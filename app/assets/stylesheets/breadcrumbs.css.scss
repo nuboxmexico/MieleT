@@ -1,0 +1,17 @@
+@import "variables";
+
+.MuiBreadcrumbs-root{
+    margin-top: 20px!important;
+    .MuiBreadcrumbs-ol{
+        .MuiBreadcrumbs-li{
+            .mdl-navigation__link{
+                font-weight: 300!important;
+            }
+        } 
+        .MuiBreadcrumbs-li:last-child{
+            .mdl-navigation__link{
+                color: $brand-primary!important;
+            }
+        }
+    }
+}

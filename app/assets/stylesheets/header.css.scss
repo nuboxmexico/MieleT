@@ -1,0 +1,226 @@
+@import "variables";
+
+figure#logo{
+  margin-top: 0;
+  margin-left: 0px;
+}
+
+.first-head{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 100%;
+}
+
+header .mdl-layout__drawer {
+    border-right: 0;
+  }
+  header .mdl-layout__drawer .mdl-layout-title {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  header .search input {
+    border-bottom: 0;
+  }
+  header .search label {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header .user_img {
+    border-radius: 24px;
+    width: 40px;
+  }
+  
+  .sidenav {
+    background-color: #fff;
+    border-right: 0;
+  }
+  .sidenav .mdl-layout-title {
+    box-shadow: rgba(0, 0, 0, 0.13725) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11765) 0px 1px 5px 0px;
+  }
+  .sidenav .mdl-navigation__link.active {
+    color: #2196F3;
+  }
+  .sidenav .mdl-navigation__link span {
+    padding-left: 16px;
+  }
+  
+  .mdl-layout__content {
+    background-color: #e0e0e0;
+  }
+  
+  .mdl-navigation span{
+    color: #fff;
+  }
+  .account_action .inner {
+    background-color: #fff;
+    font-size: 20px;
+  }
+  .account_action .inner .material-icon {
+    color: #2196F3;
+  }
+
+  .mdl-layout__header {
+      z-index: 6;
+ 
+  }
+
+.mdl-navigation{
+  #side-nav-links{
+    .MuiButtonBase-root{
+      .MuiListItemIcon-root {
+        color: #fff!important;
+        display: inline-flex;
+        min-width: 56px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.mdl-layout__drawer .mdl-navigation{
+  #side-nav-links{
+    .MuiButtonBase-root{
+      padding-left: 16px;
+      padding-right: 16px;
+      padding: 20px 10px;
+      .MuiListItemIcon-root {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+
+.mdl-layout__drawer.is-visible .mdl-navigation{
+  #side-nav-links{
+    .MuiButtonBase-root{
+      padding-left: 16px;
+      padding-right: 16px;
+      padding: 16px;
+      .MuiListItemIcon-root {
+        position: relative;
+      }
+    }
+  }
+} 
+
+
+
+.mdl-layout__drawer .mdl-layout-title{
+  .custom-col{
+
+    .user-photo-contain {
+      padding: 0px;
+      margin: 70px 0px 55px 0px;
+      height: 1px;
+      .circle-image-sm {
+        width: 40px;
+        position: absolute;
+        right: 22px;
+      }
+      .head-user-info b, .head-user-info p, .head-user-info span{
+        display: none;
+      }
+    }
+  }
+}
+.mdl-layout__drawer.is-visible .mdl-layout-title{
+
+  .custom-col{
+    .user-photo-contain {
+      padding: 0px;
+      margin: 20px 0px 20px 0px;
+      height: auto;
+      .circle-image-sm {
+        width: 40px;
+        right: 8px;
+        position: relative;
+      }
+      .head-user-info b, .head-user-info p, .head-user-info span{
+        display: inherit;
+      }
+    }
+  }
+  
+}
+.mdl-layout__drawer{
+  background-color: $brand-tertiary;
+  z-index: 6;
+}
+
+@media (min-width: 600px){
+  .mdl-layout__drawer{
+    transform: translateX(-164px) !important;
+    background-color: $brand-tertiary;
+  }
+}
+@media (max-width: 600px){
+  .MuiContainer-root {
+    padding-top: 20px;
+  }
+  .search-btn-full-height{
+    .MuiButton-label{
+      .MuiButton-startIcon{
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+      }
+    }
+  }
+}
+
+.mdl-layout__drawer.is-visible{
+  z-index: 7;
+  transform: translateX(0) !important;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  text-align: right;
+}
+
+.mdl-layout__drawer.is-visible .mdl-navigation .mdl-navigation__link{
+ text-align:left;
+}
+
+
+.brand-orange-color{
+  color: $brand-seven;
+}
+
+.brand-orange-color-bg{
+  background-color: $brand-seven;
+}
+.sign-out-link{
+  margin-left: -5px;
+}
+
+
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  background-color: transparent;
+  color: $brand-tertiary;
+  padding: 8px 14px;
+  margin: 0px;
+  position: absolute;
+  left: 76px;
+}
+
+@media(max-width: 1280px){
+  .mdl-layout__header .mdl-layout__drawer-button {
+    padding: 8px 0px;
+  }
+  
+}
+
+@media (max-width: 600px){
+  .mdl-layout__header .mdl-layout__drawer-button {
+    left: 0px;
+  }
+  .mdl-layout__header-row {
+    height: 56px;
+    padding: 0px;
+  }
+}
+@media (min-width: 600px){
+  .MuiContainer-root {
+      padding-left: 90px!important;
+      padding-right: 24px;
+  }
+}

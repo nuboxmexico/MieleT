@@ -1,0 +1,69 @@
+<% unless @policy.nil? %>
+    <p>Estimado(a) <%=  @policy["customer"]["names"] %>,</p>
+    <p>
+        Adjuntamos la información de su nueva póliza. 
+    </p>
+    <p>
+        <strong>Detalle de la póliza</strong>
+    </p>
+    <p>
+        <span class="service-p-small">Si hay algún error en los datos a continuación, por favor comuníquese con nosotros.</span>
+    </p>
+    <br>
+    <p>
+        <span class="service-p-item" ><strong>Número</strong></span>
+        <span class="service-p-subitem"><%=  @policy["customer_id"] %>-<%=  @policy["id"] %></span>
+    </p>
+    <!-- 
+    <p>
+        <span class="service-p-item" ><strong>Dirección</strong></span>
+        <span class="service-p-subitem"><%= "#{@policy["customer"]["street_type"]} #{@policy["customer"]["street_name"]}, #{@policy["customer"]["ext_number"]} #{@policy["customer"]["int_number"]}, #{@policy["customer"]["administrative_demarcation"] != nil ?  @policy["customer"]["administrative_demarcation"]["admin3_admin1"] : @policy["customer"]["state"]}#{@policy["customer"]["zipcode"] != "" ? (", Código Postal: " + @policy["customer"]["zipcode"]) : "" }" %></span>
+    </p>
+     -->
+
+    <p>
+        <span class="service-p-item"><strong>Productos</strong></span>
+    </p>
+    <ul>
+        <% @policy["policy_customer_products"].each do |customer_product| %>
+            <li> <span class="service-p-subitem"><%= customer_product["customer_product"]["product"]["tnr"]%> - <%= customer_product["customer_product"]["serial_id"]%> - <%= customer_product["customer_product"]["product"]["name"]%></span></li>
+        <% end %>
+    </ul>
+
+    <p>
+        <span class="service-p-item"><strong>Consumibles</strong></span>
+    </p>
+    <ul>
+        <% @consumables["items"].each do |consumable| %>
+            <li> <span class="service-p-subitem"><%= consumable["consumable"]["name"]%> x <%= consumable["total_boxes"]%></span></li>
+        <% end %>
+    </ul>
+
+    <p>
+        <span class="service-p-item"><strong>Mano de obra</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["labor_price"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+
+    <p>
+        <span class="service-p-item"><strong>Consumibles</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["items_price"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+
+    <p>
+        <span class="service-p-item"><strong>Viáticos</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["viatic_price"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+    <p>
+        <span class="service-p-item"><strong>IVA</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["iva_amount"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+    <p>
+        <span class="service-p-item"><strong>Subtotal</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["subtotal_price"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+    <p>
+        <span class="service-p-item"><strong>Monto total</strong></span><span class="service-p-total-amount"> $ <%= ActionController::Base.helpers.number_to_currency(@policy["total_price"], :unit => "", :separator => ",", :delimiter => ".")%></span>
+    </p>
+
+   
+<% end %>

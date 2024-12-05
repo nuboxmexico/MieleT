@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t('apipie.api_documentation', :default => 'Api Documentation') %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all'%>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://use.typekit.net/bal7ovi.css">
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+  <%= favicon_link_tag asset_path('favicon.ico') %>
+  <%= Apipie.include_stylesheets %>
+  <%= stylesheet_link_tag 'api_pie', media: 'all'%>
+  <link type='text/css' rel='stylesheet' href='<%= Apipie.full_url("stylesheets/application.css")%>'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body class="mdl-layout__container ">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <figure id="logo" class="flex-center  w-100" data-hook>
+          <a href="/" class="flex-center">
+            <%= image_tag('logo/logo.svg', alt: 'Logo Garage', class: 'img-responsive logo')%>
+          </a>
+      </figure>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div id='container'>
+          <%= yield %>
+          <%= render 'disqus' if Apipie.configuration.use_disqus? %>
+        </div>
+      </div>
+      <hr>
+      <footer><%= yield :apipie_footer %></footer>
+      <%= render partial: 'layouts/shared/pace' %>
+    </div>
+  </main>
+  <%= Apipie.include_javascripts %>
+</body>
+</html>

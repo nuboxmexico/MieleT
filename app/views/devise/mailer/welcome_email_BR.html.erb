@@ -1,0 +1,15 @@
+<p>
+	Prezado <%= @user.fullname %>, 
+</p>
+<p>
+
+	O usuário <%= @user.email %> foi criado com sucesso! Você pode entrar no sistema através do seguinte link:
+</p>
+
+<br>
+<p><%= link_to 'Navegar para Miele Tickets', Rails.configuration.site_url, style: "background: #FFFFFF;border: 1px solid #8C0014;opacity: 1;padding: 10px 20px;color: #8C0014;text-transform: uppercase;margin: 0px 30%;text-decoration:none;font-size: 12px;text-overflow: initial;word-break: break-all;white-space: nowrap;" %></p>
+<br>
+
+<p>
+	Usar como senha: <b><%= User.default_pass %></b>
+</p>

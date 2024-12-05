@@ -1,0 +1,20 @@
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+      <figure id="logo" class="flex-center  w-100" data-hook>
+        <a href="/" class="flex-center">
+          <%= image_tag('logo/logo.svg', alt: 'Logo Garage', class: 'img-responsive logo')%>
+        </a>
+      </figure>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-navigation-nav absolute-right" id="nav-links"></nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer sidenav">
+  <%= render partial: "layouts/shared/client_head"%>
+  <nav class="mdl-navigation" >
+    <%= render partial: "layouts/shared/side_nav_links"%>
+  </nav>
+</div>

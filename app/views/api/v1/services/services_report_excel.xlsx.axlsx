@@ -1,0 +1,1454 @@
+wb = xlsx_package.workbook
+@services_all = services_all if @services_all.nil?
+invoiced_label = {
+  pending: 'Pendiente',
+  completed: 'Facturada',
+  unrequired: 'No requiere facturación'
+}
+
+wb.add_worksheet(name: 'Servicios') do |sheet|
+  
+  pre_headers = [
+    'Servicio','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a',                        
+    'Dirección de servicio México','a','a','a','a','a',                                            
+    'Dirección de servicio Chile','a','a','a','a','a',                                             
+    'Productos','a','a','a','a',                                                                   
+    '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',  
+    'Refacciones utilizadas','a','a','a','a',#,                                                    
+    'Refacciones solicitadas','a','a','a','a',                                                    
+    'Cotización','a','a','a','a','a','a','a','a','a','a','a','a',                                  
+    'Encuesta',
+    'Opinión General',
+    'Opinión sobre la visita del técnico','a','a','a','a','a','a','a',
+    'Opinión desde el punto de contacto hasta la conclusión', 'a', 'a', 'a',
+    'Satisfacción para el agente de Contact Center', 'a'
+  ]
+  headers = [
+    'Folio',
+    'IBS',
+    'Tipo Servicio',
+    'Sub Categoria',
+    'Solicitado por',
+    'Cliente',
+    'Canal',
+    'Centro de Costo',
+    'Estado del Servicio',
+    'No. Visita del producto',
+    'Estado de la visita',
+    'Garantía del producto',
+    'Fecha de registro',
+    'Fecha de agendamiento del servicio',
+    'Correo',
+    'Correo adicional',
+    'Codigo postal',
+    'Tipo de Calle',
+    'Numero Exterior',
+    'Numero Interior',
+    'Colonia',
+    'Municipio',
+    'RUT',
+    'Comuna/Region',
+    'Tipo de calle',
+    'Nombre de calle',
+    'Número',
+    'Depto.',
+    'Familia',
+    'Subfamilia',
+    'ID',
+    'TNR',
+    'Nombre Producto',
+    'Facturado',
+    'Estatus de pago Servicio',
+    'Fecha de pago',
+    'Hora de pago',
+    'N° de Referencia',
+    'Monto de pago de servicio CLP',
+    'Fee Visita/Diagnóstico CLP',
+    'Consumibles CLP',
+    'Mano de obra CLP',
+    'Viáticos CLP',
+    'Sub Total CLP',
+    'IVA CLP',
+    'TOTAL CLP',
+    'Monto de pago de servicio MX',
+    'Fee Visita/Diagnóstico MX',
+    'Consumibles MX',
+    'Mano de obra MX',
+    'Viáticos MX',
+    'Sub Total MX',
+    'IVA MX',
+    'TOTAL MX',
+    'Monto de pago de servicio BR',
+    'Fee Visita/Diagnóstico BR',
+    'Consumibles BR',
+    'Mano de obra BR',
+    'Viáticos BR',
+    'Sub Total BR',
+    'IVA BR',
+    'TOTAL BR',
+    'Tecnico Principal',
+    'Comentario prediagnostico Technical Management', #36
+    'TNR',
+    'Nombre producto',
+    'Valor unitario',
+    'Cantidad',
+    'Garantía',
+    'TNR',
+    'Nombre producto',
+    'Valor unitario',
+    'Cantidad',
+    'Garantía',
+    'Observaciones technical management (cotización)',
+    'Observaciones field service (cotización)',
+    'Observaciones para cliente (cotización)',
+    'Valor Refacciones',
+    'Valor Viáticos',
+    'Valor Mano de obra',
+    'Subtotal',
+    'IVA',
+    'TOTAL',
+    'Estatus de pago Cotización',
+    'Fecha de pago cotización',
+    'Hora de pago',
+    'N° de Referencia',
+    'Estatus encuesta',
+    'En escala de 1 a 10, donde 1 es nada probable y 10 es totalmente probable. ¿Usted recomendaría el servicio técnico Miele?',
+    '¿El técnico llegó a tiempo?',
+    '¿El técnico fue amable?',
+    '¿El técnico mostró disponibilidad para resolver el problema?',
+    '¿El técnico mostró habilidad para identificar el problema?',
+    '¿El técnico habilidad para reparar el producto?',
+    '¿El técnico le dio consejos para el buen uso y mantenimiento de su producto?',
+    '¿El técnico le explico el trabajo de reparación realizada así como el costo del mismo?',
+    '¿El técnico limpió el área de trabajo?',
+    '¿El servicio técnico Miele es rápido?',
+    '¿El servicio técnico Miele es confiable?',
+    '¿El servicio técnico Miele es equiparable al monto cobrado por la reparación?',
+    '¿Estoy totalmente satisfecho con el servicio técnico Miele?',
+    '¿El agente de Contact Center manejó correctamente mi solicitud de servicio?',
+    'Comentarios adicionales del cliente'
+  ]
+  sheet.add_row pre_headers
+  sheet.add_row headers
+
+  @services_all.each do |service|
+    service["visits"].each do |visit|
+      visit["customer_products"].each do |product|
+        if product["used_spare_parts"].empty? && product["requested_spare_parts"].empty?
+          
+          sheet.add_row [
+            service["number"] ? service["number"].to_s : "-",
+              service["ibs_number"] ? service["ibs_number"].to_s : "-",
+              service["service_type"] ? service["service_type"].to_s : "-",
+              service["subcategory"] ? service["subcategory"].to_s : "-",
+              service['requested'] ? service['requested'].to_s : '',
+              visit["calendar_event"] ? visit["calendar_event"]["service_data"]["customer_name"].to_s : "-",
+              service["request_channel"] ? service["request_channel"].to_s : "-",
+              service['cost_center'] ? service['cost_center']['fullname'].to_s : '-',
+              service["status_label"] ? service["status_label"].to_s : "-",
+              visit["visit_number"] ? visit["visit_number"].to_s : "-",
+              visit["status_label"] ? visit["status_label"].to_s : "-",
+              product["warranty"] ? "Sí": "No",
+              service["created_at"] ? service["created_at"].to_date.strftime('%d/%m/%Y') : "-",
+              visit["start_time"] ? visit["start_time"].to_date.strftime('%d/%m/%Y') : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["zipcode"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["colony"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["delegation"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : service["customer"] ? service["customer"]["rut"] : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"]["admin3_admin1"].to_s : "-" : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_name"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              product["product"]["taxons"][1] ? product["product"]["taxons"][1]["name"].to_s : "-",
+              product["product"]["taxons"][2] ? product["product"]["taxons"][2]["name"].to_s : "-",
+              product["serial_id"] ? product["serial_id"].to_s : "-",
+              product["product"]["tnr"] ? product["product"]["tnr"].to_s : "-",
+              product["product"]["name"] ? product["product"]["name"].to_s : "-",
+              invoiced_label[visit['invoiced'].to_sym],
+              
+              if visit["no_payment"]
+                "No requiere pago"
+              else
+                visit["payment_state"] ? visit["payment_state"] == "paid" ? "Pagado" : "Pendiente" : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].to_date.strftime('%d/%m/%Y') :  visit["payment_date"] ? visit["payment_date"].to_date.strftime('%d/%m/%Y') : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].strftime("%H:%M") : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["transaction_id"].to_s : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] != 'CL' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos CLP
+
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'BR' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'MX' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              service["principal_technician_name"] ? service["principal_technician_name"].to_s : "-",
+              service["background_prediagnosis"] ? service["background_prediagnosis"] != "" ? service["background_prediagnosis"].to_s : "-" : "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              visit["quotation"] ? visit["quotation"]["tm_background"] ? !visit["quotation"]["tm_background"].empty? ? visit["quotation"]["tm_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["cs_background"] ? !visit["quotation"]["cs_background"].empty? ? visit["quotation"]["cs_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["customer_background"] ? !visit["quotation"]["customer_background"].empty? ? visit["quotation"]["customer_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["spare_parts_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["viatic_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["labor_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["subtotal_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["iva_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["total_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? visit["quotation"]["payment_state"] == "paid" ? "Pagado" : visit["quotation"]["payment_state"] == "pending" ? "Pendiente" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_date"] ? visit["quotation"]["payment_date"].to_date.strftime('%d/%m/%Y') : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["created_at"].strftime("%H:%M") : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["transaction_id"].to_s : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][0]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][1]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][2]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][3]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][4]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][5]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][6]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][7]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][8]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][9]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][10]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][11]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][12]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][13]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["background"].empty? ?  "-" : service["current_survey"]["background"] : "-"
+            ]
+        else
+          product["used_spare_parts"].each do |used|
+            sheet.add_row [
+              service["number"] ? service["number"].to_s : "-",
+              service["ibs_number"] ? service["ibs_number"].to_s : "-",
+              service["service_type"] ? service["service_type"].to_s : "-",
+              service["subcategory"] ? service["subcategory"].to_s : "-",
+              service['requested'] ? service['requested'].to_s : '',
+              visit["calendar_event"] ? visit["calendar_event"]["service_data"]["customer_name"].to_s : "-",
+              service["request_channel"] ? service["request_channel"].to_s : "-",
+              service['cost_center'] ? service['cost_center']['fullname'].to_s : '-',
+              service["status_label"] ? service["status_label"].to_s : "-",
+              visit["visit_number"] ? visit["visit_number"].to_s : "-",
+              visit["status_label"] ? visit["status_label"].to_s : "-",
+              product["warranty"] ? "Sí": "No",
+              service["created_at"] ? service["created_at"].to_date.strftime('%d/%m/%Y') : "-",
+              visit["start_time"] ? visit["start_time"].to_date.strftime('%d/%m/%Y') : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["zipcode"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["colony"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["delegation"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : service["customer"] ? service["customer"]["rut"] : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"]["admin3_admin1"].to_s : "-" : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_name"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              product["product"]["taxons"][1] ? product["product"]["taxons"][1]["name"].to_s : "-",
+              product["product"]["taxons"][2] ? product["product"]["taxons"][2]["name"].to_s : "-",
+              product["serial_id"] ? product["serial_id"].to_s : "-",
+              product["product"]["tnr"] ? product["product"]["tnr"].to_s : "-",
+              product["product"]["name"] ? product["product"]["name"].to_s : "-",
+              invoiced_label[visit['invoiced'].to_sym],
+              if visit["no_payment"]
+                "No requiere pago"
+              else
+                visit["payment_state"] ? visit["payment_state"] == "paid" ? "Pagado" : "Pendiente" : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].to_date.strftime('%d/%m/%Y') :  visit["payment_date"] ? visit["payment_date"].to_date.strftime('%d/%m/%Y') : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].strftime("%H:%M") : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["transaction_id"].to_s : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] != 'CL' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico CLP 
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+            
+              # Consumibles CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+
+              # Mano de obra CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'BR' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'MX' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              service["principal_technician_name"] ? service["principal_technician_name"].to_s : "-",
+              service["background_prediagnosis"] ? service["background_prediagnosis"] != "" ? service["background_prediagnosis"].to_s : "-" : "-",
+              used["spare_part"] ? used["spare_part"]["tnr"].to_s : "-",
+              used["spare_part"] ? used["spare_part"]["name"].to_s : "-",
+              MoneyUtils.quotation_spare_part_price(used, service["customer"]["country"]["iso"], used["quantity"]).to_s,
+              used["quantity"] ? used["quantity"].to_s : "-",
+              used["warranty"] ? used["warranty"].to_s : "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              visit["quotation"] ? visit["quotation"]["tm_background"] ? !visit["quotation"]["tm_background"].empty? ? visit["quotation"]["tm_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["cs_background"] ? !visit["quotation"]["cs_background"].empty? ? visit["quotation"]["cs_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["customer_background"] ? !visit["quotation"]["customer_background"].empty? ? visit["quotation"]["customer_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["spare_parts_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["viatic_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["labor_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["subtotal_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["iva_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["total_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? visit["quotation"]["payment_state"] == "paid" ? "Pagado" : visit["quotation"]["payment_state"] == "pending" ? "Pendiente" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_date"] ? visit["quotation"]["payment_date"].to_date.strftime('%d/%m/%Y') : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["created_at"].strftime("%H:%M") : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["transaction_id"].to_s : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][0]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][1]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][2]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][3]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][4]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][5]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][6]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][7]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][8]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][9]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][10]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][11]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][12]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][13]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["background"].empty? ?  "-" : service["current_survey"]["background"] : "-"
+            ]
+          end
+
+
+          product["requested_spare_parts"].each do |requested|
+            sheet.add_row [
+              service["number"] ? service["number"].to_s : "-",
+              service["ibs_number"] ? service["ibs_number"].to_s : "-",
+              service["service_type"] ? service["service_type"].to_s : "-",
+              service["subcategory"] ? service["subcategory"].to_s : "-",
+              service['requested'] ? service['requested'].to_s : '',
+              visit["calendar_event"] ? visit["calendar_event"]["service_data"]["customer_name"].to_s : "-",
+              service["request_channel"] ? service["request_channel"].to_s : "-",
+              service['cost_center'] ? service['cost_center']['fullname'].to_s : '-',
+              service["status_label"] ? service["status_label"].to_s : "-",
+              visit["visit_number"] ? visit["visit_number"].to_s : "-",
+              visit["status_label"] ? visit["status_label"].to_s : "-",
+              product["warranty"] ? "Sí": "No",
+              service["created_at"] ? service["created_at"].to_date.strftime('%d/%m/%Y') : "-",
+              visit["start_time"] ? visit["start_time"].to_date.strftime('%d/%m/%Y') : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"] ? service["customer"]["email"].to_s : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["zipcode"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["colony"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] == 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["delegation"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : service["customer"] ? service["customer"]["rut"] : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"] ? visit["calendar_event"]["service_data"]["selected_address"]["administrative_demarcation"]["admin3_admin1"].to_s : "-" : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_type"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["street_name"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["ext_number"].to_s : "-" : "-" : "-",
+              service["customer"]["country"]["iso"] != 'CL' ? "-" : visit["calendar_event"] ?  visit["calendar_event"] ? visit["calendar_event"]["service_data"]["selected_address"] ? visit["calendar_event"]["service_data"]["selected_address"]["int_number"].to_s : "-" : "-" : "-",
+              product["product"]["taxons"][1] ? product["product"]["taxons"][1]["name"].to_s : "-",
+              product["product"]["taxons"][2] ? product["product"]["taxons"][2]["name"].to_s : "-",
+              product["serial_id"] ? product["serial_id"].to_s : "-",
+              product["product"]["tnr"] ? product["product"]["tnr"].to_s : "-",
+              product["product"]["name"] ? product["product"]["name"].to_s : "-",
+              invoiced_label[visit['invoiced'].to_sym],
+              if visit["no_payment"]
+                "No requiere pago"
+              else
+                visit["payment_state"] ? visit["payment_state"] == "paid" ? "Pagado" : "Pendiente" : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].to_date.strftime('%d/%m/%Y') :  visit["payment_date"] ? visit["payment_date"].to_date.strftime('%d/%m/%Y') : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["created_at"].strftime("%H:%M") : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["payment_data"] ? service["payment_data"]["transaction_id"].to_s : "-"
+              end,
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] != 'CL' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico CLP 
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles CLP
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+
+              # Mano de obra CLP
+              
+              if visit['no_payment'] 
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos CLP
+
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL CLP
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] != 'CL'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'BR' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL MX
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'BR'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              if visit["no_payment"]
+                "-"
+              else
+                service["customer"]["country"]["iso"] == 'CL' || service['customer']['country']['iso'] == 'MX' ? "-" : service["total_amount"] ? MoneyUtils.get_money_country_format(service["total_amount"], service["customer"]["country"]["iso"]).to_s : "-"
+              end,
+
+              # Fee Visita/Diagnóstico BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['fee_amount']
+                    MoneyUtils.get_money_country_format(visit['fee_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Consumibles BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['consumable_amount']
+                    MoneyUtils.get_money_country_format(visit['consumable_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Mano de obra BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['labor_amount']
+                    MoneyUtils.get_money_country_format(visit['labor_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Viáticos BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-' 
+                else
+                  if visit['viatic_amount']
+                    MoneyUtils.get_money_country_format(visit['viatic_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # Sub Total BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['subtotal_amount']
+                    MoneyUtils.get_money_country_format(visit['subtotal_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # IVA BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['iva_amount']
+                    MoneyUtils.get_money_country_format(visit['iva_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              # TOTAL BR
+              if visit['no_payment']
+                '-'
+              else
+                if service['customer']['country']['iso'] == 'CL' || service['customer']['country']['iso'] == 'MX'
+                  '-'
+                else
+                  if visit['total_amount']
+                    MoneyUtils.get_money_country_format(visit['total_amount'], service['customer']['country']['iso']).to_s
+                  else
+                    '-'
+                  end
+                end
+              end,
+
+              service["principal_technician_name"] ? service["principal_technician_name"].to_s : "-",
+              service["background_prediagnosis"] ? service["background_prediagnosis"] != "" ? service["background_prediagnosis"].to_s : "-" : "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              requested["spare_part"] ? requested["spare_part"]["tnr"].to_s : "-",
+              requested["spare_part"] ? requested["spare_part"]["name"].to_s : "-",
+              MoneyUtils.quotation_spare_part_price(requested, service["customer"]["country"]["iso"], requested["quantity"]).to_s,
+              requested["quantity"] ? requested["quantity"].to_s : "-",
+              requested["warranty"] ? requested["warranty"].to_s : "-",
+              visit["quotation"] ? visit["quotation"]["tm_background"] ? !visit["quotation"]["tm_background"].empty? ? visit["quotation"]["tm_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["cs_background"] ? !visit["quotation"]["cs_background"].empty? ? visit["quotation"]["cs_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["customer_background"] ? !visit["quotation"]["customer_background"].empty? ? visit["quotation"]["customer_background"].to_s : "-" : "-" : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["spare_parts_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["viatic_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["labor_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["subtotal_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["iva_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? MoneyUtils.get_money_country_format(visit["quotation"]["total_amount"], service["customer"]["country"]["iso"]).to_s : "-",
+              visit["quotation"] ? visit["quotation"]["payment_state"] == "paid" ? "Pagado" : visit["quotation"]["payment_state"] == "pending" ? "Pendiente" : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_date"] ? visit["quotation"]["payment_date"].to_date.strftime('%d/%m/%Y') : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["created_at"].strftime("%H:%M") : "-" : "-",
+              visit["quotation"] ? visit["quotation"]["payment_data"] ? visit["quotation"]["payment_data"]["transaction_id"].to_s : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][0]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][1]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][2]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][3]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][4]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][5]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][6]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][7]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][8]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][9]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][10]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][11]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][12]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["survey_answers"][0] ?  service["current_survey"]["survey_answers"][13]["answer"].to_s  : "-" : "-",
+              service["current_survey"] ? service["current_survey"]["background"].empty? ?  "-" : service["current_survey"]["background"] : "-"
+            ]
+          end
+        end
+      end
+    end
+  end
+  sheet.merge_cells sheet.rows.first.cells[(0..15)]
+  sheet.merge_cells sheet.rows.first.cells[(16..21)]
+  sheet.merge_cells sheet.rows.first.cells[(22..27)]
+  sheet.merge_cells sheet.rows.first.cells[(28..33)]
+  sheet.merge_cells sheet.rows.first.cells[(59..63)] 
+  sheet.merge_cells sheet.rows.first.cells[(64..68)]
+  sheet.merge_cells sheet.rows.first.cells[(69..73)] 
+  sheet.merge_cells sheet.rows.first.cells[(74..86)]    #"Cotizacion" header
+  sheet.merge_cells sheet.rows.first.cells[(89..96)]    #"Opinión sobre la visita del técnico" header
+  sheet.merge_cells sheet.rows.first.cells[(97..100)]   #"Opinión desde el punto de contacto hasta la conclusión" header
+  sheet.merge_cells sheet.rows.first.cells[(101..102)]  #"Satisfacción para el agente de Contact Center" header
+end

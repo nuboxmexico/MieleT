@@ -1,0 +1,32 @@
+.custom-paper .additional-product-form{
+    margin-top: 20px;
+    display: inherit;
+    div.MuiFormControl-root {
+        margin-top: 0px;
+    }
+}
+
+
+
+.additional-from-box[style*="visibility: hidden;"]{
+    .additional-product-form{
+        display: none;
+    }
+}
+
+
+#additional-product-id{
+    margin-left: 10px;
+}
+
+.customer-general-loader{
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.p-relative{
+    position: relative;
+}

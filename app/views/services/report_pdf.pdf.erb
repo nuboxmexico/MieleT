@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-GB">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="generator" content="2017.0.1.363"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Servicio N° <%= service["number"] %></title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css?crc=3814339282" id="pagesheet"/>
+	<!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=323769760"/>
+<![endif]-->
+<style type="text/css">
+	
+</style>
+<!-- Other scripts -->
+<!-- JS includes -->
+<script type="text/javascript">
+	document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/open-sans:n4,n7:default.js" type="text/javascript">\x3C/script>');
+</script>
+</head>
+<body>
+    <%= render partial: "layouts/shared/pdf_stylesheets", formats: [:html]%>
+	
+	<div class="container-content-sm">
+		<div class="">
+			<% if service["number"] %>
+			<h1 class="order-title">Reporte visita N° <%= service["visits"].any? ? visit["visit_number"] : "1" %> - Servicio <%= service["number"] %></h1>
+			<% end %>
+		</div>
+
+		<div class="sub-title-padding">
+			<p class="sub-title-info">INFORMACIÓN CLIENTE</p>
+		</div>
+        
+        <div class="box-pdf gray-box">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="light-label">
+                                Nombre cliente
+                            </span>
+                            <span class="normal-label">
+                                <%= service["customer"] ? "#{service["customer"]["names"]} #{service["customer"]["lastname"]} #{service["customer"]["surname"]} " : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Teléfono
+                            </span>
+                            <span class="normal-label">
+                                <%= service["customer"] ? "#{service["customer"]["phone"]}" : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Email
+                            </span>
+                            <span class="normal-label">
+                                <%= service["customer"] ? "#{service["customer"]["email"]}" : "Sin información"%>
+                            </span>
+                        </td>
+                    </tr>
+
+                   
+                </tbody>
+            </table>
+            <table class="table">
+                <tbody>
+                     <tr>
+                        <td>
+                            <span class="light-label">
+                                Dirección
+                            </span>
+                            <span class="normal-label">
+                                <%= service["customer"] ? "#{service["customer"]["street_type"]} #{service["customer"]["street_name"]}, #{service["customer"]["ext_number"]} #{service["customer"]["int_number"]}, #{service["customer"]["administrative_demarcation"] != nil ?  service["customer"]["administrative_demarcation"]["admin3_admin1"] : service["customer"]["state"]}#{service["customer"]["zipcode"] != "" ? ", Código Postal: #{service["customer"]["zipcode"]}" : "" }" : "Sin información"%>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+		</div>
+
+        <div class="sub-title-padding">
+			<p class="sub-title-info">ANTECEDENTES DEL PROBLEMA</p>
+		</div>
+		<div class="box-pdf">
+            <span class="light-label">
+                Problema reportado por cliente
+            </span>
+            <span class="normal-label">
+                <%= !service["background"].blank? ? service["background"] : "Sin información"%>
+            </span>
+
+            <div class="row">
+                <% if service["file_resources"] && service["file_resources"].any? %>
+                    <% service["file_resources"].each do |file_resource| %>
+                        <div class="service-photo-container">
+                    	    <%= wicked_pdf_image_tag(file_resource["resource_url"], class: "service-photo img-responsive")%>
+                        </div>
+                    <% end %>
+                <% end %>
+            </div>
+
+            
+		</div>
+
+        <div class="sub-title-padding">
+			<p class="sub-title-info">INFORMACIÓN SERVICIO</p>
+		</div>
+		<div class="box-pdf">
+            <table class="table">
+                <tbody>
+
+                     <tr>
+                        <td>
+                            <span class="light-label">
+                                Técnico principal
+                            </span>
+                            <span class="normal-label">
+                                <%= principal_technician ? "#{principal_technician.user.firstname} #{principal_technician.user.lastname} #{principal_technician.user.surname} " : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Fecha de visita
+                            </span>
+                            <span class="normal-label">
+                                <%= event ? "#{DateTime.parse(event["start_date"]).strftime("%d/%m/%Y") rescue "Sin información" }"  : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Hora de visita
+                            </span>
+                            <span class="normal-label">
+                                <%= event ? "#{DateTime.parse(event["start_date"]).strftime("%H:%M:%S") rescue "Sin información" }"  : "Sin información"%>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="light-label">
+                                Tipo de servicio
+                            </span>
+                            <span class="normal-label">
+                                <%= service["service_type"] ? "#{service["service_type"]} - #{service["subcategory"]}" : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Estatus del servicio
+                            </span>
+                            <span class="normal-label">
+                                <%= service["status_label"] ? "#{service["status_label"]}" : "Sin información"%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                IBS
+                            </span>
+                            <span class="normal-label">
+                                <%= !service["ibs_number"].blank? ? "#{service["ibs_number"]}" : "Sin información"%>
+                            </span>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            
+		</div>
+        
+		
+	</div>
+   
+
+    <% if service["customer_products"] && service["customer_products"].any? %>
+        <% service["customer_products"].each do |customer_product| %>
+            
+            <% visit_customer_product = visit["visit_customer_products"].detect{|visit_customer_product| visit_customer_product["customer_product_id"] == customer_product["id"]}%>
+            <% product_info = (visit_customer_product.blank? ? customer_product : visit_customer_product )%>
+            <% next if visit_customer_product.nil? %>    
+                
+            <div id="brake"></div>
+            <div class="container-content">
+                <h1 class="order-title"><%= customer_product["product"]["name"]%></h1>
+                <h2 class="product-subtitle">TNR: <%= customer_product["product"]["tnr"].blank? ? "Sin información":  customer_product["product"]["tnr"]%> - ID: <%= customer_product["serial_id"].blank? ? "Sin información" : customer_product["serial_id"]%></h2>
+                
+                <div class="sub-title-padding">
+                    <p class="sub-title-info">CHECKLIST PRE-INSTALACIÓN</p>
+                </div>
+                <div class="box-pdf">
+                    <% index = 1 %>
+                    <% if customer_product["customer_product_checklists"] && customer_product["customer_product_checklists"].any? %>
+                            <table class="table">
+                                <tbody>
+                                    <% customer_product["customer_product_checklists"].in_groups_of(2).each do |customer_product_checklist_group| %>
+                                                <tr>
+                                                    <% customer_product_checklist_group.each do |customer_product_checklist| %>
+                                                        <td>
+                                                            <% unless customer_product_checklist.nil? %>
+                                                                    <span class="light-label">
+                                                                        <%= index %>- <%= customer_product_checklist["checklist"] ? "#{customer_product_checklist["checklist"]["question"]}" : "Sin información"%>
+                                                                    </span>
+                                                                    <span class="normal-label">
+                                                                        <%= customer_product_checklist["answer"] ? "#{customer_product_checklist["answer"]}" : "Sin responder"%>
+                                                                    </span>
+                                                            <% end %>
+                                                        </td>
+                                                        <% index+=1 %>
+                                                    <% end %>
+                                                </tr>
+                                    <% end %>
+                                </tbody>
+                            </table>
+                    <% else %>
+                            <span class="light-label">
+                                No se ha respondido el cuestionario de preinstalación para este producto.
+                            </span>
+                        
+                    <% end %>
+                </div>
+
+                
+                <% if visit_customer_product && visit_customer_product["checklist_product_images"] && visit_customer_product["checklist_product_images"].any? %>
+                    <div class="sub-title-padding">
+                        
+                    </div>
+                    <div class="">
+                     <table class="table">
+                        <tbody>
+                            <% visit_customer_product["checklist_product_images"].in_groups_of(4) do |checklist_product_images_group| %>
+                                <tr>
+                                <% checklist_product_images_group.each do |image| %>
+                                    <% unless image.nil? %>
+                                        <td>
+                                            <div class="file-image-grid">
+                                                <img src="<%= image["resource_url"]%>" class="file-image">
+                                                <span class="normal-label"><%= image["description"] %></span>
+                                            </div>
+                                        </td>
+                                    <% else %>
+                                        <td></td>
+                                    <% end %>
+                                    
+                                <% end %>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                    
+                    </div>
+                <% end %>
+
+                <div class="sub-title-padding">
+                    <p class="sub-title-info">ACTIVIDADES REALIZADAS</p>
+                </div>
+                <div class="box-pdf">
+                     <table class="table">
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <span class="light-label">
+                                        Diagnóstico técnico
+                                    </span>
+                                    <span class="normal-label">
+                                        <%= product_info["technical_diagnosis"] ? "#{product_info["technical_diagnosis"]}" : "Sin información"%>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="light-label">
+                                        Opinión Experto
+                                    </span>
+                                    <span class="normal-label">
+                                        <%= product_info["expert_opinion"] ? "#{product_info["expert_opinion"]}" : "Sin información"%>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="light-label">
+                                        Actividad realizada
+                                    </span>
+                                    <span class="normal-label">
+                                        <%= product_info["activity_performed"] ? "#{product_info["activity_performed"]}" : "Sin información"%>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="light-label">
+                                        Estatus del producto
+                                    </span>
+                                    <span class="normal-label">
+                                        <%= customer_product["status"] ? "#{customer_product["status"]}" : "Sin información"%>
+                                    </span>
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                     <table class="table">
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <span class="light-label">
+                                        Garantía de visita
+                                    </span>
+                                    <span class="normal-label">
+                                        <%= product_info["warranty"] ? product_info["warranty"] : "Sin información"%>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <% used_spare_parts = visit_customer_product ? visit_customer_product["visit_products_used"]: customer_product["customer_product_service_spare_parts"] %>
+                <div class="sub-title-padding">
+                    <p class="sub-title-info">REFACCIONES UTILIZADAS</p>
+                </div>
+                <div class="">
+                    <% if used_spare_parts && used_spare_parts.any? %>
+                            <table class="table table-spare_part">
+                                <thead>
+                                    <tr>
+                                        <th>TNR</th>
+                                        <th>NOMBRE</th>
+                                        <th>CANTIDAD</th>
+                                        <th>GARANTÍA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% used_spare_parts.each do |customer_product_service_spare_part| %>
+                                        <tr>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["service_spare_part"]["spare_part"] ? "#{customer_product_service_spare_part["service_spare_part"]["spare_part"]["tnr"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["service_spare_part"]["spare_part"] ? "#{customer_product_service_spare_part["service_spare_part"]["spare_part"]["name"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["quantity"] ? "#{customer_product_service_spare_part["quantity"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <% if visit_customer_product.nil? %>
+                                                        <%= customer_product_service_spare_part["service_spare_part"]["warranty"] ? "#{customer_product_service_spare_part["service_spare_part"]["warranty"]}" : "Sin responder"%>
+                                                    <% else %>
+                                                        <%= customer_product_service_spare_part["warranty"] ? "#{customer_product_service_spare_part["warranty"]}" : "Sin responder"%>
+                                                    <% end %>
+                                                </span> 
+                                            </td>
+                                        </tr>       
+                                    <% end %>
+                                </tbody>
+                            </table>
+                    <% else %>
+                        <div class="box-pdf">
+                            <span class="light-label">
+                                No se han asignado refacciones a este producto.
+                            </span>
+                        </div>
+                        
+                    <% end %>
+                </div>
+                
+
+                <% requested_spare_parts = visit_customer_product ? visit_customer_product["visit_products_requested"]: customer_product["customer_product_requested_service_spare_parts"] %>
+                
+                <div class="sub-title-padding">
+                    <p class="sub-title-info">REFACCIONES SOLICITADAS</p>
+                </div>
+                <div class="">
+                    <% if requested_spare_parts && requested_spare_parts.any? %>
+                            <table class="table table-spare_part">
+                                <thead>
+                                    <tr>
+                                        <th>TNR</th>
+                                        <th>NOMBRE</th>
+                                        <th>CANTIDAD</th>
+                                        <th>GARANTÍA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% requested_spare_parts.each do |customer_product_service_spare_part| %>
+                                  
+                                        <tr>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["spare_part"] ? "#{customer_product_service_spare_part["spare_part"]["tnr"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["spare_part"] ? "#{customer_product_service_spare_part["spare_part"]["name"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["quantity"] ? "#{customer_product_service_spare_part["quantity"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_service_spare_part["warranty"] ? "#{customer_product_service_spare_part["warranty"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                        </tr>       
+                                    <% end %>
+                                </tbody>
+                            </table>
+                    <% else %>
+                        <div class="box-pdf">
+                            <span class="light-label">
+                                No se han asignado refacciones a este producto.
+                            </span>
+                        </div>
+                        
+                    <% end %>
+                </div>
+                
+
+                
+                <% if visit_customer_product && visit_customer_product["visit_product_images"] && visit_customer_product["visit_product_images"].any? %>
+                    <div class="sub-title-padding">
+                        
+                    </div>
+                    <div class="">
+                     <table class="table">
+                        <tbody>
+                            <% visit_customer_product["visit_product_images"].in_groups_of(4) do |visit_product_images_group| %>
+                                <tr>
+                                <% visit_product_images_group.each do |image| %>
+                                    <% unless image.nil? %>
+                                        <td>
+                                            <div class="file-image-grid">
+                                                <img src="<%= image["resource_url"]%>" class="file-image">
+                                                <span class="normal-label"><%= image["description"] %></span>
+                                            </div>
+                                        </td>
+                                    <% else %>
+                                        <td></td>
+                                    <% end %>
+                                    
+                                <% end %>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                    
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    <% end %>
+    <div id="brake"></div>
+    <div class="container-content-sm">
+        <div class="sub-title-padding">
+			<p class="sub-title-info">INFORMACIÓN DE PAGO
+            <%if visit["validated_payment"] %>
+                <span class="green-pay">&#10004;
+                    Visita Pagada
+                </span>
+            <%elsif visit['no_payment'] %>
+                <span class="green-pay">&#10004;
+                    No requiere pago
+                </span>
+            <%else%>
+            <span class="red-pay">&#x2715;
+                    Visita No Pagada
+                </span>
+                
+            <%end%>
+            </p>
+		</div>
+        
+        <div class="box-pdf">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="light-label">
+                                Fecha de pago
+                            </span>
+                            <span class="normal-label">
+                                <%= payment_data.blank? ? visit["payment_date"] ? visit["payment_date"].to_date.strftime('%d/%m/%Y') : "Sin Información" : payment_data["created_at"].to_date.strftime('%d/%m/%Y')  %>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Monto
+                            </span>
+                            <%unless payment_data.blank?%>
+                                <span class="normal-label">
+                                    <%= MoneyUtils.get_money_country_format(payment_data["amount"], country)  %>
+                                </span>
+                            <%else%>
+                                <span class="normal-label">
+                                    <%= service['no_payment'] ? MoneyUtils.get_money_country_format(0, country) : MoneyUtils.get_money_country_format(service["total_amount"], country)  %>
+                                </span>
+                            <%end%>
+                        </td>
+                            <td>
+                            <span class="light-label">
+                                N° de Referencia de la transacción
+                            </span>
+                            <%unless payment_data.blank?%>
+                                <span class="normal-label">
+                                    <%= payment_data["transaction_id"]%>
+                                </span>
+                            <%else%>
+                                <span class="normal-label">
+                                    Sin Información
+                                </span>
+                            <%end%>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="light-label">
+                                Tipo de pago 
+                            </span>
+                            <span class="normal-label">
+                                <%=payment_type.blank? ? "Sin Información" : payment_type%>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="light-label">
+                                Factura
+                            </span>
+                            <span class="normal-label">
+                                <%= service["invoice"] ? "Sí" : "No"%>
+                            </span>
+                        </td>
+                            <td>
+                            <span class="light-label">
+                                Dirección de Facturación
+                            </span>
+                            <%if service["invoice"]%>
+                                <span class="normal-label">
+                                <%=""+customer["street_type_fn"].to_s+" "+customer["street_name_fn"].to_s+", "+customer["ext_number_fn"].to_s+" "+customer["int_number_fn"].to_s+", "+ administrative_demarcation_fn.to_s %>
+                                </span>
+                            <%else%>
+                                <span class="normal-label">
+                                    Sin Información
+                                </span>
+                            <%end%>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <div class="container-content">
+        <% if visit["payment_resources"] &&  visit["payment_resources"].any? %>
+            <div class="sub-title-padding">
+                    <p class="sub-title-info">Evidencia de pago</p>
+            </div>
+            <div class="">
+                <table class="table">
+                <tbody>
+                    <% visit["payment_resources"].in_groups_of(4) do |payment_resources| %>
+                        <tr>
+                        <% payment_resources.each do |image| %>
+                            <% unless image.nil? %>
+                                <td>
+                                    <div class="file-image-grid">
+                                        <img src="<%= image["resource_url"]%>" class="file-image">
+                                        <span class="normal-label"><%= image["description"] %></span>
+                                    </div>
+                                </td>
+                            <% else %>
+                                <td></td>
+                            <% end %>
+                            
+                        <% end %>
+                        </tr>
+                    <% end %>
+                </tbody>
+            </table>
+            
+            </div>
+        <% end %>
+    </div>
+    <div class="container-content">
+        <div class="sign-container">
+        <% if visit["signatures"].any? %>
+            <% visit["signatures"].each do |image| %>
+                <% unless image.nil? %>
+                    <img src="<%= image["resource_url"]%>" class="file-image">
+                <% end %>
+                
+            <% end %>
+            </div>
+            <div class="sign-div">
+                <% else %>
+                    <td></td>
+                <% end %>
+                
+            <%= ( !visit["person_accountable"].nil? ? visit["person_accountable"] : "Sin información") %>
+        </div>
+
+    </div>
+</body>
+</html>

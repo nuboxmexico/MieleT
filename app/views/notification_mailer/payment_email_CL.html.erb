@@ -1,0 +1,127 @@
+<tr>
+    <td colspan="2">
+    <br>
+        <%= image_tag 'header_mailer.jpg', style: 'width: 100%' %>
+    </td>
+</tr>
+<tr>
+  <td colspan="2" class="notification-body">
+  <br>
+    <% unless @service.nil? %>    
+      <p class="text-center standar-letter">Estimado(a) <%=  @service["customer"]["names"] %>,</p>
+      <% unless @visit.nil?%>
+        <% unless @visit["calendar_events"].last.nil? #si tiene fechas:%>
+          <p class="text-center standar-letter">
+              Por este medio le informamos que la fecha tentativa para atender su servicio de <span><%=@visit["service_type"]%></span> <span class="strong-letter"><%= @service["number"] %></span>
+              es el próximo <span class="strong-letter"><%= "#{((@visit["calendar_events"].last["start_date"]).in_time_zone( @service["customer"]["country"]["time_zone"])).strftime("%d/%m/%Y")}"%></span> en la dirección <span class="strong-letter"><%= "#{@service["calendar_events"][0]["service_data"]["selected_address"]["street_type"]} #{@service["calendar_events"][0]["service_data"]["selected_address"]["street_name"]}, 
+              #{@service["calendar_events"][0]["service_data"]["selected_address"]["ext_number"]} #{@service["calendar_events"][0]["service_data"]["selected_address"]["int_number"]}, #{@service["calendar_events"][0]["service_data"]["selected_address"]["administrative_demarcation"] != nil ?  
+              @service["calendar_events"][0]["service_data"]["selected_address"]["administrative_demarcation"]["admin3_admin1"] : @service["customer"]["state"]}" %></span>.
+          </p>
+        <% else #no hay fechas%>
+          <p>
+              Por este medio le informamos que la fecha tentativa para atender su servicio de <span><%=@visit["service_type"]%></span> <span class="strong-letter"><%= @service["number"] %></span>
+              está por confirmar en la dirección <span class="strong-letter"><%= "#{@service["calendar_events"][0]["service_data"]["selected_address"]["street_type"]} #{@service["calendar_events"][0]["service_data"]["selected_address"]["street_name"]}, 
+              #{@service["calendar_events"][0]["service_data"]["selected_address"]["ext_number"]} #{@service["calendar_events"][0]["service_data"]["selected_address"]["int_number"]}, #{@service["calendar_events"][0]["service_data"]["selected_address"]["administrative_demarcation"] != nil ?  
+              @service["calendar_events"][0]["service_data"]["selected_address"]["administrative_demarcation"]["admin3_admin1"] : @service["customer"]["state"]}" %></span>.
+          </p>
+        <% end %>
+      <% end %>
+      <br>
+      <p class="text-left standar-letter">
+          <span class="strong-letter">Productos a revisar en el servicio:</span>
+          <% @visit["visit_customer_products"].each do |product| %>
+              <p class="text-left standar-letter" >- <%=product["customer_product"]["product"]["tnr"]%> <%=product["customer_product"]["product"]["tnr"]%> <%= product["customer_product"]["product"]["name"].blank? ? product["customer_product"]["product"]["product_type"] : product["customer_product"]["product"]["name"] %></p>
+          <% end %>
+      </p>
+      <br>
+
+      <% if !@service.nil? && @service["payment_state"] != "paid" && (@service["total_amount"] > 0 || !@service["no_payment"]) %>  
+        <p class="text-left standar-letter">
+            <span class="strong-letter" >Valor servicio: CLP<%=@pago%> - IVA incluido</span>
+        </p>
+        <p>
+          <br>
+          <hr class="hr-mailer">
+        </p>
+        <br>
+        
+        <p class="text-center standar-letter">
+            Métodos de pago
+        </p>
+
+        <%unless @service["payment_date"].nil?%> 
+          <p class="text-left small-letter">
+              Para confirmar esta fecha, le solicitamos enviar el comprobante de pago por 
+              <span class="strong-letter">
+                  CLP<%=@pago%>
+              </span> - IVA incluido - <span class="strong-letter">antes del próximo  <%= "#{((@service["payment_date"]).in_time_zone( @service["customer"]["country"]["time_zone"])).strftime("%d/%m/%Y")}"%></span>
+              al correo <a href="mailto:info@miele.cl">info@miele.cl</a>.
+          </p>
+        <% end %>
+      <% end %> 
+    <% else #no hay fechas%>
+      <p class="text-left small-letter">
+          Unas vez establecidas las fechas, le solicitamos enviar el comprobante de pago por 
+          <span class="strong-letter">
+              CLP<%=@pago%>
+          </span> - IVA incluido - antes de las fechas establecidas al correo <a href="mailto:info@miele.cl">info@miele.cl</a>.
+      </p>
+    <% end %>      
+  </td>
+</tr>
+
+<% if !@service.nil? && @service["payment_state"] != "paid" && (@service["total_amount"] > 0 || !@service["no_payment"]) %>
+  <%if @show_payment_options%>
+    <tr>
+      <td class="notification-body">
+          <u class="text-left small-letter">Datos para pago con transferencia</u>
+          <p class="text-left small-letter"><br>Miele Electrodomésticos LTDA</p>
+          <p class="text-left small-letter">76.740.630-4</p>
+          <p class="text-left small-letter">Cta. Corriente Scotiabank</p>
+          <p class="text-left small-letter">97-02540-21</p>
+          <p class="text-left small-letter"><br><br>Enviar a <a href="mailto:info@miele.cl">info@miele.cl</a> folio de </p>
+          <p class="text-left small-letter">servicio <%=  @service["number"] %> como referencia.</p>     
+      </td>
+
+      <td class="notification-body">
+          <u class="text-left small-letter">Pagar en línea <br><br></u>
+          <button class="pay-button"><%= link_to "PAGAR CON WEBPAY", @payment_url%></button>
+      </td>
+    </tr>
+  <%end%>
+<% end %>  
+<tr>
+  <td colspan="2">
+    <p class="text-left small-medium-letter">
+    <br><br>
+        Para cualquier duda o comentario al respecto, nos mantenemos a sus órdenes al teléfono <a href="tel:800-265-050">800 265 050</a> 
+        o en el correo <a href="mailto:info@miele.cl">info@miele.cl</a>
+    </p>
+    <p class="text-left small-medium-letter"> 
+    <br>
+        En caso de requerir factura, agradecemos el enviar copia de su cédula fiscal junto con su comprobante de pago 
+        al correo <a href="mailto:info@miele.cl">info@miele.cl</a> 
+    </p>
+    <p class="very-small-letter">
+        1. Le recordamos que los servicios sólo pueden ser facturados dentro del mes calendario correspondiente a la fecha 
+        de prestación del servicio.
+    </p>
+    <p class="very-small-letter">
+        2. En caso de costo CLP$0 pesos, su servicio será atendido como una validación de garantía y/o cortesía.
+    </p>
+    <p class="very-small-letter">
+        3. Este cobro no incluye refacciones, no tarifa por reparación (en caso de requerirla).
+    </p>
+    <p class="very-small-letter">
+        4. En Mantenimiento Preventivo no cuenta con garantía de servicio, salvo que exista alguna anomalía en el 
+        equipo, la cual debe de ser reportada dentro de las 48 horas hábiles posteriores al mismo, en cuyo caso solo aplicaría para el diagnóstico del equipo. 
+    </p>
+    <p class="very-small-letter">
+        5. En caso de NO aplicar garantía se efectuaría el cobro por concepto de diagnóstico y/o Reparación.
+    </p>
+    <p class="very-small-letter">
+        6. Si no se llegase a confirmar su pago antes de la fecha indicada el servicio se concluiría sin responsabilidad para Miele.
+    </p> 
+    <br>
+  </td>
+</tr>

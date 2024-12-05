@@ -1,0 +1,123 @@
+@import "variables";
+
+.policy-custom-subtitle{
+    text-align: left;
+    font-size: 18px!important;
+    letter-spacing: 0px;
+    font-weight: 500!important;
+    color: #333333;
+    margin: 0!important;
+}
+
+.policy-item-list{
+    padding: 0px 18px;
+    li{
+        text-align: left;
+        font-size: 16px!important;
+        font-weight: 300!important;
+        color: #333333;
+        line-height: 28px;
+    }
+}
+
+.policy-item-table{
+    tbody{
+        tr{
+            td:last-child{
+                text-align: right;     
+            }
+        }
+        td{
+            text-align: left;
+            font-size: 16px!important;
+            font-weight: 300!important;
+            color: #333333;
+            line-height: 28px;
+            padding-right: 30px;
+        }
+        tr:last-child{
+          td{
+              font-weight: 500!important;
+          }  
+        }
+    }
+}
+
+.policy-p{
+    text-align: left;
+    font-size: 18px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #333333;
+    margin: 0px 0px 20px 0px!important;
+}
+
+.policy-summary-1{
+    text-align: left;
+    font-size:  12px!important;
+    font-weight: 300!important;
+    color: #707070;
+}
+.policy-summary-2{
+    text-align: left;
+    font-size:  14px!important;
+    font-weight: 300!important;
+    color: #1F1F1F;
+}
+
+
+.customers-pay-policy-link{
+    position: absolute;
+    top: 0px;
+    right: 165px;
+    z-index: 1;
+}
+
+.customers-edit-policy-link{
+    position: absolute;
+    top: 0px;
+    right: 95px;
+    z-index: 1;
+}
+
+.customers-delete-policy-link{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    z-index: 1;
+
+}
+.policy-accordeon-details{
+    position: relative!important;
+}
+
+.policy-table-container{
+    border-left: 1px solid #B3B3B3;
+    padding: 12px 12px 12px 30px!important;
+}
+
+.policy-table-buttons{
+    padding: 12px 12px 12px 30px!important;
+
+}
+
+
+.policy-summary{
+    .MuiAccordionSummary-content{
+        display: inline-block;
+    }
+    .policy-col{
+        width: 20%;
+        display: inline-block;
+    }
+}
+
+
+.policy-validate-payment-title{
+    font-size: 21px;
+    font-weight: 500;
+    h2{
+        font-size: 21px!important;
+        font-weight: 500!important;
+    }
+}

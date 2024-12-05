@@ -1,0 +1,78 @@
+
+@import "variables";
+
+.tech-taxon-tabs{
+    background-color: $white-color;
+    .MuiTabs-scroller{
+        border-bottom: 1px solid $brand-secondary!important;  
+        .MuiTabs-flexContainer{
+            .MuiButtonBase-root{
+                background-color: $brand-secondary;
+                color: $brand-four;
+            }
+            .Mui-selected{
+                background-color: $white-color;
+                border: 1px solid $brand-secondary!important;           
+            }
+        }
+    }
+}
+
+.rct-node-icon{
+    padding: 0px!important;
+    position: absolute;
+}
+
+.technician-avatar{
+    width: 60px!important;
+    height: 60px!important;
+    margin-right: 15px;
+}
+
+
+.tech-calendar-accordeon.Mui-expanded{
+    border-top: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.12) !important;
+}
+.tech-calendar-accordeon.MuiPaper-elevation1 {
+    box-shadow: none!important;
+}
+.tech-calendar-accordeon::before{
+    background-color: transparent!important;
+}
+.tech-calendar-accordeon{
+    border-top: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.12) !important;
+    .MuiPaper-elevation1 {
+        box-shadow: none!important;
+    }
+    .MuiAccordionSummary-root {
+        padding: 0px 0px!important;
+    }
+
+    .MuiCollapse-container{
+        .MuiCollapse-wrapper{
+            .MuiCollapse-wrapperInner{
+                div{
+                    .MuiAccordionDetails-root{
+                        padding: 0px!important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.technician-calendar-accordeon-summary{
+    justify-content: flex-start!important;
+    .MuiAccordionSummary-content {
+        flex-grow: inherit;
+    }
+}
+
+
+.technician-spare-part{
+    margin-top: -20px;
+}
+  

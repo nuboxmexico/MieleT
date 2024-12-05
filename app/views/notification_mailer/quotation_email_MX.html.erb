@@ -1,0 +1,18 @@
+
+<% unless @quotation.nil? %>
+    <p>Estimado(a) <%=  @quotation["service"]["customer"]["names"] %>,</p>
+    <p>
+        Se ha generado una cotización de visita para su servicio <%=  @quotation["service"]["number"] %>
+    </p>
+    <p>
+        <strong>Detalle de la cotización</strong>
+
+        <p style="margin: 25px 0px;"><%= link_to 'Ver cotización', @quotation_url, style: "background: #FFFFFF;border: 1px solid #8C0014;opacity: 1;padding: 10px 20px;color: #8C0014;text-transform: uppercase;text-decoration:none;font-size: 12px;text-overflow: initial;word-break: break-all;white-space: nowrap;" %></p>    
+
+    </p>
+    <p>
+        <span class="service-p-small">Si hay algún error en los datos a continuación, por favor comuníquese con nosotros.</span>
+    </p>
+    <br>
+    
+<% end %>

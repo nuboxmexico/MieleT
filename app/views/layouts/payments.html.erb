@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miele Tickets</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <%= javascript_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://use.typekit.net/bal7ovi.css">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+   <body class="" id="<%= @body_id || 'default' %>" data-hook="body">
+    <section class="mdl-layout <%= !user_signed_in? ? "white-container" : "" %> mdl-js-layout mdl-layout--fixed-header  has-drawer">
+      <%= render partial: 'layouts/shared/flash_messages' if !user_signed_in? %>
+      <main class="page-content">
+        <%= yield %>
+        <%= yield :templates %>
+      </main>
+    </section>
+    <%= render partial: 'layouts/shared/pace' %>
+  </body>
+</html>

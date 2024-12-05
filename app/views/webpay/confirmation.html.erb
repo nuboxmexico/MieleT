@@ -1,0 +1,21 @@
+<div class="error-image">
+    <div class="row text-center">
+        <%= image_tag('logo/logo.png', alt: 'miele', class: 'logo-miele center-logo')%>
+    </div>
+    
+    <div class="row text-center error-div">
+        <div id="checkout" class="MuiContainer-root MuiContainer-maxWidthLg" data-hook>
+			<form action='<%=@urlredirection%>' id="webpay-form" method="post"><input type="hidden" name="token_ws" value='<%=@token%>'>
+					<input style="opacity: 0;" type="submit" value="Continuar >>">
+			</form>
+			<br><br>
+		</div>
+    </div>
+</div>
+
+<script>
+	window.onload = function() {
+		document.getElementById("webpay-form").submit();
+	};
+</script>
+

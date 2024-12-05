@@ -1,0 +1,33 @@
+<tr>
+    <td>
+    <br>
+        <%= image_tag 'header_mailer.jpg', style: 'width: 100%' %>
+    </td>
+</tr>
+
+
+<tr>
+    <td class="notification-body">
+        <br>
+        <p class="text-center standar-letter">Estimado(a) <%=  @service["customer"]["names"] %>,</p>
+        <p class="text-center standar-letter">
+            Se ha finalizado una visita para su servicio <span class="strong-letter"><%= @service["number"] %></span>    
+        </p>
+
+        <div class="center-items"> 
+            <button class="report-button text-center"><%= link_to "VER REPORTE", @report_url%></button>
+        </div>
+        <br>
+    </td>
+
+
+<tr>    
+    <td >
+        <p class="text-left small-letter">
+        <br><br>
+            Para cualquier duda o comentario al respecto, nos mantenemos a sus órdenes al teléfono <a class="link-mailer" href="tel:800-265-050">800 265 050</a> 
+            o en el correo <a class="link-mailer" href="mailto:info@miele.cl">info@miele.cl</a>
+        </p>
+    <br>
+    </td >
+</tr>

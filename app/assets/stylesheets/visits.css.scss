@@ -1,0 +1,50 @@
+
+@import "variables";
+
+.visit-summary-1{
+    text-align: left;
+    font-size:  12px!important;
+    font-weight: 300!important;
+    color: #707070;
+}
+.visit-summary-2{
+    text-align: left;
+    font-size:  14px!important;
+    font-weight: 300!important;
+    color: #1F1F1F;
+    overflow-wrap: break-word;
+}
+
+
+.summary-container{
+    @media (max-width: 1100px){
+        .MuiAccordionSummary-content{
+            flex-wrap: wrap!important;
+        }
+    }
+}
+.visit-actions{
+    justify-content: space-between;
+    display: flex;
+    p{
+        display: contents;
+    }
+}
+
+.visit-price-table-container{
+    margin-top: 50px!important;
+    p{
+        margin: 0 0 5px!important;
+    }
+    hr{
+        margin: 10px 0px!important;
+    }
+    .mg-bottom-30{
+        margin-bottom: 30px!important;
+    }
+}
+
+.visit-download-link-container{
+    margin-top: 30px!important;
+    margin-bottom: 20px!important;
+}

@@ -1,0 +1,68 @@
+.logo-miele{ height: 50px; }
+.center-logo{
+	display: block;
+	margin: 0 auto;
+}
+.error-image {
+	height: 150vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(asset-path('error-image.png'));
+}
+
+.error-div{
+	padding: 12% 10% 0% 10%;
+}
+
+@media(max-width: 768px){
+	.error-div{
+		padding: 20% 10% 0% 10%;
+	}
+
+	.error-image {
+		height: 150vh;
+	}
+}
+
+.btn-extra{
+	padding: 10px 35px;
+	font-size: 16px;
+}
+
+.code-error{
+	font-size: 103px!important;
+	font-weight: 700!important;
+	color: #fff!important;
+	.material-icons{
+		font-size: 103px!important;
+		
+	}
+}
+
+
+.error-description{
+	color: #fff;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+.sorry-msg{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.error-help{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.error-btn-separation{
+	margin-top: 10px;
+}
+
+.light-btn{
+	font-weight: 300!important;
+}

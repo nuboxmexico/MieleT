@@ -1,0 +1,30 @@
+<span class="mdl-layout-title white-text">
+    <div class="col-xs-12 custom-col">
+        <figure class="user-photo-contain">
+            <% 
+            url = 'user/user_default.png'
+            %>
+            <div class="first-head">
+                <%= image_tag(url, alt: 'User photo', class: 'circle-image-sm')%>
+                <div class="head-user-info">
+                    <b><%= current_user.try(:firstname)%></b><br>
+                    <span><%= current_user.try(:get_roles_names) %></span>
+                    <p><%= current_user.try(:email) %></p>
+                    <%= link_to destroy_user_session_path, method: :delete, class: "mdl-navigation__link sidenav-link sign-out-link brand-orange-color"  do %>
+                        <i class="material-icons sign-out-icon">power_settings_new</i> <%= t(:sign_out)%>
+                    <% end %>
+                </div>
+            </div>
+        </figure>
+        <!-- right aligned menu below button -->
+        <button id="language-menu-lower-side" class="mdl-button mdl-js-button mdl-button--icon">
+        </button>
+		<br>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="language-menu-lower-side">
+            <li class="mdl-menu__item">
+            </li>
+            <li class="mdl-menu__item">
+            </li>
+        </ul>
+    </div>
+</span>

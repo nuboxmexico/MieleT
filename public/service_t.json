@@ -1,0 +1,1401 @@
+{
+    "id": 34,
+    "customer_id": 34,
+    "address": "principal",
+    "service_type": "Home Program",
+    "subcategory": "",
+    "requested": "Distribuidor autorizado",
+    "request_channel": "",
+    "distributor_name": "TEST DELI",
+    "distributor_email": "test@deli.cl",
+    "created_at": "09/11/2020 19:08:56",
+    "updated_at": "09/11/2020 19:08:56",
+    "technicians_number": 0,
+    "hour_amount": 0,
+    "fee_amount": 0,
+    "total_hours": 4,
+    "total_amount": 5002,
+    "status": "new",
+    "background": "",
+    "no_payment": false,
+    "payment_channel": "phone",
+    "payment_date": null,
+    "no_payment_reason": "",
+    "invoice": false,
+    "payment_state": "pending",
+    "job_id": "40cb228987243c91b2dd0b7c9c4a0856",
+    "number": "MTMX000034",
+    "address_fn": null,
+    "cancel_reason": null,
+    "background_cancel_service": null,
+    "customer_products": [
+      {
+        "id": 51,
+        "customer_id": 48,
+        "product_id": 15,
+        "created_at": "2020-11-13T19:22:23.763Z",
+        "updated_at": "2020-11-13T19:22:23.763Z",
+        "status": "Inicial",
+        "warranty": "1/1/1990",
+        "policy": "S/N",
+        "serial_id": null,
+        "product": {
+          "id": 15,
+          "country_id": null,
+          "platform": "Tickets",
+          "tnr": "10515061",
+          "ean": "004859EEEEQ129072",
+          "profit_center": "419",
+          "name": "Aspiradora sin Bolsa CX12 Blizzard Excellence",
+          "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+          "mandatory": true,
+          "product_type": "SDA",
+          "created_at": "2020-11-12T21:36:30.300Z",
+          "updated_at": "2020-11-12T21:36:30.300Z",
+          "additional": false,
+          "home_program_hours": 2,
+          "taxons": [
+            {
+              "id": 5276,
+              "name": "Limpieza",
+              "permalink": "sda",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.927Z",
+              "updated_at": "2020-11-18T14:17:18.435Z",
+              "ancestry": null,
+              "alias": "Limpieza",
+              "children_set": [
+                {
+                  "id": 5277,
+                  "name": "Máquinas de café",
+                  "permalink": "sda/máquinas_de_café",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.938Z",
+                  "updated_at": "2020-09-07T13:47:01.938Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5278,
+                      "name": "Empotrables",
+                      "permalink": "sda/máquinas_de_café/empotrables",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.949Z",
+                      "updated_at": "2020-09-07T13:47:01.949Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5288,
+                      "name": "Independiente",
+                      "permalink": "sda/máquinas_de_café/independiente",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.273Z",
+                      "updated_at": "2020-09-07T13:47:02.273Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5318,
+              "name": "Aspiradoras",
+              "permalink": "sda/aspiradoras",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.446Z",
+              "updated_at": "2020-09-07T13:47:03.446Z",
+              "ancestry": "5276",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5326,
+                  "name": "Robot",
+                  "permalink": "sda/aspiradoras/robot",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.811Z",
+                  "updated_at": "2020-09-07T13:47:03.811Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5330,
+                  "name": "Con bolsa",
+                  "permalink": "sda/aspiradoras/con_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:04.077Z",
+                  "updated_at": "2020-09-07T13:47:04.077Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5319,
+              "name": "Sin bolsa",
+              "permalink": "sda/aspiradoras/sin_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.458Z",
+              "updated_at": "2020-09-07T13:47:03.458Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            }
+          ],
+          "product_prices": [
+            {
+              "id": 5,
+              "country_id": 2,
+              "product_id": 15,
+              "price": 499900,
+              "sale_price": 499900,
+              "created_at": "2020-11-12T21:36:30.344Z",
+              "updated_at": "2020-11-12T21:36:30.344Z",
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2020-09-02T20:07:18.167Z",
+                "updated_at": "2020-09-02T20:07:18.167Z"
+              }
+            },
+            {
+              "id": 6,
+              "country_id": 1,
+              "product_id": 15,
+              "price": 6999,
+              "sale_price": 6999,
+              "created_at": "2020-11-12T21:36:30.352Z",
+              "updated_at": "2020-11-12T21:36:30.352Z",
+              "country": {
+                "id": 1,
+                "name": "México",
+                "iso": "MX",
+                "created_at": "2020-09-02T20:07:18.160Z",
+                "updated_at": "2020-09-02T20:07:18.160Z"
+              }
+            }
+          ],
+          "country": null
+        }
+      },
+      {
+        "id": 47,
+        "customer_id": 48,
+        "product_id": 4,
+        "created_at": "2020-10-29T13:22:43.898Z",
+        "updated_at": "2020-12-02T14:22:05.947Z",
+        "status": "Inicial",
+        "warranty": "1/1/1990",
+        "policy": "S/N",
+        "serial_id": "123456",
+        "product": {
+          "id": 4,
+          "country_id": null,
+          "platform": "Tickets",
+          "tnr": "10515060",
+          "ean": "004859EEEEQ129078",
+          "profit_center": "419",
+          "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+          "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+          "mandatory": true,
+          "product_type": "SDA",
+          "created_at": "2020-09-22T17:48:18.138Z",
+          "updated_at": "2020-12-03T19:51:22.477Z",
+          "additional": false,
+          "home_program_hours": null,
+          "taxons": [
+            {
+              "id": 5481,
+              "name": "Limpieza",
+              "permalink": "sda/test/limpieza",
+              "taxonomy_id": 3,
+              "created_at": "2020-11-27T14:49:27.279Z",
+              "updated_at": "2020-11-27T14:49:27.279Z",
+              "ancestry": "5478",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5482,
+                  "name": "test2",
+                  "permalink": "sda/test/limpieza/test2",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.301Z",
+                  "updated_at": "2020-11-27T14:49:27.301Z",
+                  "ancestry": "5481",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5483,
+                      "name": "test especifico",
+                      "permalink": "sda/test/limpieza/test2/test_especifico",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T15:09:51.396Z",
+                      "updated_at": "2020-11-27T15:09:51.396Z",
+                      "ancestry": "5482",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5276,
+              "name": "Limpieza",
+              "permalink": "sda",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.927Z",
+              "updated_at": "2020-11-18T14:17:18.435Z",
+              "ancestry": null,
+              "alias": "Limpieza",
+              "children_set": [
+                {
+                  "id": 5277,
+                  "name": "Máquinas de café",
+                  "permalink": "sda/máquinas_de_café",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.938Z",
+                  "updated_at": "2020-09-07T13:47:01.938Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5278,
+                      "name": "Empotrables",
+                      "permalink": "sda/máquinas_de_café/empotrables",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.949Z",
+                      "updated_at": "2020-09-07T13:47:01.949Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5288,
+                      "name": "Independiente",
+                      "permalink": "sda/máquinas_de_café/independiente",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.273Z",
+                      "updated_at": "2020-09-07T13:47:02.273Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5271,
+              "name": "Lavado",
+              "permalink": "lavado",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.758Z",
+              "updated_at": "2020-09-07T13:47:01.758Z",
+              "ancestry": null,
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5272,
+                  "name": "Lavadoras",
+                  "permalink": "lavado/lavadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.770Z",
+                  "updated_at": "2020-09-07T13:47:01.770Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5337,
+                      "name": "Martin Pradenas",
+                      "permalink": "lavado/lavadoras/martin_pradenas",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-08T14:47:31.772Z",
+                      "updated_at": "2020-09-08T14:47:31.772Z",
+                      "ancestry": "5272",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5336,
+                      "name": "Servicios",
+                      "permalink": "lavado/lavadoras/servicios",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:06.044Z",
+                      "updated_at": "2020-09-08T14:13:10.623Z",
+                      "ancestry": "5272",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5289,
+                  "name": "Secadoras",
+                  "permalink": "lavado/secadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:02.310Z",
+                  "updated_at": "2020-09-07T13:47:02.310Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5321,
+                  "name": "Planchadoras",
+                  "permalink": "lavado/planchadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.570Z",
+                  "updated_at": "2020-09-07T13:47:03.570Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5318,
+              "name": "Aspiradoras",
+              "permalink": "sda/aspiradoras",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.446Z",
+              "updated_at": "2020-09-07T13:47:03.446Z",
+              "ancestry": "5276",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5326,
+                  "name": "Robot",
+                  "permalink": "sda/aspiradoras/robot",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.811Z",
+                  "updated_at": "2020-09-07T13:47:03.811Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5330,
+                  "name": "Con bolsa",
+                  "permalink": "sda/aspiradoras/con_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:04.077Z",
+                  "updated_at": "2020-09-07T13:47:04.077Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5319,
+              "name": "Sin bolsa",
+              "permalink": "sda/aspiradoras/sin_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.458Z",
+              "updated_at": "2020-09-07T13:47:03.458Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            },
+            {
+              "id": 5330,
+              "name": "Con bolsa",
+              "permalink": "sda/aspiradoras/con_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:04.077Z",
+              "updated_at": "2020-09-07T13:47:04.077Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            }
+          ],
+          "product_prices": [
+            {
+              "id": 1,
+              "country_id": 2,
+              "product_id": 4,
+              "price": 499900,
+              "sale_price": 499900,
+              "created_at": "2020-09-22T18:03:35.875Z",
+              "updated_at": "2020-09-22T18:03:35.875Z",
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2020-09-02T20:07:18.167Z",
+                "updated_at": "2020-09-02T20:07:18.167Z"
+              }
+            },
+            {
+              "id": 2,
+              "country_id": 1,
+              "product_id": 4,
+              "price": 6999,
+              "sale_price": 6999,
+              "created_at": "2020-09-22T18:03:35.886Z",
+              "updated_at": "2020-09-22T18:03:35.886Z",
+              "country": {
+                "id": 1,
+                "name": "México",
+                "iso": "MX",
+                "created_at": "2020-09-02T20:07:18.160Z",
+                "updated_at": "2020-09-02T20:07:18.160Z"
+              }
+            }
+          ],
+          "country": null
+        }
+      },
+      {
+        "id": 50,
+        "customer_id": 48,
+        "product_id": 5,
+        "created_at": "2020-11-13T19:22:23.758Z",
+        "updated_at": "2020-12-02T14:22:12.914Z",
+        "status": "Inicial",
+        "warranty": "1/1/1990",
+        "policy": "S/N",
+        "serial_id": "1234567789",
+        "product": {
+          "id": 5,
+          "country_id": null,
+          "platform": "Tickets",
+          "tnr": "10515060",
+          "ean": "004859EEEEQ129078",
+          "profit_center": "419",
+          "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+          "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+          "mandatory": true,
+          "product_type": "Limpieza",
+          "created_at": "2020-10-05T22:38:36.457Z",
+          "updated_at": "2020-12-02T14:22:12.872Z",
+          "additional": false,
+          "home_program_hours": 1,
+          "taxons": [
+            {
+              "id": 5481,
+              "name": "Limpieza",
+              "permalink": "sda/test/limpieza",
+              "taxonomy_id": 3,
+              "created_at": "2020-11-27T14:49:27.279Z",
+              "updated_at": "2020-11-27T14:49:27.279Z",
+              "ancestry": "5478",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5482,
+                  "name": "test2",
+                  "permalink": "sda/test/limpieza/test2",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.301Z",
+                  "updated_at": "2020-11-27T14:49:27.301Z",
+                  "ancestry": "5481",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5483,
+                      "name": "test especifico",
+                      "permalink": "sda/test/limpieza/test2/test_especifico",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T15:09:51.396Z",
+                      "updated_at": "2020-11-27T15:09:51.396Z",
+                      "ancestry": "5482",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5276,
+              "name": "Limpieza",
+              "permalink": "sda",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.927Z",
+              "updated_at": "2020-11-18T14:17:18.435Z",
+              "ancestry": null,
+              "alias": "Limpieza",
+              "children_set": [
+                {
+                  "id": 5277,
+                  "name": "Máquinas de café",
+                  "permalink": "sda/máquinas_de_café",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.938Z",
+                  "updated_at": "2020-09-07T13:47:01.938Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5278,
+                      "name": "Empotrables",
+                      "permalink": "sda/máquinas_de_café/empotrables",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.949Z",
+                      "updated_at": "2020-09-07T13:47:01.949Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5288,
+                      "name": "Independiente",
+                      "permalink": "sda/máquinas_de_café/independiente",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.273Z",
+                      "updated_at": "2020-09-07T13:47:02.273Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5318,
+              "name": "Aspiradoras",
+              "permalink": "sda/aspiradoras",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.446Z",
+              "updated_at": "2020-09-07T13:47:03.446Z",
+              "ancestry": "5276",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5326,
+                  "name": "Robot",
+                  "permalink": "sda/aspiradoras/robot",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.811Z",
+                  "updated_at": "2020-09-07T13:47:03.811Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5330,
+                  "name": "Con bolsa",
+                  "permalink": "sda/aspiradoras/con_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:04.077Z",
+                  "updated_at": "2020-09-07T13:47:04.077Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5319,
+              "name": "Sin bolsa",
+              "permalink": "sda/aspiradoras/sin_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.458Z",
+              "updated_at": "2020-09-07T13:47:03.458Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            }
+          ],
+          "product_prices": [
+            {
+              "id": 3,
+              "country_id": 2,
+              "product_id": 5,
+              "price": 499900,
+              "sale_price": 499900,
+              "created_at": "2020-11-12T21:36:30.286Z",
+              "updated_at": "2020-11-12T21:36:30.286Z",
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2020-09-02T20:07:18.167Z",
+                "updated_at": "2020-09-02T20:07:18.167Z"
+              }
+            },
+            {
+              "id": 4,
+              "country_id": 1,
+              "product_id": 5,
+              "price": 6999,
+              "sale_price": 6999,
+              "created_at": "2020-11-12T21:36:30.295Z",
+              "updated_at": "2020-11-12T21:36:30.295Z",
+              "country": {
+                "id": 1,
+                "name": "México",
+                "iso": "MX",
+                "created_at": "2020-09-02T20:07:18.160Z",
+                "updated_at": "2020-09-02T20:07:18.160Z"
+              }
+            }
+          ],
+          "country": null
+        }
+      },
+      {
+        "id": 46,
+        "customer_id": 48,
+        "product_id": 4,
+        "created_at": "2020-10-29T13:22:43.886Z",
+        "updated_at": "2020-12-02T14:22:16.837Z",
+        "status": "Inicial",
+        "warranty": "1/1/1990",
+        "policy": "S/N",
+        "serial_id": "123412312313",
+        "product": {
+          "id": 4,
+          "country_id": null,
+          "platform": "Tickets",
+          "tnr": "10515060",
+          "ean": "004859EEEEQ129078",
+          "profit_center": "419",
+          "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+          "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+          "mandatory": true,
+          "product_type": "SDA",
+          "created_at": "2020-09-22T17:48:18.138Z",
+          "updated_at": "2020-12-03T19:51:22.477Z",
+          "additional": false,
+          "home_program_hours": null,
+          "taxons": [
+            {
+              "id": 5481,
+              "name": "Limpieza",
+              "permalink": "sda/test/limpieza",
+              "taxonomy_id": 3,
+              "created_at": "2020-11-27T14:49:27.279Z",
+              "updated_at": "2020-11-27T14:49:27.279Z",
+              "ancestry": "5478",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5482,
+                  "name": "test2",
+                  "permalink": "sda/test/limpieza/test2",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.301Z",
+                  "updated_at": "2020-11-27T14:49:27.301Z",
+                  "ancestry": "5481",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5483,
+                      "name": "test especifico",
+                      "permalink": "sda/test/limpieza/test2/test_especifico",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T15:09:51.396Z",
+                      "updated_at": "2020-11-27T15:09:51.396Z",
+                      "ancestry": "5482",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5276,
+              "name": "Limpieza",
+              "permalink": "sda",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.927Z",
+              "updated_at": "2020-11-18T14:17:18.435Z",
+              "ancestry": null,
+              "alias": "Limpieza",
+              "children_set": [
+                {
+                  "id": 5277,
+                  "name": "Máquinas de café",
+                  "permalink": "sda/máquinas_de_café",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.938Z",
+                  "updated_at": "2020-09-07T13:47:01.938Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5278,
+                      "name": "Empotrables",
+                      "permalink": "sda/máquinas_de_café/empotrables",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.949Z",
+                      "updated_at": "2020-09-07T13:47:01.949Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5288,
+                      "name": "Independiente",
+                      "permalink": "sda/máquinas_de_café/independiente",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.273Z",
+                      "updated_at": "2020-09-07T13:47:02.273Z",
+                      "ancestry": "5277",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 5271,
+              "name": "Lavado",
+              "permalink": "lavado",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:01.758Z",
+              "updated_at": "2020-09-07T13:47:01.758Z",
+              "ancestry": null,
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5272,
+                  "name": "Lavadoras",
+                  "permalink": "lavado/lavadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.770Z",
+                  "updated_at": "2020-09-07T13:47:01.770Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5337,
+                      "name": "Martin Pradenas",
+                      "permalink": "lavado/lavadoras/martin_pradenas",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-08T14:47:31.772Z",
+                      "updated_at": "2020-09-08T14:47:31.772Z",
+                      "ancestry": "5272",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5336,
+                      "name": "Servicios",
+                      "permalink": "lavado/lavadoras/servicios",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:06.044Z",
+                      "updated_at": "2020-09-08T14:13:10.623Z",
+                      "ancestry": "5272",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5289,
+                  "name": "Secadoras",
+                  "permalink": "lavado/secadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:02.310Z",
+                  "updated_at": "2020-09-07T13:47:02.310Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5321,
+                  "name": "Planchadoras",
+                  "permalink": "lavado/planchadoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.570Z",
+                  "updated_at": "2020-09-07T13:47:03.570Z",
+                  "ancestry": "5271",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5318,
+              "name": "Aspiradoras",
+              "permalink": "sda/aspiradoras",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.446Z",
+              "updated_at": "2020-09-07T13:47:03.446Z",
+              "ancestry": "5276",
+              "alias": null,
+              "children_set": [
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5326,
+                  "name": "Robot",
+                  "permalink": "sda/aspiradoras/robot",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.811Z",
+                  "updated_at": "2020-09-07T13:47:03.811Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5330,
+                  "name": "Con bolsa",
+                  "permalink": "sda/aspiradoras/con_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:04.077Z",
+                  "updated_at": "2020-09-07T13:47:04.077Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ]
+            },
+            {
+              "id": 5319,
+              "name": "Sin bolsa",
+              "permalink": "sda/aspiradoras/sin_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:03.458Z",
+              "updated_at": "2020-09-07T13:47:03.458Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            },
+            {
+              "id": 5330,
+              "name": "Con bolsa",
+              "permalink": "sda/aspiradoras/con_bolsa",
+              "taxonomy_id": 2,
+              "created_at": "2020-09-07T13:47:04.077Z",
+              "updated_at": "2020-09-07T13:47:04.077Z",
+              "ancestry": "5318",
+              "alias": null,
+              "children_set": []
+            }
+          ],
+          "product_prices": [
+            {
+              "id": 1,
+              "country_id": 2,
+              "product_id": 4,
+              "price": 499900,
+              "sale_price": 499900,
+              "created_at": "2020-09-22T18:03:35.875Z",
+              "updated_at": "2020-09-22T18:03:35.875Z",
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2020-09-02T20:07:18.167Z",
+                "updated_at": "2020-09-02T20:07:18.167Z"
+              }
+            },
+            {
+              "id": 2,
+              "country_id": 1,
+              "product_id": 4,
+              "price": 6999,
+              "sale_price": 6999,
+              "created_at": "2020-09-22T18:03:35.886Z",
+              "updated_at": "2020-09-22T18:03:35.886Z",
+              "country": {
+                "id": 1,
+                "name": "México",
+                "iso": "MX",
+                "created_at": "2020-09-02T20:07:18.160Z",
+                "updated_at": "2020-09-02T20:07:18.160Z"
+              }
+            }
+          ],
+          "country": null
+        }
+      }
+    ],
+    "service_products": [],
+    "spare_parts": [],
+    "calendar_events": [],
+    "serviceFiles": [],
+    "file_resources": [
+      {
+        "id": 18,
+        "service_id": 34,
+        "created_at": "2020-11-12T23:46:08.025Z",
+        "updated_at": "2020-11-12T23:46:08.066Z",
+        "name": "nature-2609647_1920.jpg",
+        "mime": "image/jpeg",
+        "object_source": "Product",
+        "resource_url": "https://dummyimage.com/600x400/000/fff"
+      }
+    ],
+    "payment_resources": [],
+    "status_label": "Agendado",
+    "visit_number": 0,
+    "ibs_number": "EEE458097890UOP",
+    "visits": [
+      {
+        "id": 33,
+        "principal_technician_id": null,
+        "total_time": null,
+        "confirmed": true,
+        "invoice": false,
+        "background": "Primera visita del servicio MTCL000006",
+        "created_at": "2021-02-03T15:00:09.852Z",
+        "updated_at": "2021-02-04T17:09:26.668Z",
+        "service_id": 34,
+        "start_time": "2021-02-04T15:34:16.711Z",
+        "finish_time": "2021-02-04T17:09:26.648Z",
+        "time_diff": 1.59,
+        "canceled_at": null,
+        "cancel_from": null,
+        "cancel_reason": null,
+        "arrival_time": "2021-02-04T15:21:20.269Z",
+        "arrival_time_diff": 0.22,
+        "calendar_event": {
+          "id": 47,
+          "title": "Visita 2",
+          "start_date": "2021-02-07T11:00:00.000Z",
+          "finish_date": "2021-02-07T12:00:00.000Z",
+          "allDay": false,
+          "event_type": "Visit",
+          "description": "Visita 2 de servicio MTCL000006",
+          "created_at": "2021-02-03T15:00:28.391Z",
+          "updated_at": "2021-02-03T15:00:28.391Z",
+          "country_id": 2,
+          "object_id": null,
+          "service_id": 34,
+          "visit_id": 33,
+          "service_data": {
+            "customer_name": "test test test",
+            "selected_address": {
+              "name": "principal",
+              "zipcode": "",
+              "state": "338",
+              "delegation": "",
+              "colony": "",
+              "street_name": "test",
+              "street_type": "Calle",
+              "ext_number": "test",
+              "int_number": "test",
+              "country_id": 2,
+              "adminis_trative_demarcation_id": 338,
+              "customerid": 48,
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2021-01-18T17:51:08.074Z",
+                "updated_at": "2021-01-18T17:51:08.089Z",
+                "iva": 0.19,
+                "time_zone": "Santiago"
+              },
+              "administrative_demarcation": {
+                "id": 338,
+                "admin_name_1": "Región de Magallanes y Antártica Chilena",
+                "admin_code_1": "10",
+                "admin_name_2": "Provincia Antártica Chilena",
+                "admin_code_2": "122",
+                "admin_name_3": "Cabo De Hornos",
+                "admin_code_3": "12201",
+                "place_name": "Cabo De Hornos",
+                "zipcode": "6350000",
+                "country_id": 2,
+                "created_at": "2021-01-19T13:32:01.997Z",
+                "updated_at": "2021-01-19T13:32:01.997Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2021-01-18T17:51:08.074Z",
+                  "updated_at": "2021-01-18T17:51:08.089Z",
+                  "iva": 0.19,
+                  "time_zone": "Santiago"
+                },
+                "admin3_admin1": "Cabo De Hornos, Región de Magallanes y Antártica Chilena",
+                "admin3_admin2_admin1": "Cabo De Hornos, Provincia Antártica Chilena, Región de Magallanes y Antártica Chilena",
+                "country_code": "CL",
+                "place_name_admin2_admin1": "Cabo De Hornos, Provincia Antártica Chilena Región de Magallanes y Antártica Chilena"
+              }
+            },
+            "id": 6,
+            "service_type": "Mantenimiento",
+            "number": "MTCL000006",
+            "payment_state": "pending",
+            "status_label": "Agendado",
+            "created_at": "02/02/2021 15:33:04",
+            "updated_at": "02/02/2021 15:33:04"
+          }
+        },
+        "customer_products": [
+          {
+            "id": 1,
+            "customer_id": 1,
+            "product_id": 1,
+            "created_at": "2021-01-19T14:06:55.588Z",
+            "updated_at": "2021-02-03T20:48:20.538Z",
+            "status": "test",
+            "warranty": "test",
+            "policy": "S/N",
+            "serial_id": "12345",
+            "discontinued": false,
+            "instalation_date": "2021-02-27",
+            "reinstalation_date": null,
+            "technical_diagnosis": "test",
+            "expert_opinion": "test",
+            "activity_performed": null,
+            "product": {
+              "id": 1,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "500006600",
+              "ean": null,
+              "profit_center": "600",
+              "name": "pastillas",
+              "description": "pastillas",
+              "mandatory": null,
+              "product_type": "Encimeras",
+              "created_at": "2021-01-19T14:04:22.672Z",
+              "updated_at": "2021-02-02T18:21:13.371Z",
+              "additional": false,
+              "home_program_hours": 1,
+              "taxons": [
+                {
+                  "id": 1,
+                  "name": "Encimeras",
+                  "permalink": "encimeras",
+                  "taxonomy_id": 1,
+                  "created_at": "2021-01-19T14:04:04.187Z",
+                  "updated_at": "2021-01-19T14:04:04.187Z",
+                  "ancestry": null,
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 2,
+                      "name": "A gas",
+                      "permalink": "encimeras/a_gas",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-01-19T14:04:04.217Z",
+                      "updated_at": "2021-01-19T14:04:04.217Z",
+                      "ancestry": "1",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 3,
+                          "name": "vapor",
+                          "permalink": "encimeras/a_gas/vapor",
+                          "taxonomy_id": 1,
+                          "created_at": "2021-01-19T14:04:04.238Z",
+                          "updated_at": "2021-01-19T14:04:04.238Z",
+                          "ancestry": "2",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 2,
+                  "name": "A gas",
+                  "permalink": "encimeras/a_gas",
+                  "taxonomy_id": 1,
+                  "created_at": "2021-01-19T14:04:04.217Z",
+                  "updated_at": "2021-01-19T14:04:04.217Z",
+                  "ancestry": "1",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 3,
+                      "name": "vapor",
+                      "permalink": "encimeras/a_gas/vapor",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-01-19T14:04:04.238Z",
+                      "updated_at": "2021-01-19T14:04:04.238Z",
+                      "ancestry": "2",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 3,
+                  "name": "vapor",
+                  "permalink": "encimeras/a_gas/vapor",
+                  "taxonomy_id": 1,
+                  "created_at": "2021-01-19T14:04:04.238Z",
+                  "updated_at": "2021-01-19T14:04:04.238Z",
+                  "ancestry": "2",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 1,
+                  "country_id": 2,
+                  "product_id": 1,
+                  "price": 1000,
+                  "sale_price": 1000,
+                  "created_at": "2021-01-19T14:04:22.773Z",
+                  "updated_at": "2021-01-19T14:04:22.773Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2021-01-18T17:51:08.074Z",
+                    "updated_at": "2021-01-18T17:51:08.089Z",
+                    "iva": 0.19,
+                    "time_zone": "Santiago"
+                  }
+                },
+                {
+                  "id": 2,
+                  "country_id": 1,
+                  "product_id": 1,
+                  "price": 1000,
+                  "sale_price": 1000,
+                  "created_at": "2021-01-19T14:04:22.791Z",
+                  "updated_at": "2021-01-19T14:04:22.791Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2021-01-18T17:51:08.068Z",
+                    "updated_at": "2021-01-18T17:51:08.098Z",
+                    "iva": 0.16,
+                    "time_zone": "Mexico City"
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        ]
+      }
+    ]
+  }

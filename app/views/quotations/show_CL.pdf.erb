@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-GB">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="generator" content="2017.0.1.363"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Cotización N° <%= service && service["number"] || ""  %></title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css?crc=3814339282" id="pagesheet"/>
+	<!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=323769760"/>
+<![endif]-->
+<style type="text/css">
+	
+</style>
+<!-- Other scripts -->
+<!-- JS includes -->
+<script type="text/javascript">
+	document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/open-sans:n4,n7:default.js" type="text/javascript">\x3C/script>');
+</script>
+</head>
+<body>
+    <%= render partial: "layouts/shared/pdf_stylesheets", formats: [:html]%>
+	<% if service %>
+        <div class="container-content-sm">
+            <div class="">
+                <% if service["number"] %>
+                <h1 class="order-title">Cotización Visita N° <%= quotation["quotation_number"] %> - Servicio <%= service["number"] %></h1>
+                <% end %>
+            </div>
+        </div>
+    
+        <% if service["customer_products"] && service["customer_products"].any? %>
+            <% service["customer_products"].each do |customer_product| %>
+                <div class="container-content-sm">
+                    <h1 class="product-title"><%= customer_product["product"]["name"]%></h1>
+                    <h2 class="product-subtitle">TNR: <%= customer_product["product"]["tnr"].blank? ? "Sin información":  customer_product["product"]["tnr"]%> - ID: <%= customer_product["serial_id"].blank? ? "Sin información" : customer_product["serial_id"]%></h2>
+                    <% quotation_product = quotation["quotation_customer_products"].detect {|quotation_customer_product| quotation_customer_product["customer_product_id"] == customer_product["id"]} %> 
+                    <% unless quotation_product.nil? %>
+                        <h2 class="product-subtitle">Garantía: <%= (quotation_product["warranty"] != "No" && quotation_product["warranty"] != "f" && quotation_product["warranty"] != false) ? "Si" : "No" %></h2>
+                    <% else %>
+                        <h2 class="product-subtitle">Garantía: <%= (customer_product["product"]["warranty"] != "No" && customer_product["product"]["warranty"] != "f" && customer_product["product"]["warranty"] != false) ? "Si" : "No" %></h2>
+                    <% end %>
+                        
+                    <%
+                        #customer_product_used_spare_parts = used_spare_parts.select(used_spare_part => (used_spare_part.customer_product_id == customer_product["id"] && used_spare_part["quotation_id"] == quotation["id"] ))
+                        customer_product_requested_spare_parts = requested_spare_parts.select{ |requested_spare_part|(requested_spare_part["customer_product_id"] == customer_product["id"] && requested_spare_part["quotation_id"] == quotation["id"] )}
+                    %>
+                    <% if customer_product_requested_spare_parts && customer_product_requested_spare_parts.any? %>
+                            <p class="sub-title-info">REFACCIONES SOLICITADAS</p>
+                            <table class="table table-spare_part">
+                                <thead>
+                                    <tr>
+                                        <th>TNR</th>
+                                        <th>NOMBRE</th>
+                                        <th>CANT.</th>
+                                        <th>PRECIO UNITARIO</th>
+                                        <th>PRECIO TOTAL</th>
+                                        <th>GARANTÍA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% customer_product_requested_spare_parts.each do |customer_product_requested_spare_part| %>
+                                        
+                                        <tr>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_requested_spare_part["spare_part"] ? "#{customer_product_requested_spare_part["spare_part"]["tnr"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_requested_spare_part["spare_part"] ? "#{customer_product_requested_spare_part["spare_part"]["name"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_requested_spare_part["quantity"] ? "#{customer_product_requested_spare_part["quantity"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= MoneyUtils.quotation_spare_part_price(customer_product_requested_spare_part, country)  %>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= MoneyUtils.quotation_spare_part_price(customer_product_requested_spare_part, country, customer_product_requested_spare_part["quantity"])  %>
+                                                </span> 
+                                            </td>
+                                            <td>
+                                                <span class="normal-label">
+                                                    <%= customer_product_requested_spare_part["warranty"] ? "#{customer_product_requested_spare_part["warranty"]}" : "Sin responder"%>
+                                                </span> 
+                                            </td>
+                                        </tr>       
+                                    <% end %>
+                                </tbody>
+                            </table>
+                    <% else %>
+                        <p class="sub-title-info">No se han asignado refacciones a estre producto.</p>
+                    <% end %>
+                    
+                </div>
+            <% end %>
+        <% end %>
+        
+        <div class="container-content-sm">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <p class="sub-title-info">Observaciones</p>
+                            <div class="box-pdf" style="margin-right: 20px;">
+                                <p class="pdf-background">
+                                    <%= quotation["customer_background"]%>
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="sub-title-info">Valor de la visita</p>
+                            
+
+                            <table class="table table-values">
+                                <tr>
+                                    <td colspan="3">
+                                        Refacciones
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(spare_parts_amount, country) %></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="table table-values">
+                                <tr>
+                                    <td colspan="3">
+                                        Viáticos
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(viaticAmout, country) %></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="table table-values">
+                                <tr>
+                                    <td colspan="3">
+                                        Mano de obra
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(laborAmout, country) %></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr/>
+                            <table class="table table-values">
+                                <tr>
+                                    <td colspan="3">
+                                        Sub Total
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(subtotalAmount, country) %></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                                
+                            <table class="table table-values">
+                                <tr>
+                                    <td colspan="3">
+                                        IVA
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(ivaAmount, country) %></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <hr/>
+                            <table class="table table-values">
+                                <tr>
+                                    <th colspan="3">
+                                        TOTAL
+                                    </th>
+                                    <th style="text-align: right;">
+                                        <span className="pull-right"><%= MoneyUtils.get_money_country_format(totalAmount, country) %></span>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div class="container-content-sm">
+            <table class="table">
+            <% if (totalAmount > 0) %>
+            <tr>
+                <td COLSPAN="2">
+                <hr class="hr-end">
+                <br>
+                <p class="sub-title-end-info">Consideraciones para esta cotización:</p>
+                <p class="content-end">1. La validez de esta cotización es de 15 días naturales, contados a partir de la fecha de realización.</p>
+                <p class="content-end">2. Los precios son en pesos chilenos.</p>
+                <p class="content-end">3. Tiempo de entrega de refacciones sujeto a disponibilidad.</p>
+                <p class="content-end">4. En caso de aceptar esta cotización, el pago únicamente deberá realizarse a la siguiente cuenta a nombre de Miele Electrodomésticos LTDA.</p>
+                <br>
+
+                <p class="sub-title-end-info">Pagar Cotización:</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p class="content-light"><u>Pago con transferencia</u></p>
+                    <br>
+                    <p class="content-light">Miele Electrodomésticos LTDA</p>
+                    <p class="content-light">76.740.630-4</p>
+                    <p class="content-light">Corriente Scotiabank</p>
+                    <p class="content-light">97-02540-21</p>
+                    <br>
+                    <p class="content-light">Enviar comprobante a <a class="link-mailer" href="mailto:info@miele.cl">info@miele.cl</a> con folio de servicio</p>
+                    <p class="content-light"><span class="sub-title-end-info"><%= service["number"] %></span> como referencia.</p>
+                </td>
+
+                <td>
+                    <p class="content-light"><u>Pago en línea</u></p>
+                    <br><br>
+                    <button class="pay-button"><%= link_to "IR A PAGAR", payment_url%></button>
+                </td>
+                
+            </tr>
+            <% end %>
+            <tr>
+                <td COLSPAN="2">
+                <br>
+                <hr class="hr-end">
+                <br>
+                    <p class="light-label">
+                        Para cualquier duda o comentario con la misma, por favor llame al teléfono <a class="link-mailer" href="tel:800-265-050"><span class="strong-label">800 265 050</span></a>  o escribanos al correo <a class="link-mailer" href="mailto:info@miele.cl"><span class="strong-label">info@miele.cl</span></a>
+                    </p>
+                    <p class="light-label">
+                        En caso de requerir factura, agradecemos el enviar copia de su cédula fiscal junto con su comprobante de pago al correo  <a class="link-mailer" href="mailto:info@miele.cl"><span class="strong-label">info@miele.cl</span></a>
+                    </p>
+                    <br>
+                    <p class="small-letter"><a><%= link_to 'www.miele.cl', Rails.configuration.official_site_url_CL %></a> <span class="strong-letter">#LifeBeyondOrdinary</span></p>
+                </td>
+            </tr>
+            </table>
+        </div>
+    <% else %>
+        No se ha podido generar la cotización inténtelo más tarde.
+    <% end %>
+</body>
+</html>

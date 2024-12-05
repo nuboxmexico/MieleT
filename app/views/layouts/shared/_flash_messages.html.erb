@@ -1,0 +1,19 @@
+<% unless flash.empty? %>
+  <% flash.each do |name, msg| %>
+    <% case name.to_s %>
+      <% when 'alert', 'error' %>
+        <%# javascript_tag do %>
+          <div data-react-class="FlashMessages" data-react-props="{&quot;messages&quot;:[[&quot;alert&quot;,&quot;<%= msg %>&quot;]]}" data-react-cache-id="FlashMessages-1"></div>
+        <%# end %>
+      <% when 'notice', 'success' %>
+        <%# javascript_tag do %>
+          <div data-react-class="FlashMessages" data-react-props="{&quot;messages&quot;:[[&quot;success&quot;,&quot;<%= msg %>&quot;]]}" data-react-cache-id="FlashMessages-1"></div>
+        <%# end %>
+      <% when 'info' %>
+        <%# javascript_tag do %>
+          <div data-react-class="FlashMessages" data-react-props="{&quot;messages&quot;:[[&quot;info&quot;,&quot;<%= msg %>&quot;]]}" data-react-cache-id="FlashMessages-1"></div>
+        <%# end %>
+    <% end %>
+  <% end %>
+<% end %>
+

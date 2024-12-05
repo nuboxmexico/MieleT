@@ -1,0 +1,21 @@
+
+<%if @country == "CL"%>
+    <p class="small-letter">
+    Atte.<br>Equipo de Servicio al Cliente Miele.
+    </p>
+    <p class="small-letter"><a><%= link_to 'www.miele.cl', Rails.configuration.official_site_url_CL %></a> <span class="strong-letter">#LifeBeyondOrdinary</span></p>
+<%end%>
+
+<%if @country == "MX"%>
+    <p class="small-letter">
+    Atte.<br>Equipo de Servicio al Cliente Miele.
+    </p>
+    <p class="small-letter"><a><%= link_to 'www.miele.com.mx', Rails.configuration.official_site_url_MX %></a> <span class="strong-letter">#LifeBeyondOrdinary</span></p>
+<%end%>
+
+<%if @country == "BR"%>
+    <p class="small-letter">
+    Atenciosamente,<br>Serviço de atendimento ao cliente.
+    </p>
+    <p class="small-letter"><a><%= link_to 'www.mielebrasil.com.br', Rails.configuration.official_site_url_BR %></a> <span class="strong-letter">#LifeBeyondOrdinary</span></p>
+<%end%>

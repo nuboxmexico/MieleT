@@ -1,0 +1,417 @@
+@import "variables";
+.service-address-label{
+    min-width: 44px!important;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.service-address-p div p{
+    font-size: 0.875rem!important;
+    font-weight: 400!important;
+    line-height: 1.43!important;
+    letter-spacing: 0.01071em!important;
+    margin: 10px 0px;
+}
+
+.service-p{
+    text-align: left;
+    font-size: 18px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #333333;
+    margin: 20px 0px 0px 0px!important;
+}
+
+.service-subtitle{
+    text-align: left;
+    font-size: 18px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.service-payemnt-method-p{
+    text-align: left;
+    font-size: 14px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 0px!important;
+}
+.customer-products-table{
+    margin-bottom: 40px;
+    header{
+        min-height: 40px!important;
+    }
+    .rdt_TableHeader div:last-child{
+        background-color: #ededed;
+        div{
+            font-size: 15px!important;
+
+        }
+    }
+}
+
+.MuiListItemText-primary{
+    font-size: 14px!important;
+    letter-spacing: 0px!important;
+    color: #333333!important;
+    font-weight: 500!important;
+}
+.MuiListItemText-secondary{
+    font-size: 14px!important;
+    letter-spacing: 0px!important;
+    color: #333333!important;
+    font-weight: 300!important;
+} 
+
+.schedule-service-title{
+    text-align: left;
+    font-size: 21px!important;
+    letter-spacing: 0px;
+    color: #333333!important;
+    font-weight: 500!important;
+    margin-top: 20px!important;
+}
+.schedule-service-techinicias-available{
+    text-align: left;
+    font-size: 16px!important;
+    letter-spacing: 0px;
+    color: #333333!important;
+    font-weight: 500!important;
+}
+.schedule-service-techinicias-available-p{
+    margin-top:10px!important;
+    letter-spacing: 0px;
+    font-size: 14px!important;
+    color: #8C0014!important;
+    font-weight: normal!important;
+}
+.schedule-save-buttom{
+    font-size: 16px!important;
+}
+
+.schedule-list-technician{
+
+}
+
+.schedule-material-icon{
+    font-size: 16px;
+    margin-top: -1px;
+}
+.schedule-back-button{
+    color: #707070!important;
+}
+
+
+.others-tech-accordeon.Mui-expanded{
+    border-top: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.12) !important;
+}
+.others-tech-accordeon.MuiPaper-elevation1 {
+    box-shadow: none!important;
+}
+.others-tech-accordeon::before{
+    background-color: transparent!important;
+}
+.others-tech-accordeon{
+    border-top: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.12) !important;
+    .MuiPaper-elevation1 {
+        box-shadow: none!important;
+    }
+    .MuiAccordionSummary-root {
+        padding: 0px 0px!important;
+    }
+
+    .MuiCollapse-container{
+        .MuiCollapse-wrapper{
+            .MuiCollapse-wrapperInner{
+                div{
+                    .MuiAccordionDetails-root{
+                        padding: 0px!important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.service-price-table-container{
+    border-left: 1px solid #ECECEC;
+    padding: 0px 12px 12px 30px!important;
+    p{
+        font-weight: lighter!important;
+    }
+    p.totals{
+        font-weight: 500!important;
+    }
+}
+
+.service-payment-method-group{
+    display: grid !important;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 16px;
+    margin-right: 12px;
+
+    .service-payment-method-btn{
+        border: 2px solid rgba(0, 0, 0, 0.12)!important;
+        border-radius: 0px!important;
+    }
+    .Mui-selected{
+        border: 2px solid $brand-primary!important;
+        background-color: transparent!important;
+    }
+}
+
+
+@media screen and (max-width: 775px){
+    
+    .service-payment-method-group{
+        display: grid!important;
+        grid-template-columns: 100%;
+        margin-bottom: 50px;
+        margin-right: 0px;
+
+    }
+    .service-price-table-container{
+        border-left: 0px solid #ECECEC;
+        padding: 8px!important;
+    }
+    
+}
+
+.payment-date-input{
+    margin-top: 6px!important;
+}
+
+.service-price-table-label{
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #707070;
+    display: block;
+    font-weight: 300!important;
+}
+.service-price-table-value{
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: block;
+    font-weight: lighter!important;
+    margin-bottom: 15px;
+}
+
+.service-price-table-value-check{
+    font-size: 14px; 
+}
+
+.service-type-value{
+    font-size: 14px;
+    font-weight: lighter!important;
+}
+
+.limit-payment-date{
+    font-size: 14px!important;
+    font-weight: lighter!important;
+    line-height: 0px!important;
+    .material-icons{
+        font-size: 14px!important;
+    }
+}
+
+.payment-image{
+    height: auto !important;
+    width: auto !important;
+    position: relative!important;
+    left: 50%!important;
+    transform: translateX(-50%);
+    max-width: 250px;
+}
+.service-photo-link{
+    position: relative;
+    height: auto !important;
+    width: auto !important;
+    display: block;
+    div{
+        position: relative;
+        height: auto !important;
+        width: auto !important;
+        display: block;
+        padding-top: 0px!important;        
+    }
+}
+
+.service-photo-box{
+    padding: 4%!important;
+    border: 2px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 0px !important;
+}
+
+.checkout-content, .checkout-header-title{
+    color: #fff!important;
+}
+
+.service-p-small{
+    text-align: left;
+    font-size: 12px!important;
+    letter-spacing: 0px;
+    color: #707070;
+    font-weight: 300!important;
+}
+
+.service-p-item{
+    text-align: left;
+    font-size: 12px!important;
+    font-weight: 400!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+    display: block;
+}
+
+.service-p-subitem{
+    text-align: left;
+    font-size: 14px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: block;
+}
+.service-payment-container{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.service-payment-box{
+    margin-top: 48px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media screen and (max-width: 1120px){
+    .service-payment-box{
+        margin-top: 48px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .service-payment-box{
+        margin-top: 48px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .service-payment-box{
+        margin-top: 48px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.service-p-total-label{
+    text-align: left;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: inline-block;
+}
+.service-p-total-amount{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: inline-block;
+}
+
+.service-p-payment-method-name{
+    text-align: center;
+    font-size: 14px!important;
+    font-weight: 400!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: block;
+}
+.service-address-list-item{
+    padding-left: 0px!important;
+}
+
+.service-scheddule-value {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    display: inline-block;
+    font-weight: 300!important;
+    margin-bottom: 15px;
+    span{
+            text-align: left;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #1F1F1F;
+            display: inline-block;
+            font-weight: 300!important;
+            margin-bottom: 15px;
+    }
+}
+
+.payment-dialog-title{
+    h2{
+        font-size: 21px!important;
+        font-weight: 500!important;
+    }
+}
+
+.service-high-info{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+}
+.service-high-separator{
+    padding: 20px;
+}
+
+.service-payment-icon{
+    width: 45px;
+}
+.service-tooltip{
+    font-size: 14px;
+    line-height: 20px;
+    height: auto!important;
+    padding: 5px 0px;
+}
+.add-sparepart-dialog-title, .edit-sparepart-dialog-title, .delete-sparepart-dialog-title, #alert-dialog-title{
+    font-size: 21px!important;
+    font-weight: 500!important;
+    padding-bottom: 10px!important;
+    h2{
+        font-size: 21px!important;
+        font-weight: 500!important;
+            
+    }
+}
+
+.edit-sparepart-dialog-product-name{
+    padding-bottom: 30px!important;
+}
+
+.service-background{
+    word-wrap: break-word!important;
+}
+
+.mg-b-50{
+    margin-bottom: 50px!important;
+}
+
+.disabled-link {
+  pointer-events: none;
+}

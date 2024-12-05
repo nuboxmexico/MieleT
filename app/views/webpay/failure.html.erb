@@ -1,0 +1,44 @@
+<div class="error-image">
+    <div class="row text-center">
+        <%= image_tag('logo/logo.png', alt: 'miele', class: 'logo-miele center-logo')%>
+    </div>
+    
+    <div class="row text-center error-div">
+        <div id="checkout" class="MuiContainer-root MuiContainer-maxWidthLg" data-hook>
+          <div class="text-uppercase checkout-header-title">
+            <h1 data-hook="checkout_title">
+              <legend>No se ha podido completar el pago</legend>
+            </h1>
+          </div>
+          <div class="row checkout-content" data-hook="checkout_content">
+              <div data-hook="webpay_field_wrapper">
+                  <fieldset id="billing" data-hook>
+                    <hr class="clear" />
+                    <p>Pago N°: <%= @payment.number %> <%= @payment.object_class %>: <%= @payment.customer_id %>-<%= @payment.object_id %></p>
+                    <p>Las posibles causas de este rechazo son:</p>
+
+                    <ul>
+                      <li>
+                        <span>Error en el ingreso de los datos de su tarjeta de crédito o Debito (fecha y/o código de seguridad).</span>
+                      </li>
+                      <li>
+                        <span>Su tarjeta de crédito o debito no cuenta con el cupo necesario para cancelar la compra.</span>
+                      </li>
+                      <li>
+                        <span>Tarjeta aún no habilitada en el sistema financiero. </span>
+                      </li>
+                    </ul>
+                  </fieldset>
+
+                  <hr class="clear" />
+                  <% unless @payment.customer_id.nil? %>
+                    <div class="form-buttons" data-hook="buttons">
+                      <%= link_to "Volver", "/customers/#{@payment.customer_id}/new_service", :class => 'mdl-button mdl-js-button mdl-js-ripple-effect btn-primary-custom btn-block btn-miele' %>
+                    </div>
+                  <% end %>
+            </div>  
+          </div>
+        </div>
+    </div>
+</div>
+

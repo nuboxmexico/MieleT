@@ -1,0 +1,69 @@
+.rdt_TableCell div:first-child {
+    white-space: normal!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-plus-btn{
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+}
+.table-search-label{
+    z-index: 1;
+    transform: translate(14px, 10px) scale(1)!important;
+    pointer-events: none;
+}
+.absolute-calentar{
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    z-index: 5;
+}
+.table-search-label.MuiInputLabel-shrink {
+    transform: translate(14px, -6px) scale(0.75)!important;
+}
+.table-search-input{
+    input{
+        padding: 10px 0px 10px 14px!important;
+    }
+    padding-right: 0px!important;
+}
+
+.rdt_TableHeadRow{
+    .rdt_TableCol{
+        div{
+            div{
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.rdt_TableBody{
+    .rdt_TableRow{
+        padding: 10px 0px;
+        .rdt_TableCell{
+                div{
+                    font-weight: 300;
+                }
+        }
+    }
+}
+
+
+.rdt_TableCell div:first-child {
+    white-space: normal!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-flag{
+    display: inline!important;
+    white-space: normal!important;
+}
+
+.rdt_TableRow{
+    min-height: auto!important;
+}

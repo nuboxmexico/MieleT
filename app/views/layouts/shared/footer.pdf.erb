@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="generator" content="2017.0.1.363"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/open-sans:n4,n7:default.js" type="text/javascript">\x3C/script>');
+  </script>
+</head>
+
+<body>
+  <%= render partial: "layouts/shared/pdf_stylesheets", formats: [:html]%>
+   <div class="container-content">
+   <%if @country == "CL"%>
+        <p class="light-label">
+            Este reporte contiene el detalle de las actividades realizadas por el Técnico Miele 
+            durante su visita. Si Usted tiene alguna duda o comentario relacionado a este reporte,  
+            por favor llame al teléfono <a class="link-mailer" href="tel:800-265-050"><span class="strong-label">800 265 050</span></a>  o escribanos al correo <a class="link-mailer" href="mailto:info@miele.cl"><span class="strong-label">info@miele.cl</span></a>
+        </p>
+  <%end%>
+  <%if @country == "MX"%>
+      <p class="light-label">
+            Este reporte contiene el detalle de las actividades realizadas por el Técnico Miele 
+            durante su visita. Si Usted tiene alguna duda o comentario relacionado a este reporte,  
+            por favor llame al teléfono <a class="link-mailer" href="tel:800-64353-00"><span class="strong-label">800 MIELE 00 (800 64353 00)</span></a>  o escribanos al correo <a class="link-mailer" href="mailto:info@miele.com.mx"><span class="strong-label">info@miele.com.mx</span></a>
+        </p>
+  <%end%>
+    </div>
+</body>
+  
+</html>
+

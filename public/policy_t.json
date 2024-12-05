@@ -1,0 +1,3601 @@
+{
+    "data": {
+      "id": 9,
+      "customer_id": 49,
+      "address_assinged": "principal",
+      "labor_price": 5000,
+      "items_price": 342500,
+      "viatic_price": 0,
+      "total_price": 347500,
+      "created_at": "2020-12-30T20:34:39.818Z",
+      "updated_at": "2020-12-30T20:34:39.818Z",
+      "customer_products": [
+        {
+          "id": 64,
+          "customer_id": 49,
+          "product_id": 15,
+          "created_at": "2020-11-19T20:15:57.277Z",
+          "updated_at": "2020-12-29T20:31:53.179Z",
+          "status": "Inicial",
+          "warranty": "1/1/1990",
+          "policy": "S/N",
+          "serial_id": "2321",
+          "discontinued": false,
+          "instalation_date": "2020-12-31",
+          "reinstalation_date": "2021-01-16",
+          "product": {
+            "id": 15,
+            "country_id": null,
+            "platform": "Tickets",
+            "tnr": "10515061",
+            "ean": "004859EEEEQ129072",
+            "profit_center": "419",
+            "name": "Aspiradora sin Bolsa CX12 Blizzard Excellence",
+            "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+            "mandatory": true,
+            "product_type": "Limpieza",
+            "created_at": "2020-11-12T21:36:30.300Z",
+            "updated_at": "2020-12-09T21:55:44.929Z",
+            "additional": false,
+            "home_program_hours": 2,
+            "taxons": [
+              {
+                "id": 5481,
+                "name": "Limpieza",
+                "permalink": "sda/test/limpieza",
+                "taxonomy_id": 3,
+                "created_at": "2020-11-27T14:49:27.279Z",
+                "updated_at": "2020-11-27T14:49:27.279Z",
+                "ancestry": "5478",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5482,
+                    "name": "test2",
+                    "permalink": "sda/test/limpieza/test2",
+                    "taxonomy_id": 3,
+                    "created_at": "2020-11-27T14:49:27.301Z",
+                    "updated_at": "2020-11-27T14:49:27.301Z",
+                    "ancestry": "5481",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5483,
+                        "name": "test especifico",
+                        "permalink": "sda/test/limpieza/test2/test_especifico",
+                        "taxonomy_id": 3,
+                        "created_at": "2020-11-27T15:09:51.396Z",
+                        "updated_at": "2020-11-27T15:09:51.396Z",
+                        "ancestry": "5482",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5276,
+                "name": "Limpieza",
+                "permalink": "sda",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:01.927Z",
+                "updated_at": "2020-11-18T14:17:18.435Z",
+                "ancestry": null,
+                "alias": "Limpieza",
+                "children_set": [
+                  {
+                    "id": 5277,
+                    "name": "Máquinas de café",
+                    "permalink": "sda/máquinas_de_café",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:01.938Z",
+                    "updated_at": "2020-09-07T13:47:01.938Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5278,
+                        "name": "Empotrables",
+                        "permalink": "sda/máquinas_de_café/empotrables",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:01.949Z",
+                        "updated_at": "2020-09-07T13:47:01.949Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5288,
+                        "name": "Independiente",
+                        "permalink": "sda/máquinas_de_café/independiente",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.273Z",
+                        "updated_at": "2020-09-07T13:47:02.273Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5318,
+                    "name": "Aspiradoras",
+                    "permalink": "sda/aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.446Z",
+                    "updated_at": "2020-09-07T13:47:03.446Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5319,
+                        "name": "Sin bolsa",
+                        "permalink": "sda/aspiradoras/sin_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.458Z",
+                        "updated_at": "2020-09-07T13:47:03.458Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5326,
+                        "name": "Robot",
+                        "permalink": "sda/aspiradoras/robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.811Z",
+                        "updated_at": "2020-09-07T13:47:03.811Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5330,
+                        "name": "Con bolsa",
+                        "permalink": "sda/aspiradoras/con_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:04.077Z",
+                        "updated_at": "2020-09-07T13:47:04.077Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5318,
+                "name": "Aspiradoras",
+                "permalink": "sda/aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.446Z",
+                "updated_at": "2020-09-07T13:47:03.446Z",
+                "ancestry": "5276",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5319,
+                    "name": "Sin bolsa",
+                    "permalink": "sda/aspiradoras/sin_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.458Z",
+                    "updated_at": "2020-09-07T13:47:03.458Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5326,
+                    "name": "Robot",
+                    "permalink": "sda/aspiradoras/robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.811Z",
+                    "updated_at": "2020-09-07T13:47:03.811Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5330,
+                    "name": "Con bolsa",
+                    "permalink": "sda/aspiradoras/con_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:04.077Z",
+                    "updated_at": "2020-09-07T13:47:04.077Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5319,
+                "name": "Sin bolsa",
+                "permalink": "sda/aspiradoras/sin_bolsa",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.458Z",
+                "updated_at": "2020-09-07T13:47:03.458Z",
+                "ancestry": "5318",
+                "alias": null,
+                "children_set": []
+              }
+            ],
+            "product_prices": [
+              {
+                "id": 5,
+                "country_id": 2,
+                "product_id": 15,
+                "price": 499900,
+                "sale_price": 499900,
+                "created_at": "2020-11-12T21:36:30.344Z",
+                "updated_at": "2020-11-12T21:36:30.344Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2020-09-02T20:07:18.167Z",
+                  "updated_at": "2020-12-29T21:50:49.779Z",
+                  "iva": 0.19
+                }
+              },
+              {
+                "id": 6,
+                "country_id": 1,
+                "product_id": 15,
+                "price": 6999,
+                "sale_price": 6999,
+                "created_at": "2020-11-12T21:36:30.352Z",
+                "updated_at": "2020-11-12T21:36:30.352Z",
+                "country": {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-02T20:07:18.160Z",
+                  "updated_at": "2020-12-29T21:50:49.783Z",
+                  "iva": 0.16
+                }
+              }
+            ],
+            "country": null
+          }
+        },
+        {
+          "id": 65,
+          "customer_id": 49,
+          "product_id": 5,
+          "created_at": "2020-11-19T20:15:57.302Z",
+          "updated_at": "2020-12-29T20:23:56.061Z",
+          "status": "Inicial",
+          "warranty": "1/1/1990",
+          "policy": "S/N",
+          "serial_id": "43212",
+          "discontinued": false,
+          "instalation_date": "2020-12-31",
+          "reinstalation_date": null,
+          "product": {
+            "id": 5,
+            "country_id": null,
+            "platform": "Tickets",
+            "tnr": "10515060",
+            "ean": "004859EEEEQ129078",
+            "profit_center": "419",
+            "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+            "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+            "mandatory": true,
+            "product_type": "Limpieza",
+            "created_at": "2020-10-05T22:38:36.457Z",
+            "updated_at": "2020-12-02T14:22:12.872Z",
+            "additional": false,
+            "home_program_hours": 1,
+            "taxons": [
+              {
+                "id": 5481,
+                "name": "Limpieza",
+                "permalink": "sda/test/limpieza",
+                "taxonomy_id": 3,
+                "created_at": "2020-11-27T14:49:27.279Z",
+                "updated_at": "2020-11-27T14:49:27.279Z",
+                "ancestry": "5478",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5482,
+                    "name": "test2",
+                    "permalink": "sda/test/limpieza/test2",
+                    "taxonomy_id": 3,
+                    "created_at": "2020-11-27T14:49:27.301Z",
+                    "updated_at": "2020-11-27T14:49:27.301Z",
+                    "ancestry": "5481",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5483,
+                        "name": "test especifico",
+                        "permalink": "sda/test/limpieza/test2/test_especifico",
+                        "taxonomy_id": 3,
+                        "created_at": "2020-11-27T15:09:51.396Z",
+                        "updated_at": "2020-11-27T15:09:51.396Z",
+                        "ancestry": "5482",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5276,
+                "name": "Limpieza",
+                "permalink": "sda",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:01.927Z",
+                "updated_at": "2020-11-18T14:17:18.435Z",
+                "ancestry": null,
+                "alias": "Limpieza",
+                "children_set": [
+                  {
+                    "id": 5277,
+                    "name": "Máquinas de café",
+                    "permalink": "sda/máquinas_de_café",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:01.938Z",
+                    "updated_at": "2020-09-07T13:47:01.938Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5278,
+                        "name": "Empotrables",
+                        "permalink": "sda/máquinas_de_café/empotrables",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:01.949Z",
+                        "updated_at": "2020-09-07T13:47:01.949Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5288,
+                        "name": "Independiente",
+                        "permalink": "sda/máquinas_de_café/independiente",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.273Z",
+                        "updated_at": "2020-09-07T13:47:02.273Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5318,
+                    "name": "Aspiradoras",
+                    "permalink": "sda/aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.446Z",
+                    "updated_at": "2020-09-07T13:47:03.446Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5319,
+                        "name": "Sin bolsa",
+                        "permalink": "sda/aspiradoras/sin_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.458Z",
+                        "updated_at": "2020-09-07T13:47:03.458Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5326,
+                        "name": "Robot",
+                        "permalink": "sda/aspiradoras/robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.811Z",
+                        "updated_at": "2020-09-07T13:47:03.811Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5330,
+                        "name": "Con bolsa",
+                        "permalink": "sda/aspiradoras/con_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:04.077Z",
+                        "updated_at": "2020-09-07T13:47:04.077Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5318,
+                "name": "Aspiradoras",
+                "permalink": "sda/aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.446Z",
+                "updated_at": "2020-09-07T13:47:03.446Z",
+                "ancestry": "5276",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5319,
+                    "name": "Sin bolsa",
+                    "permalink": "sda/aspiradoras/sin_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.458Z",
+                    "updated_at": "2020-09-07T13:47:03.458Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5326,
+                    "name": "Robot",
+                    "permalink": "sda/aspiradoras/robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.811Z",
+                    "updated_at": "2020-09-07T13:47:03.811Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5330,
+                    "name": "Con bolsa",
+                    "permalink": "sda/aspiradoras/con_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:04.077Z",
+                    "updated_at": "2020-09-07T13:47:04.077Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5319,
+                "name": "Sin bolsa",
+                "permalink": "sda/aspiradoras/sin_bolsa",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.458Z",
+                "updated_at": "2020-09-07T13:47:03.458Z",
+                "ancestry": "5318",
+                "alias": null,
+                "children_set": []
+              }
+            ],
+            "product_prices": [
+              {
+                "id": 3,
+                "country_id": 2,
+                "product_id": 5,
+                "price": 499900,
+                "sale_price": 499900,
+                "created_at": "2020-11-12T21:36:30.286Z",
+                "updated_at": "2020-11-12T21:36:30.286Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2020-09-02T20:07:18.167Z",
+                  "updated_at": "2020-12-29T21:50:49.779Z",
+                  "iva": 0.19
+                }
+              },
+              {
+                "id": 4,
+                "country_id": 1,
+                "product_id": 5,
+                "price": 6999,
+                "sale_price": 6999,
+                "created_at": "2020-11-12T21:36:30.295Z",
+                "updated_at": "2020-11-12T21:36:30.295Z",
+                "country": {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-02T20:07:18.160Z",
+                  "updated_at": "2020-12-29T21:50:49.783Z",
+                  "iva": 0.16
+                }
+              }
+            ],
+            "country": null
+          }
+        },
+        {
+          "id": 96,
+          "customer_id": 49,
+          "product_id": 204,
+          "created_at": "2020-12-23T20:48:07.658Z",
+          "updated_at": "2020-12-29T20:24:02.669Z",
+          "status": "Inicial",
+          "warranty": "1/1/1990",
+          "policy": "S/N",
+          "serial_id": "",
+          "discontinued": false,
+          "instalation_date": null,
+          "reinstalation_date": null,
+          "product": {
+            "id": 204,
+            "country_id": null,
+            "platform": "Tickets",
+            "tnr": "9616270",
+            "ean": null,
+            "profit_center": null,
+            "name": "filtro SF HA 30",
+            "description": "Filtro Hepa SF-AH-30",
+            "mandatory": true,
+            "product_type": "Accesorios para aspiradoras",
+            "created_at": "2020-12-03T19:39:53.183Z",
+            "updated_at": "2020-12-29T20:24:02.621Z",
+            "additional": false,
+            "home_program_hours": null,
+            "taxons": [
+              {
+                "id": 5345,
+                "name": "Accesorios para aspiradoras",
+                "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-16T17:42:10.438Z",
+                "updated_at": "2020-09-16T17:42:10.438Z",
+                "ancestry": "5338",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5346,
+                    "name": "Filtros de aspiradora",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:42:10.447Z",
+                    "updated_at": "2020-09-16T17:42:10.447Z",
+                    "ancestry": "5345",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5347,
+                    "name": "Bolsas recoge polvo Miele",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:42:10.477Z",
+                    "updated_at": "2020-09-16T17:42:10.477Z",
+                    "ancestry": "5345",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5355,
+                    "name": "Toberas y boquillas",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:42:11.079Z",
+                    "updated_at": "2020-09-16T17:42:11.079Z",
+                    "ancestry": "5345",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5359,
+                    "name": "Accesorios aspiradora robot",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:42:11.231Z",
+                    "updated_at": "2020-09-16T17:42:11.231Z",
+                    "ancestry": "5345",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5346,
+                "name": "Filtros de aspiradora",
+                "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-16T17:42:10.447Z",
+                "updated_at": "2020-09-16T17:42:10.447Z",
+                "ancestry": "5345",
+                "alias": null,
+                "children_set": []
+              },
+              {
+                "id": 5433,
+                "name": "Accesorios",
+                "permalink": "pai/accesorios",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-16T17:44:55.346Z",
+                "updated_at": "2020-09-16T17:44:55.346Z",
+                "ancestry": "5239",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5434,
+                    "name": "Accesorios para hornos",
+                    "permalink": "pai/accesorios/accesorios_para_hornos",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:55.355Z",
+                    "updated_at": "2020-09-16T17:44:55.355Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5435,
+                        "name": "Hornos a vapor",
+                        "permalink": "pai/accesorios/accesorios_para_hornos/hornos_a_vapor",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.363Z",
+                        "updated_at": "2020-09-16T17:44:55.363Z",
+                        "ancestry": "5434",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5458,
+                        "name": "Hornos multifunción",
+                        "permalink": "pai/accesorios/accesorios_para_hornos/hornos_multifunción",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:57.750Z",
+                        "updated_at": "2020-09-16T17:44:57.750Z",
+                        "ancestry": "5434",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5436,
+                    "name": "Accesorios de instalación",
+                    "permalink": "pai/accesorios/accesorios_de_instalación",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:55.408Z",
+                    "updated_at": "2020-09-16T17:44:55.408Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5437,
+                        "name": "Paneles frontales para lavavajillas",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_lavavajillas",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.426Z",
+                        "updated_at": "2020-09-16T17:44:55.426Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5438,
+                        "name": "Instalación lavadora y secadora",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/instalación_lavadora_y_secadora",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.597Z",
+                        "updated_at": "2020-09-16T17:44:55.597Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5439,
+                        "name": "Ductos para extracción de mesa",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/ductos_para_extracción_de_mesa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.918Z",
+                        "updated_at": "2020-09-16T17:44:55.918Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5445,
+                        "name": "Filtros de carbón para recirculación",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/filtros_de_carbón_para_recirculación",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.363Z",
+                        "updated_at": "2020-09-16T17:44:56.363Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5451,
+                        "name": "Kits de unión Mastercool",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/kits_de_unión_mastercool",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.673Z",
+                        "updated_at": "2020-09-16T17:44:56.673Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5455,
+                        "name": "Kits para recirculación",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/kits_para_recirculación",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.852Z",
+                        "updated_at": "2020-09-16T17:44:56.852Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5457,
+                        "name": "Paneles frontales para Mastercool",
+                        "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_mastercool",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:57.611Z",
+                        "updated_at": "2020-09-16T17:44:57.611Z",
+                        "ancestry": "5436",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5440,
+                    "name": "Accesorios para aspiradoras",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:55.979Z",
+                    "updated_at": "2020-09-16T17:44:55.979Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5441,
+                        "name": "Filtros de aspiradora",
+                        "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.987Z",
+                        "updated_at": "2020-09-16T17:44:55.987Z",
+                        "ancestry": "5440",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5442,
+                        "name": "Bolsas recoge polvo Miele",
+                        "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.013Z",
+                        "updated_at": "2020-09-16T17:44:56.013Z",
+                        "ancestry": "5440",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5450,
+                        "name": "Toberas y boquillas",
+                        "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.585Z",
+                        "updated_at": "2020-09-16T17:44:56.585Z",
+                        "ancestry": "5440",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5454,
+                        "name": "Accesorios aspiradora robot",
+                        "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.771Z",
+                        "updated_at": "2020-09-16T17:44:56.771Z",
+                        "ancestry": "5440",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5443,
+                    "name": "Accesorios lavado y secado",
+                    "permalink": "pai/accesorios/accesorios_lavado_y_secado",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:56.167Z",
+                    "updated_at": "2020-09-16T17:44:56.167Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5444,
+                        "name": "Lavadoras",
+                        "permalink": "pai/accesorios/accesorios_lavado_y_secado/lavadoras",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.176Z",
+                        "updated_at": "2020-09-16T17:44:56.176Z",
+                        "ancestry": "5443",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5459,
+                        "name": "Secadoras",
+                        "permalink": "pai/accesorios/accesorios_lavado_y_secado/secadoras",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:57.795Z",
+                        "updated_at": "2020-09-16T17:44:57.795Z",
+                        "ancestry": "5443",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5446,
+                    "name": "Accesorios para sistemas de cajón",
+                    "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:56.420Z",
+                    "updated_at": "2020-09-16T17:44:56.420Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5447,
+                        "name": "Envasadores al vacío",
+                        "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón/envasadores_al_vacío",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.429Z",
+                        "updated_at": "2020-09-16T17:44:56.429Z",
+                        "ancestry": "5446",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5448,
+                    "name": "Inducción",
+                    "permalink": "pai/accesorios/inducción",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:56.553Z",
+                    "updated_at": "2020-09-16T17:44:56.553Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5449,
+                        "name": "Inducción",
+                        "permalink": "pai/accesorios/inducción/inducción",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.565Z",
+                        "updated_at": "2020-09-16T17:44:56.565Z",
+                        "ancestry": "5448",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5452,
+                    "name": "Accesorios máquinas de café",
+                    "permalink": "pai/accesorios/accesorios_máquinas_de_café",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:56.711Z",
+                    "updated_at": "2020-09-16T17:44:56.711Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5453,
+                        "name": "Café en grano",
+                        "permalink": "pai/accesorios/accesorios_máquinas_de_café/café_en_grano",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.727Z",
+                        "updated_at": "2020-09-16T17:44:56.727Z",
+                        "ancestry": "5452",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5456,
+                        "name": "Accesorios máquinas independientes",
+                        "permalink": "pai/accesorios/accesorios_máquinas_de_café/accesorios_máquinas_independientes",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.930Z",
+                        "updated_at": "2020-09-16T17:44:56.930Z",
+                        "ancestry": "5452",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5460,
+                    "name": "Accesorios para refrigeración",
+                    "permalink": "pai/accesorios/accesorios_para_refrigeración",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:57.910Z",
+                    "updated_at": "2020-09-16T17:44:57.910Z",
+                    "ancestry": "5433",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5461,
+                        "name": "filtritos",
+                        "permalink": "pai/accesorios/accesorios_para_refrigeración/filtros_de_refrigeración",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:57.919Z",
+                        "updated_at": "2020-11-05T15:29:33.238Z",
+                        "ancestry": "5460",
+                        "alias": "filtritos",
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5239,
+                "name": "PAI",
+                "permalink": "pai",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:01.032Z",
+                "updated_at": "2020-09-07T13:47:01.032Z",
+                "ancestry": null,
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5433,
+                    "name": "Accesorios",
+                    "permalink": "pai/accesorios",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-16T17:44:55.346Z",
+                    "updated_at": "2020-09-16T17:44:55.346Z",
+                    "ancestry": "5239",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5434,
+                        "name": "Accesorios para hornos",
+                        "permalink": "pai/accesorios/accesorios_para_hornos",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.355Z",
+                        "updated_at": "2020-09-16T17:44:55.355Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5435,
+                            "name": "Hornos a vapor",
+                            "permalink": "pai/accesorios/accesorios_para_hornos/hornos_a_vapor",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:55.363Z",
+                            "updated_at": "2020-09-16T17:44:55.363Z",
+                            "ancestry": "5434",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5458,
+                            "name": "Hornos multifunción",
+                            "permalink": "pai/accesorios/accesorios_para_hornos/hornos_multifunción",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:57.750Z",
+                            "updated_at": "2020-09-16T17:44:57.750Z",
+                            "ancestry": "5434",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5436,
+                        "name": "Accesorios de instalación",
+                        "permalink": "pai/accesorios/accesorios_de_instalación",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.408Z",
+                        "updated_at": "2020-09-16T17:44:55.408Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5437,
+                            "name": "Paneles frontales para lavavajillas",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_lavavajillas",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:55.426Z",
+                            "updated_at": "2020-09-16T17:44:55.426Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5438,
+                            "name": "Instalación lavadora y secadora",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/instalación_lavadora_y_secadora",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:55.597Z",
+                            "updated_at": "2020-09-16T17:44:55.597Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5439,
+                            "name": "Ductos para extracción de mesa",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/ductos_para_extracción_de_mesa",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:55.918Z",
+                            "updated_at": "2020-09-16T17:44:55.918Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5445,
+                            "name": "Filtros de carbón para recirculación",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/filtros_de_carbón_para_recirculación",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.363Z",
+                            "updated_at": "2020-09-16T17:44:56.363Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5451,
+                            "name": "Kits de unión Mastercool",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/kits_de_unión_mastercool",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.673Z",
+                            "updated_at": "2020-09-16T17:44:56.673Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5455,
+                            "name": "Kits para recirculación",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/kits_para_recirculación",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.852Z",
+                            "updated_at": "2020-09-16T17:44:56.852Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5457,
+                            "name": "Paneles frontales para Mastercool",
+                            "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_mastercool",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:57.611Z",
+                            "updated_at": "2020-09-16T17:44:57.611Z",
+                            "ancestry": "5436",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5440,
+                        "name": "Accesorios para aspiradoras",
+                        "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:55.979Z",
+                        "updated_at": "2020-09-16T17:44:55.979Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5441,
+                            "name": "Filtros de aspiradora",
+                            "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:55.987Z",
+                            "updated_at": "2020-09-16T17:44:55.987Z",
+                            "ancestry": "5440",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5442,
+                            "name": "Bolsas recoge polvo Miele",
+                            "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.013Z",
+                            "updated_at": "2020-09-16T17:44:56.013Z",
+                            "ancestry": "5440",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5450,
+                            "name": "Toberas y boquillas",
+                            "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.585Z",
+                            "updated_at": "2020-09-16T17:44:56.585Z",
+                            "ancestry": "5440",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5454,
+                            "name": "Accesorios aspiradora robot",
+                            "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.771Z",
+                            "updated_at": "2020-09-16T17:44:56.771Z",
+                            "ancestry": "5440",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5443,
+                        "name": "Accesorios lavado y secado",
+                        "permalink": "pai/accesorios/accesorios_lavado_y_secado",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.167Z",
+                        "updated_at": "2020-09-16T17:44:56.167Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5444,
+                            "name": "Lavadoras",
+                            "permalink": "pai/accesorios/accesorios_lavado_y_secado/lavadoras",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.176Z",
+                            "updated_at": "2020-09-16T17:44:56.176Z",
+                            "ancestry": "5443",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5459,
+                            "name": "Secadoras",
+                            "permalink": "pai/accesorios/accesorios_lavado_y_secado/secadoras",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:57.795Z",
+                            "updated_at": "2020-09-16T17:44:57.795Z",
+                            "ancestry": "5443",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5446,
+                        "name": "Accesorios para sistemas de cajón",
+                        "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.420Z",
+                        "updated_at": "2020-09-16T17:44:56.420Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5447,
+                            "name": "Envasadores al vacío",
+                            "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón/envasadores_al_vacío",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.429Z",
+                            "updated_at": "2020-09-16T17:44:56.429Z",
+                            "ancestry": "5446",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5448,
+                        "name": "Inducción",
+                        "permalink": "pai/accesorios/inducción",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.553Z",
+                        "updated_at": "2020-09-16T17:44:56.553Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5449,
+                            "name": "Inducción",
+                            "permalink": "pai/accesorios/inducción/inducción",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.565Z",
+                            "updated_at": "2020-09-16T17:44:56.565Z",
+                            "ancestry": "5448",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5452,
+                        "name": "Accesorios máquinas de café",
+                        "permalink": "pai/accesorios/accesorios_máquinas_de_café",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:56.711Z",
+                        "updated_at": "2020-09-16T17:44:56.711Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5453,
+                            "name": "Café en grano",
+                            "permalink": "pai/accesorios/accesorios_máquinas_de_café/café_en_grano",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.727Z",
+                            "updated_at": "2020-09-16T17:44:56.727Z",
+                            "ancestry": "5452",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5456,
+                            "name": "Accesorios máquinas independientes",
+                            "permalink": "pai/accesorios/accesorios_máquinas_de_café/accesorios_máquinas_independientes",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:56.930Z",
+                            "updated_at": "2020-09-16T17:44:56.930Z",
+                            "ancestry": "5452",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5460,
+                        "name": "Accesorios para refrigeración",
+                        "permalink": "pai/accesorios/accesorios_para_refrigeración",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-16T17:44:57.910Z",
+                        "updated_at": "2020-09-16T17:44:57.910Z",
+                        "ancestry": "5433",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5461,
+                            "name": "filtritos",
+                            "permalink": "pai/accesorios/accesorios_para_refrigeración/filtros_de_refrigeración",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-16T17:44:57.919Z",
+                            "updated_at": "2020-11-05T15:29:33.238Z",
+                            "ancestry": "5460",
+                            "alias": "filtritos",
+                            "children_set": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5293,
+                    "name": "Productos de Limpieza",
+                    "permalink": "pai/productos_de_limpieza",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:02.398Z",
+                    "updated_at": "2020-09-07T13:47:02.398Z",
+                    "ancestry": "5239",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5294,
+                        "name": "Cuidado de productos",
+                        "permalink": "pai/productos_de_limpieza/cuidado_de_productos",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.410Z",
+                        "updated_at": "2020-09-07T13:47:02.410Z",
+                        "ancestry": "5293",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5295,
+                            "name": "Cuidado de productos",
+                            "permalink": "pai/productos_de_limpieza/cuidado_de_productos/cuidado_de_productos",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.423Z",
+                            "updated_at": "2020-09-07T13:47:02.423Z",
+                            "ancestry": "5294",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5297,
+                        "name": "Detergentes Lavadora",
+                        "permalink": "pai/productos_de_limpieza/detergentes_lavadora",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.463Z",
+                        "updated_at": "2020-09-07T13:47:02.463Z",
+                        "ancestry": "5293",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5298,
+                            "name": "Capsulas Miele",
+                            "permalink": "pai/productos_de_limpieza/detergentes_lavadora/capsulas_miele",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.474Z",
+                            "updated_at": "2020-09-07T13:47:02.474Z",
+                            "ancestry": "5297",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5301,
+                            "name": "Detergentes en polvo",
+                            "permalink": "pai/productos_de_limpieza/detergentes_lavadora/detergentes_en_polvo",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.674Z",
+                            "updated_at": "2020-09-07T13:47:02.674Z",
+                            "ancestry": "5297",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5304,
+                            "name": "Detergentes líquidos",
+                            "permalink": "pai/productos_de_limpieza/detergentes_lavadora/detergentes_líquidos",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.783Z",
+                            "updated_at": "2020-09-07T13:47:02.783Z",
+                            "ancestry": "5297",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5299,
+                        "name": "Detergentes Lavavajillas",
+                        "permalink": "pai/productos_de_limpieza/detergentes_lavavajillas",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.639Z",
+                        "updated_at": "2020-09-07T13:47:02.639Z",
+                        "ancestry": "5293",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5300,
+                            "name": "Detergentes Lavavajillas",
+                            "permalink": "pai/productos_de_limpieza/detergentes_lavavajillas/detergentes_lavavajillas",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.651Z",
+                            "updated_at": "2020-09-07T13:47:02.651Z",
+                            "ancestry": "5299",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5305,
+                        "name": "Fragancias Secadora",
+                        "permalink": "pai/productos_de_limpieza/fragancias_secadora",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.849Z",
+                        "updated_at": "2020-09-07T13:47:02.849Z",
+                        "ancestry": "5293",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5306,
+                            "name": "Fragancias Secadora",
+                            "permalink": "pai/productos_de_limpieza/fragancias_secadora/fragancias_secadora",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.862Z",
+                            "updated_at": "2020-09-07T13:47:02.862Z",
+                            "ancestry": "5305",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5291,
+                "name": "Accesorios para aspiradoras",
+                "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:02.369Z",
+                "updated_at": "2020-09-07T13:47:02.369Z",
+                "ancestry": "5240",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5292,
+                    "name": "Filtros de aspiradora",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:02.385Z",
+                    "updated_at": "2020-09-07T13:47:02.385Z",
+                    "ancestry": "5291",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5296,
+                    "name": "Bolsas recoge polvo Miele",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:02.445Z",
+                    "updated_at": "2020-09-07T13:47:02.445Z",
+                    "ancestry": "5291",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5317,
+                    "name": "Toberas y boquillas",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.415Z",
+                    "updated_at": "2020-09-07T13:47:03.415Z",
+                    "ancestry": "5291",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5324,
+                    "name": "Accesorios aspiradora robot",
+                    "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.664Z",
+                    "updated_at": "2020-09-07T13:47:03.664Z",
+                    "ancestry": "5291",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5292,
+                "name": "Filtros de aspiradora",
+                "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:02.385Z",
+                "updated_at": "2020-09-07T13:47:02.385Z",
+                "ancestry": "5291",
+                "alias": null,
+                "children_set": []
+              }
+            ],
+            "product_prices": [
+              {
+                "id": 377,
+                "country_id": 2,
+                "product_id": 204,
+                "price": 44900,
+                "sale_price": 44900,
+                "created_at": "2020-12-03T19:39:53.221Z",
+                "updated_at": "2020-12-03T19:39:53.221Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2020-09-02T20:07:18.167Z",
+                  "updated_at": "2020-12-29T21:50:49.779Z",
+                  "iva": 0.19
+                }
+              },
+              {
+                "id": 378,
+                "country_id": 1,
+                "product_id": 204,
+                "price": 6200,
+                "sale_price": 6200,
+                "created_at": "2020-12-03T19:39:53.229Z",
+                "updated_at": "2020-12-03T19:39:53.229Z",
+                "country": {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-02T20:07:18.160Z",
+                  "updated_at": "2020-12-29T21:50:49.783Z",
+                  "iva": 0.16
+                }
+              }
+            ],
+            "country": null
+          }
+        },
+        {
+          "id": 66,
+          "customer_id": 49,
+          "product_id": 5,
+          "created_at": "2020-11-19T20:15:57.311Z",
+          "updated_at": "2020-12-29T20:31:36.296Z",
+          "status": "Inicial",
+          "warranty": "1/1/1990",
+          "policy": "S/N",
+          "serial_id": "1234",
+          "discontinued": false,
+          "instalation_date": "2020-12-29",
+          "reinstalation_date": "2020-12-31",
+          "product": {
+            "id": 5,
+            "country_id": null,
+            "platform": "Tickets",
+            "tnr": "10515060",
+            "ean": "004859EEEEQ129078",
+            "profit_center": "419",
+            "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+            "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+            "mandatory": true,
+            "product_type": "Limpieza",
+            "created_at": "2020-10-05T22:38:36.457Z",
+            "updated_at": "2020-12-02T14:22:12.872Z",
+            "additional": false,
+            "home_program_hours": 1,
+            "taxons": [
+              {
+                "id": 5481,
+                "name": "Limpieza",
+                "permalink": "sda/test/limpieza",
+                "taxonomy_id": 3,
+                "created_at": "2020-11-27T14:49:27.279Z",
+                "updated_at": "2020-11-27T14:49:27.279Z",
+                "ancestry": "5478",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5482,
+                    "name": "test2",
+                    "permalink": "sda/test/limpieza/test2",
+                    "taxonomy_id": 3,
+                    "created_at": "2020-11-27T14:49:27.301Z",
+                    "updated_at": "2020-11-27T14:49:27.301Z",
+                    "ancestry": "5481",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5483,
+                        "name": "test especifico",
+                        "permalink": "sda/test/limpieza/test2/test_especifico",
+                        "taxonomy_id": 3,
+                        "created_at": "2020-11-27T15:09:51.396Z",
+                        "updated_at": "2020-11-27T15:09:51.396Z",
+                        "ancestry": "5482",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5276,
+                "name": "Limpieza",
+                "permalink": "sda",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:01.927Z",
+                "updated_at": "2020-11-18T14:17:18.435Z",
+                "ancestry": null,
+                "alias": "Limpieza",
+                "children_set": [
+                  {
+                    "id": 5277,
+                    "name": "Máquinas de café",
+                    "permalink": "sda/máquinas_de_café",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:01.938Z",
+                    "updated_at": "2020-09-07T13:47:01.938Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5278,
+                        "name": "Empotrables",
+                        "permalink": "sda/máquinas_de_café/empotrables",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:01.949Z",
+                        "updated_at": "2020-09-07T13:47:01.949Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5288,
+                        "name": "Independiente",
+                        "permalink": "sda/máquinas_de_café/independiente",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.273Z",
+                        "updated_at": "2020-09-07T13:47:02.273Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5318,
+                    "name": "Aspiradoras",
+                    "permalink": "sda/aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.446Z",
+                    "updated_at": "2020-09-07T13:47:03.446Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5319,
+                        "name": "Sin bolsa",
+                        "permalink": "sda/aspiradoras/sin_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.458Z",
+                        "updated_at": "2020-09-07T13:47:03.458Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5326,
+                        "name": "Robot",
+                        "permalink": "sda/aspiradoras/robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.811Z",
+                        "updated_at": "2020-09-07T13:47:03.811Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5330,
+                        "name": "Con bolsa",
+                        "permalink": "sda/aspiradoras/con_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:04.077Z",
+                        "updated_at": "2020-09-07T13:47:04.077Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5318,
+                "name": "Aspiradoras",
+                "permalink": "sda/aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.446Z",
+                "updated_at": "2020-09-07T13:47:03.446Z",
+                "ancestry": "5276",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5319,
+                    "name": "Sin bolsa",
+                    "permalink": "sda/aspiradoras/sin_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.458Z",
+                    "updated_at": "2020-09-07T13:47:03.458Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5326,
+                    "name": "Robot",
+                    "permalink": "sda/aspiradoras/robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.811Z",
+                    "updated_at": "2020-09-07T13:47:03.811Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5330,
+                    "name": "Con bolsa",
+                    "permalink": "sda/aspiradoras/con_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:04.077Z",
+                    "updated_at": "2020-09-07T13:47:04.077Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5319,
+                "name": "Sin bolsa",
+                "permalink": "sda/aspiradoras/sin_bolsa",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.458Z",
+                "updated_at": "2020-09-07T13:47:03.458Z",
+                "ancestry": "5318",
+                "alias": null,
+                "children_set": []
+              }
+            ],
+            "product_prices": [
+              {
+                "id": 3,
+                "country_id": 2,
+                "product_id": 5,
+                "price": 499900,
+                "sale_price": 499900,
+                "created_at": "2020-11-12T21:36:30.286Z",
+                "updated_at": "2020-11-12T21:36:30.286Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2020-09-02T20:07:18.167Z",
+                  "updated_at": "2020-12-29T21:50:49.779Z",
+                  "iva": 0.19
+                }
+              },
+              {
+                "id": 4,
+                "country_id": 1,
+                "product_id": 5,
+                "price": 6999,
+                "sale_price": 6999,
+                "created_at": "2020-11-12T21:36:30.295Z",
+                "updated_at": "2020-11-12T21:36:30.295Z",
+                "country": {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-02T20:07:18.160Z",
+                  "updated_at": "2020-12-29T21:50:49.783Z",
+                  "iva": 0.16
+                }
+              }
+            ],
+            "country": null
+          }
+        }
+      ],
+      "policy_customer_products": [
+        {
+          "id": 30,
+          "customer_product_id": 64,
+          "policy_id": 9,
+          "created_at": "2020-12-30T20:34:39.836Z",
+          "updated_at": "2020-12-30T20:34:39.836Z",
+          "status": "Inactivo",
+          "visits": 0,
+          "customer_product": {
+            "id": 64,
+            "customer_id": 49,
+            "product_id": 15,
+            "created_at": "2020-11-19T20:15:57.277Z",
+            "updated_at": "2020-12-29T20:31:53.179Z",
+            "status": "Inicial",
+            "warranty": "1/1/1990",
+            "policy": "S/N",
+            "serial_id": "2321",
+            "discontinued": false,
+            "instalation_date": "2020-12-31",
+            "reinstalation_date": "2021-01-16",
+            "product": {
+              "id": 15,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "10515061",
+              "ean": "004859EEEEQ129072",
+              "profit_center": "419",
+              "name": "Aspiradora sin Bolsa CX12 Blizzard Excellence",
+              "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+              "mandatory": true,
+              "product_type": "Limpieza",
+              "created_at": "2020-11-12T21:36:30.300Z",
+              "updated_at": "2020-12-09T21:55:44.929Z",
+              "additional": false,
+              "home_program_hours": 2,
+              "taxons": [
+                {
+                  "id": 5481,
+                  "name": "Limpieza",
+                  "permalink": "sda/test/limpieza",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.279Z",
+                  "updated_at": "2020-11-27T14:49:27.279Z",
+                  "ancestry": "5478",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5482,
+                      "name": "test2",
+                      "permalink": "sda/test/limpieza/test2",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T14:49:27.301Z",
+                      "updated_at": "2020-11-27T14:49:27.301Z",
+                      "ancestry": "5481",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5483,
+                          "name": "test especifico",
+                          "permalink": "sda/test/limpieza/test2/test_especifico",
+                          "taxonomy_id": 3,
+                          "created_at": "2020-11-27T15:09:51.396Z",
+                          "updated_at": "2020-11-27T15:09:51.396Z",
+                          "ancestry": "5482",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5276,
+                  "name": "Limpieza",
+                  "permalink": "sda",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.927Z",
+                  "updated_at": "2020-11-18T14:17:18.435Z",
+                  "ancestry": null,
+                  "alias": "Limpieza",
+                  "children_set": [
+                    {
+                      "id": 5277,
+                      "name": "Máquinas de café",
+                      "permalink": "sda/máquinas_de_café",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.938Z",
+                      "updated_at": "2020-09-07T13:47:01.938Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5278,
+                          "name": "Empotrables",
+                          "permalink": "sda/máquinas_de_café/empotrables",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:01.949Z",
+                          "updated_at": "2020-09-07T13:47:01.949Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5288,
+                          "name": "Independiente",
+                          "permalink": "sda/máquinas_de_café/independiente",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.273Z",
+                          "updated_at": "2020-09-07T13:47:02.273Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5318,
+                      "name": "Aspiradoras",
+                      "permalink": "sda/aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.446Z",
+                      "updated_at": "2020-09-07T13:47:03.446Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5319,
+                          "name": "Sin bolsa",
+                          "permalink": "sda/aspiradoras/sin_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.458Z",
+                          "updated_at": "2020-09-07T13:47:03.458Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5326,
+                          "name": "Robot",
+                          "permalink": "sda/aspiradoras/robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.811Z",
+                          "updated_at": "2020-09-07T13:47:03.811Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5330,
+                          "name": "Con bolsa",
+                          "permalink": "sda/aspiradoras/con_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:04.077Z",
+                          "updated_at": "2020-09-07T13:47:04.077Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 5,
+                  "country_id": 2,
+                  "product_id": 15,
+                  "price": 499900,
+                  "sale_price": 499900,
+                  "created_at": "2020-11-12T21:36:30.344Z",
+                  "updated_at": "2020-11-12T21:36:30.344Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2020-09-02T20:07:18.167Z",
+                    "updated_at": "2020-12-29T21:50:49.779Z",
+                    "iva": 0.19
+                  }
+                },
+                {
+                  "id": 6,
+                  "country_id": 1,
+                  "product_id": 15,
+                  "price": 6999,
+                  "sale_price": 6999,
+                  "created_at": "2020-11-12T21:36:30.352Z",
+                  "updated_at": "2020-11-12T21:36:30.352Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2020-09-02T20:07:18.160Z",
+                    "updated_at": "2020-12-29T21:50:49.783Z",
+                    "iva": 0.16
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        },
+        {
+          "id": 31,
+          "customer_product_id": 65,
+          "policy_id": 9,
+          "created_at": "2020-12-30T20:34:39.843Z",
+          "updated_at": "2020-12-30T20:34:39.843Z",
+          "status": "Inactivo",
+          "visits": 0,
+          "customer_product": {
+            "id": 65,
+            "customer_id": 49,
+            "product_id": 5,
+            "created_at": "2020-11-19T20:15:57.302Z",
+            "updated_at": "2020-12-29T20:23:56.061Z",
+            "status": "Inicial",
+            "warranty": "1/1/1990",
+            "policy": "S/N",
+            "serial_id": "43212",
+            "discontinued": false,
+            "instalation_date": "2020-12-31",
+            "reinstalation_date": null,
+            "product": {
+              "id": 5,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "10515060",
+              "ean": "004859EEEEQ129078",
+              "profit_center": "419",
+              "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+              "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+              "mandatory": true,
+              "product_type": "Limpieza",
+              "created_at": "2020-10-05T22:38:36.457Z",
+              "updated_at": "2020-12-02T14:22:12.872Z",
+              "additional": false,
+              "home_program_hours": 1,
+              "taxons": [
+                {
+                  "id": 5481,
+                  "name": "Limpieza",
+                  "permalink": "sda/test/limpieza",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.279Z",
+                  "updated_at": "2020-11-27T14:49:27.279Z",
+                  "ancestry": "5478",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5482,
+                      "name": "test2",
+                      "permalink": "sda/test/limpieza/test2",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T14:49:27.301Z",
+                      "updated_at": "2020-11-27T14:49:27.301Z",
+                      "ancestry": "5481",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5483,
+                          "name": "test especifico",
+                          "permalink": "sda/test/limpieza/test2/test_especifico",
+                          "taxonomy_id": 3,
+                          "created_at": "2020-11-27T15:09:51.396Z",
+                          "updated_at": "2020-11-27T15:09:51.396Z",
+                          "ancestry": "5482",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5276,
+                  "name": "Limpieza",
+                  "permalink": "sda",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.927Z",
+                  "updated_at": "2020-11-18T14:17:18.435Z",
+                  "ancestry": null,
+                  "alias": "Limpieza",
+                  "children_set": [
+                    {
+                      "id": 5277,
+                      "name": "Máquinas de café",
+                      "permalink": "sda/máquinas_de_café",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.938Z",
+                      "updated_at": "2020-09-07T13:47:01.938Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5278,
+                          "name": "Empotrables",
+                          "permalink": "sda/máquinas_de_café/empotrables",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:01.949Z",
+                          "updated_at": "2020-09-07T13:47:01.949Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5288,
+                          "name": "Independiente",
+                          "permalink": "sda/máquinas_de_café/independiente",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.273Z",
+                          "updated_at": "2020-09-07T13:47:02.273Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5318,
+                      "name": "Aspiradoras",
+                      "permalink": "sda/aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.446Z",
+                      "updated_at": "2020-09-07T13:47:03.446Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5319,
+                          "name": "Sin bolsa",
+                          "permalink": "sda/aspiradoras/sin_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.458Z",
+                          "updated_at": "2020-09-07T13:47:03.458Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5326,
+                          "name": "Robot",
+                          "permalink": "sda/aspiradoras/robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.811Z",
+                          "updated_at": "2020-09-07T13:47:03.811Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5330,
+                          "name": "Con bolsa",
+                          "permalink": "sda/aspiradoras/con_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:04.077Z",
+                          "updated_at": "2020-09-07T13:47:04.077Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 3,
+                  "country_id": 2,
+                  "product_id": 5,
+                  "price": 499900,
+                  "sale_price": 499900,
+                  "created_at": "2020-11-12T21:36:30.286Z",
+                  "updated_at": "2020-11-12T21:36:30.286Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2020-09-02T20:07:18.167Z",
+                    "updated_at": "2020-12-29T21:50:49.779Z",
+                    "iva": 0.19
+                  }
+                },
+                {
+                  "id": 4,
+                  "country_id": 1,
+                  "product_id": 5,
+                  "price": 6999,
+                  "sale_price": 6999,
+                  "created_at": "2020-11-12T21:36:30.295Z",
+                  "updated_at": "2020-11-12T21:36:30.295Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2020-09-02T20:07:18.160Z",
+                    "updated_at": "2020-12-29T21:50:49.783Z",
+                    "iva": 0.16
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        },
+        {
+          "id": 32,
+          "customer_product_id": 96,
+          "policy_id": 9,
+          "created_at": "2020-12-30T20:34:39.849Z",
+          "updated_at": "2020-12-30T20:34:39.849Z",
+          "status": "Inactivo",
+          "visits": 0,
+          "customer_product": {
+            "id": 96,
+            "customer_id": 49,
+            "product_id": 204,
+            "created_at": "2020-12-23T20:48:07.658Z",
+            "updated_at": "2020-12-29T20:24:02.669Z",
+            "status": "Inicial",
+            "warranty": "1/1/1990",
+            "policy": "S/N",
+            "serial_id": "",
+            "discontinued": false,
+            "instalation_date": null,
+            "reinstalation_date": null,
+            "product": {
+              "id": 204,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "9616270",
+              "ean": null,
+              "profit_center": null,
+              "name": "filtro SF HA 30",
+              "description": "Filtro Hepa SF-AH-30",
+              "mandatory": true,
+              "product_type": "Accesorios para aspiradoras",
+              "created_at": "2020-12-03T19:39:53.183Z",
+              "updated_at": "2020-12-29T20:24:02.621Z",
+              "additional": false,
+              "home_program_hours": null,
+              "taxons": [
+                {
+                  "id": 5345,
+                  "name": "Accesorios para aspiradoras",
+                  "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-16T17:42:10.438Z",
+                  "updated_at": "2020-09-16T17:42:10.438Z",
+                  "ancestry": "5338",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5346,
+                      "name": "Filtros de aspiradora",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:42:10.447Z",
+                      "updated_at": "2020-09-16T17:42:10.447Z",
+                      "ancestry": "5345",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5347,
+                      "name": "Bolsas recoge polvo Miele",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:42:10.477Z",
+                      "updated_at": "2020-09-16T17:42:10.477Z",
+                      "ancestry": "5345",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5355,
+                      "name": "Toberas y boquillas",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:42:11.079Z",
+                      "updated_at": "2020-09-16T17:42:11.079Z",
+                      "ancestry": "5345",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5359,
+                      "name": "Accesorios aspiradora robot",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:42:11.231Z",
+                      "updated_at": "2020-09-16T17:42:11.231Z",
+                      "ancestry": "5345",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5346,
+                  "name": "Filtros de aspiradora",
+                  "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-16T17:42:10.447Z",
+                  "updated_at": "2020-09-16T17:42:10.447Z",
+                  "ancestry": "5345",
+                  "alias": null,
+                  "children_set": []
+                },
+                {
+                  "id": 5433,
+                  "name": "Accesorios",
+                  "permalink": "pai/accesorios",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-16T17:44:55.346Z",
+                  "updated_at": "2020-09-16T17:44:55.346Z",
+                  "ancestry": "5239",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5434,
+                      "name": "Accesorios para hornos",
+                      "permalink": "pai/accesorios/accesorios_para_hornos",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:55.355Z",
+                      "updated_at": "2020-09-16T17:44:55.355Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5435,
+                          "name": "Hornos a vapor",
+                          "permalink": "pai/accesorios/accesorios_para_hornos/hornos_a_vapor",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.363Z",
+                          "updated_at": "2020-09-16T17:44:55.363Z",
+                          "ancestry": "5434",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5458,
+                          "name": "Hornos multifunción",
+                          "permalink": "pai/accesorios/accesorios_para_hornos/hornos_multifunción",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:57.750Z",
+                          "updated_at": "2020-09-16T17:44:57.750Z",
+                          "ancestry": "5434",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5436,
+                      "name": "Accesorios de instalación",
+                      "permalink": "pai/accesorios/accesorios_de_instalación",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:55.408Z",
+                      "updated_at": "2020-09-16T17:44:55.408Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5437,
+                          "name": "Paneles frontales para lavavajillas",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_lavavajillas",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.426Z",
+                          "updated_at": "2020-09-16T17:44:55.426Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5438,
+                          "name": "Instalación lavadora y secadora",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/instalación_lavadora_y_secadora",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.597Z",
+                          "updated_at": "2020-09-16T17:44:55.597Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5439,
+                          "name": "Ductos para extracción de mesa",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/ductos_para_extracción_de_mesa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.918Z",
+                          "updated_at": "2020-09-16T17:44:55.918Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5445,
+                          "name": "Filtros de carbón para recirculación",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/filtros_de_carbón_para_recirculación",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.363Z",
+                          "updated_at": "2020-09-16T17:44:56.363Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5451,
+                          "name": "Kits de unión Mastercool",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/kits_de_unión_mastercool",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.673Z",
+                          "updated_at": "2020-09-16T17:44:56.673Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5455,
+                          "name": "Kits para recirculación",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/kits_para_recirculación",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.852Z",
+                          "updated_at": "2020-09-16T17:44:56.852Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5457,
+                          "name": "Paneles frontales para Mastercool",
+                          "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_mastercool",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:57.611Z",
+                          "updated_at": "2020-09-16T17:44:57.611Z",
+                          "ancestry": "5436",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5440,
+                      "name": "Accesorios para aspiradoras",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:55.979Z",
+                      "updated_at": "2020-09-16T17:44:55.979Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5441,
+                          "name": "Filtros de aspiradora",
+                          "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.987Z",
+                          "updated_at": "2020-09-16T17:44:55.987Z",
+                          "ancestry": "5440",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5442,
+                          "name": "Bolsas recoge polvo Miele",
+                          "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.013Z",
+                          "updated_at": "2020-09-16T17:44:56.013Z",
+                          "ancestry": "5440",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5450,
+                          "name": "Toberas y boquillas",
+                          "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.585Z",
+                          "updated_at": "2020-09-16T17:44:56.585Z",
+                          "ancestry": "5440",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5454,
+                          "name": "Accesorios aspiradora robot",
+                          "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.771Z",
+                          "updated_at": "2020-09-16T17:44:56.771Z",
+                          "ancestry": "5440",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5443,
+                      "name": "Accesorios lavado y secado",
+                      "permalink": "pai/accesorios/accesorios_lavado_y_secado",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:56.167Z",
+                      "updated_at": "2020-09-16T17:44:56.167Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5444,
+                          "name": "Lavadoras",
+                          "permalink": "pai/accesorios/accesorios_lavado_y_secado/lavadoras",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.176Z",
+                          "updated_at": "2020-09-16T17:44:56.176Z",
+                          "ancestry": "5443",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5459,
+                          "name": "Secadoras",
+                          "permalink": "pai/accesorios/accesorios_lavado_y_secado/secadoras",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:57.795Z",
+                          "updated_at": "2020-09-16T17:44:57.795Z",
+                          "ancestry": "5443",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5446,
+                      "name": "Accesorios para sistemas de cajón",
+                      "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:56.420Z",
+                      "updated_at": "2020-09-16T17:44:56.420Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5447,
+                          "name": "Envasadores al vacío",
+                          "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón/envasadores_al_vacío",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.429Z",
+                          "updated_at": "2020-09-16T17:44:56.429Z",
+                          "ancestry": "5446",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5448,
+                      "name": "Inducción",
+                      "permalink": "pai/accesorios/inducción",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:56.553Z",
+                      "updated_at": "2020-09-16T17:44:56.553Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5449,
+                          "name": "Inducción",
+                          "permalink": "pai/accesorios/inducción/inducción",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.565Z",
+                          "updated_at": "2020-09-16T17:44:56.565Z",
+                          "ancestry": "5448",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5452,
+                      "name": "Accesorios máquinas de café",
+                      "permalink": "pai/accesorios/accesorios_máquinas_de_café",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:56.711Z",
+                      "updated_at": "2020-09-16T17:44:56.711Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5453,
+                          "name": "Café en grano",
+                          "permalink": "pai/accesorios/accesorios_máquinas_de_café/café_en_grano",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.727Z",
+                          "updated_at": "2020-09-16T17:44:56.727Z",
+                          "ancestry": "5452",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5456,
+                          "name": "Accesorios máquinas independientes",
+                          "permalink": "pai/accesorios/accesorios_máquinas_de_café/accesorios_máquinas_independientes",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.930Z",
+                          "updated_at": "2020-09-16T17:44:56.930Z",
+                          "ancestry": "5452",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5460,
+                      "name": "Accesorios para refrigeración",
+                      "permalink": "pai/accesorios/accesorios_para_refrigeración",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:57.910Z",
+                      "updated_at": "2020-09-16T17:44:57.910Z",
+                      "ancestry": "5433",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5461,
+                          "name": "filtritos",
+                          "permalink": "pai/accesorios/accesorios_para_refrigeración/filtros_de_refrigeración",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:57.919Z",
+                          "updated_at": "2020-11-05T15:29:33.238Z",
+                          "ancestry": "5460",
+                          "alias": "filtritos",
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5239,
+                  "name": "PAI",
+                  "permalink": "pai",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.032Z",
+                  "updated_at": "2020-09-07T13:47:01.032Z",
+                  "ancestry": null,
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5433,
+                      "name": "Accesorios",
+                      "permalink": "pai/accesorios",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-16T17:44:55.346Z",
+                      "updated_at": "2020-09-16T17:44:55.346Z",
+                      "ancestry": "5239",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5434,
+                          "name": "Accesorios para hornos",
+                          "permalink": "pai/accesorios/accesorios_para_hornos",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.355Z",
+                          "updated_at": "2020-09-16T17:44:55.355Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5435,
+                              "name": "Hornos a vapor",
+                              "permalink": "pai/accesorios/accesorios_para_hornos/hornos_a_vapor",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:55.363Z",
+                              "updated_at": "2020-09-16T17:44:55.363Z",
+                              "ancestry": "5434",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5458,
+                              "name": "Hornos multifunción",
+                              "permalink": "pai/accesorios/accesorios_para_hornos/hornos_multifunción",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:57.750Z",
+                              "updated_at": "2020-09-16T17:44:57.750Z",
+                              "ancestry": "5434",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5436,
+                          "name": "Accesorios de instalación",
+                          "permalink": "pai/accesorios/accesorios_de_instalación",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.408Z",
+                          "updated_at": "2020-09-16T17:44:55.408Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5437,
+                              "name": "Paneles frontales para lavavajillas",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_lavavajillas",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:55.426Z",
+                              "updated_at": "2020-09-16T17:44:55.426Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5438,
+                              "name": "Instalación lavadora y secadora",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/instalación_lavadora_y_secadora",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:55.597Z",
+                              "updated_at": "2020-09-16T17:44:55.597Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5439,
+                              "name": "Ductos para extracción de mesa",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/ductos_para_extracción_de_mesa",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:55.918Z",
+                              "updated_at": "2020-09-16T17:44:55.918Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5445,
+                              "name": "Filtros de carbón para recirculación",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/filtros_de_carbón_para_recirculación",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.363Z",
+                              "updated_at": "2020-09-16T17:44:56.363Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5451,
+                              "name": "Kits de unión Mastercool",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/kits_de_unión_mastercool",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.673Z",
+                              "updated_at": "2020-09-16T17:44:56.673Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5455,
+                              "name": "Kits para recirculación",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/kits_para_recirculación",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.852Z",
+                              "updated_at": "2020-09-16T17:44:56.852Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5457,
+                              "name": "Paneles frontales para Mastercool",
+                              "permalink": "pai/accesorios/accesorios_de_instalación/paneles_frontales_para_mastercool",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:57.611Z",
+                              "updated_at": "2020-09-16T17:44:57.611Z",
+                              "ancestry": "5436",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5440,
+                          "name": "Accesorios para aspiradoras",
+                          "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:55.979Z",
+                          "updated_at": "2020-09-16T17:44:55.979Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5441,
+                              "name": "Filtros de aspiradora",
+                              "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:55.987Z",
+                              "updated_at": "2020-09-16T17:44:55.987Z",
+                              "ancestry": "5440",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5442,
+                              "name": "Bolsas recoge polvo Miele",
+                              "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.013Z",
+                              "updated_at": "2020-09-16T17:44:56.013Z",
+                              "ancestry": "5440",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5450,
+                              "name": "Toberas y boquillas",
+                              "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.585Z",
+                              "updated_at": "2020-09-16T17:44:56.585Z",
+                              "ancestry": "5440",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5454,
+                              "name": "Accesorios aspiradora robot",
+                              "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.771Z",
+                              "updated_at": "2020-09-16T17:44:56.771Z",
+                              "ancestry": "5440",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5443,
+                          "name": "Accesorios lavado y secado",
+                          "permalink": "pai/accesorios/accesorios_lavado_y_secado",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.167Z",
+                          "updated_at": "2020-09-16T17:44:56.167Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5444,
+                              "name": "Lavadoras",
+                              "permalink": "pai/accesorios/accesorios_lavado_y_secado/lavadoras",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.176Z",
+                              "updated_at": "2020-09-16T17:44:56.176Z",
+                              "ancestry": "5443",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5459,
+                              "name": "Secadoras",
+                              "permalink": "pai/accesorios/accesorios_lavado_y_secado/secadoras",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:57.795Z",
+                              "updated_at": "2020-09-16T17:44:57.795Z",
+                              "ancestry": "5443",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5446,
+                          "name": "Accesorios para sistemas de cajón",
+                          "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.420Z",
+                          "updated_at": "2020-09-16T17:44:56.420Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5447,
+                              "name": "Envasadores al vacío",
+                              "permalink": "pai/accesorios/accesorios_para_sistemas_de_cajón/envasadores_al_vacío",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.429Z",
+                              "updated_at": "2020-09-16T17:44:56.429Z",
+                              "ancestry": "5446",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5448,
+                          "name": "Inducción",
+                          "permalink": "pai/accesorios/inducción",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.553Z",
+                          "updated_at": "2020-09-16T17:44:56.553Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5449,
+                              "name": "Inducción",
+                              "permalink": "pai/accesorios/inducción/inducción",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.565Z",
+                              "updated_at": "2020-09-16T17:44:56.565Z",
+                              "ancestry": "5448",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5452,
+                          "name": "Accesorios máquinas de café",
+                          "permalink": "pai/accesorios/accesorios_máquinas_de_café",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:56.711Z",
+                          "updated_at": "2020-09-16T17:44:56.711Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5453,
+                              "name": "Café en grano",
+                              "permalink": "pai/accesorios/accesorios_máquinas_de_café/café_en_grano",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.727Z",
+                              "updated_at": "2020-09-16T17:44:56.727Z",
+                              "ancestry": "5452",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5456,
+                              "name": "Accesorios máquinas independientes",
+                              "permalink": "pai/accesorios/accesorios_máquinas_de_café/accesorios_máquinas_independientes",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:56.930Z",
+                              "updated_at": "2020-09-16T17:44:56.930Z",
+                              "ancestry": "5452",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5460,
+                          "name": "Accesorios para refrigeración",
+                          "permalink": "pai/accesorios/accesorios_para_refrigeración",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-16T17:44:57.910Z",
+                          "updated_at": "2020-09-16T17:44:57.910Z",
+                          "ancestry": "5433",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5461,
+                              "name": "filtritos",
+                              "permalink": "pai/accesorios/accesorios_para_refrigeración/filtros_de_refrigeración",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-16T17:44:57.919Z",
+                              "updated_at": "2020-11-05T15:29:33.238Z",
+                              "ancestry": "5460",
+                              "alias": "filtritos",
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5293,
+                      "name": "Productos de Limpieza",
+                      "permalink": "pai/productos_de_limpieza",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.398Z",
+                      "updated_at": "2020-09-07T13:47:02.398Z",
+                      "ancestry": "5239",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5294,
+                          "name": "Cuidado de productos",
+                          "permalink": "pai/productos_de_limpieza/cuidado_de_productos",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.410Z",
+                          "updated_at": "2020-09-07T13:47:02.410Z",
+                          "ancestry": "5293",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5295,
+                              "name": "Cuidado de productos",
+                              "permalink": "pai/productos_de_limpieza/cuidado_de_productos/cuidado_de_productos",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.423Z",
+                              "updated_at": "2020-09-07T13:47:02.423Z",
+                              "ancestry": "5294",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5297,
+                          "name": "Detergentes Lavadora",
+                          "permalink": "pai/productos_de_limpieza/detergentes_lavadora",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.463Z",
+                          "updated_at": "2020-09-07T13:47:02.463Z",
+                          "ancestry": "5293",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5298,
+                              "name": "Capsulas Miele",
+                              "permalink": "pai/productos_de_limpieza/detergentes_lavadora/capsulas_miele",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.474Z",
+                              "updated_at": "2020-09-07T13:47:02.474Z",
+                              "ancestry": "5297",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5301,
+                              "name": "Detergentes en polvo",
+                              "permalink": "pai/productos_de_limpieza/detergentes_lavadora/detergentes_en_polvo",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.674Z",
+                              "updated_at": "2020-09-07T13:47:02.674Z",
+                              "ancestry": "5297",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5304,
+                              "name": "Detergentes líquidos",
+                              "permalink": "pai/productos_de_limpieza/detergentes_lavadora/detergentes_líquidos",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.783Z",
+                              "updated_at": "2020-09-07T13:47:02.783Z",
+                              "ancestry": "5297",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5299,
+                          "name": "Detergentes Lavavajillas",
+                          "permalink": "pai/productos_de_limpieza/detergentes_lavavajillas",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.639Z",
+                          "updated_at": "2020-09-07T13:47:02.639Z",
+                          "ancestry": "5293",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5300,
+                              "name": "Detergentes Lavavajillas",
+                              "permalink": "pai/productos_de_limpieza/detergentes_lavavajillas/detergentes_lavavajillas",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.651Z",
+                              "updated_at": "2020-09-07T13:47:02.651Z",
+                              "ancestry": "5299",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5305,
+                          "name": "Fragancias Secadora",
+                          "permalink": "pai/productos_de_limpieza/fragancias_secadora",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.849Z",
+                          "updated_at": "2020-09-07T13:47:02.849Z",
+                          "ancestry": "5293",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5306,
+                              "name": "Fragancias Secadora",
+                              "permalink": "pai/productos_de_limpieza/fragancias_secadora/fragancias_secadora",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.862Z",
+                              "updated_at": "2020-09-07T13:47:02.862Z",
+                              "ancestry": "5305",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5291,
+                  "name": "Accesorios para aspiradoras",
+                  "permalink": "pai/accesorios/accesorios_para_aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:02.369Z",
+                  "updated_at": "2020-09-07T13:47:02.369Z",
+                  "ancestry": "5240",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5292,
+                      "name": "Filtros de aspiradora",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.385Z",
+                      "updated_at": "2020-09-07T13:47:02.385Z",
+                      "ancestry": "5291",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5296,
+                      "name": "Bolsas recoge polvo Miele",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/bolsas_recoge_polvo_miele",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:02.445Z",
+                      "updated_at": "2020-09-07T13:47:02.445Z",
+                      "ancestry": "5291",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5317,
+                      "name": "Toberas y boquillas",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/toberas_y_boquillas",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.415Z",
+                      "updated_at": "2020-09-07T13:47:03.415Z",
+                      "ancestry": "5291",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5324,
+                      "name": "Accesorios aspiradora robot",
+                      "permalink": "pai/accesorios/accesorios_para_aspiradoras/accesorios_aspiradora_robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.664Z",
+                      "updated_at": "2020-09-07T13:47:03.664Z",
+                      "ancestry": "5291",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5292,
+                  "name": "Filtros de aspiradora",
+                  "permalink": "pai/accesorios/accesorios_para_aspiradoras/filtros_de_aspiradora",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:02.385Z",
+                  "updated_at": "2020-09-07T13:47:02.385Z",
+                  "ancestry": "5291",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 377,
+                  "country_id": 2,
+                  "product_id": 204,
+                  "price": 44900,
+                  "sale_price": 44900,
+                  "created_at": "2020-12-03T19:39:53.221Z",
+                  "updated_at": "2020-12-03T19:39:53.221Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2020-09-02T20:07:18.167Z",
+                    "updated_at": "2020-12-29T21:50:49.779Z",
+                    "iva": 0.19
+                  }
+                },
+                {
+                  "id": 378,
+                  "country_id": 1,
+                  "product_id": 204,
+                  "price": 6200,
+                  "sale_price": 6200,
+                  "created_at": "2020-12-03T19:39:53.229Z",
+                  "updated_at": "2020-12-03T19:39:53.229Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2020-09-02T20:07:18.160Z",
+                    "updated_at": "2020-12-29T21:50:49.783Z",
+                    "iva": 0.16
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        },
+        {
+          "id": 33,
+          "customer_product_id": 66,
+          "policy_id": 9,
+          "created_at": "2020-12-30T20:34:39.855Z",
+          "updated_at": "2020-12-30T20:34:39.855Z",
+          "status": "Inactivo",
+          "visits": 0,
+          "customer_product": {
+            "id": 66,
+            "customer_id": 49,
+            "product_id": 5,
+            "created_at": "2020-11-19T20:15:57.311Z",
+            "updated_at": "2020-12-29T20:31:36.296Z",
+            "status": "Inicial",
+            "warranty": "1/1/1990",
+            "policy": "S/N",
+            "serial_id": "1234",
+            "discontinued": false,
+            "instalation_date": "2020-12-29",
+            "reinstalation_date": "2020-12-31",
+            "product": {
+              "id": 5,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "10515060",
+              "ean": "004859EEEEQ129078",
+              "profit_center": "419",
+              "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+              "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+              "mandatory": true,
+              "product_type": "Limpieza",
+              "created_at": "2020-10-05T22:38:36.457Z",
+              "updated_at": "2020-12-02T14:22:12.872Z",
+              "additional": false,
+              "home_program_hours": 1,
+              "taxons": [
+                {
+                  "id": 5481,
+                  "name": "Limpieza",
+                  "permalink": "sda/test/limpieza",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.279Z",
+                  "updated_at": "2020-11-27T14:49:27.279Z",
+                  "ancestry": "5478",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5482,
+                      "name": "test2",
+                      "permalink": "sda/test/limpieza/test2",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T14:49:27.301Z",
+                      "updated_at": "2020-11-27T14:49:27.301Z",
+                      "ancestry": "5481",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5483,
+                          "name": "test especifico",
+                          "permalink": "sda/test/limpieza/test2/test_especifico",
+                          "taxonomy_id": 3,
+                          "created_at": "2020-11-27T15:09:51.396Z",
+                          "updated_at": "2020-11-27T15:09:51.396Z",
+                          "ancestry": "5482",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5276,
+                  "name": "Limpieza",
+                  "permalink": "sda",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.927Z",
+                  "updated_at": "2020-11-18T14:17:18.435Z",
+                  "ancestry": null,
+                  "alias": "Limpieza",
+                  "children_set": [
+                    {
+                      "id": 5277,
+                      "name": "Máquinas de café",
+                      "permalink": "sda/máquinas_de_café",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.938Z",
+                      "updated_at": "2020-09-07T13:47:01.938Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5278,
+                          "name": "Empotrables",
+                          "permalink": "sda/máquinas_de_café/empotrables",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:01.949Z",
+                          "updated_at": "2020-09-07T13:47:01.949Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5288,
+                          "name": "Independiente",
+                          "permalink": "sda/máquinas_de_café/independiente",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.273Z",
+                          "updated_at": "2020-09-07T13:47:02.273Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5318,
+                      "name": "Aspiradoras",
+                      "permalink": "sda/aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.446Z",
+                      "updated_at": "2020-09-07T13:47:03.446Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5319,
+                          "name": "Sin bolsa",
+                          "permalink": "sda/aspiradoras/sin_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.458Z",
+                          "updated_at": "2020-09-07T13:47:03.458Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5326,
+                          "name": "Robot",
+                          "permalink": "sda/aspiradoras/robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.811Z",
+                          "updated_at": "2020-09-07T13:47:03.811Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5330,
+                          "name": "Con bolsa",
+                          "permalink": "sda/aspiradoras/con_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:04.077Z",
+                          "updated_at": "2020-09-07T13:47:04.077Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 3,
+                  "country_id": 2,
+                  "product_id": 5,
+                  "price": 499900,
+                  "sale_price": 499900,
+                  "created_at": "2020-11-12T21:36:30.286Z",
+                  "updated_at": "2020-11-12T21:36:30.286Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2020-09-02T20:07:18.167Z",
+                    "updated_at": "2020-12-29T21:50:49.779Z",
+                    "iva": 0.19
+                  }
+                },
+                {
+                  "id": 4,
+                  "country_id": 1,
+                  "product_id": 5,
+                  "price": 6999,
+                  "sale_price": 6999,
+                  "created_at": "2020-11-12T21:36:30.295Z",
+                  "updated_at": "2020-11-12T21:36:30.295Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2020-09-02T20:07:18.160Z",
+                    "updated_at": "2020-12-29T21:50:49.783Z",
+                    "iva": 0.16
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        }
+      ],
+      "customer": {
+        "id": 49,
+        "names": "Cliente",
+        "lastname": "Mexicano",
+        "surname": "Test",
+        "email": "test@garagelabs.cl",
+        "zipcode": "01160",
+        "state": "109328",
+        "delegation": "Álvaro Obregón",
+        "colony": "1a Victoria",
+        "street_type": "Callejon",
+        "ext_number": "1234",
+        "int_number": "1234",
+        "phone": "(+52) 6 12312312",
+        "cellphone": "(+56) 21323123  ",
+        "reference": "REFERENCIA DE PRUEBA",
+        "business_name": "RZN PRUEBA",
+        "rfc": "test",
+        "email_fn": "mexico@test.cl",
+        "zipcode_fn": "01160",
+        "state_fn": "109328",
+        "delegation_fn": "Álvaro Obregón",
+        "colony_fn": "1a Victoria",
+        "street_type_fn": "Carretera",
+        "street_name_fn": "TEST CALLE",
+        "ext_number_fn": "1234",
+        "int_number_fn": "1234",
+        "phone_fn": "(+52) 6 12312312",
+        "created_at": "05/11/2020 19:23:28",
+        "updated_at": "05/11/2020 19:23:28",
+        "street_name": "TEST CALLE",
+        "person_type": "person_p",
+        "rut": "dasdasd",
+        "email2": "mexico@test.cl",
+        "commercial_business": "",
+        "country_id": 1,
+        "tradename": "",
+        "administrative_demarcation_id": 109328,
+        "administrative_demarcation_fn_id": 109328,
+        "country": {
+          "id": 1,
+          "name": "México",
+          "iso": "MX",
+          "created_at": "2020-09-02T20:07:18.160Z",
+          "updated_at": "2020-12-29T21:50:49.783Z",
+          "iva": 0.16
+        }
+      }
+    }
+  }

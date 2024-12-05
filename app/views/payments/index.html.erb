@@ -1,0 +1,11 @@
+<div class="error-image">
+    <div class="row text-center">
+        <%= image_tag('logo/logo.png', alt: 'miele', class: 'logo-miele center-logo')%>
+    </div>
+    
+    
+    <%= react_component("FlashMessages", { messages: flash}) %>
+    <%= react_component('payments/NewPayment', {payment: @payment, payment_amount: @payment_amount, is_quotation: @is_quotation, service_id: @service_id}) %>
+</div>
+
+

@@ -1,0 +1,1605 @@
+{
+    "data": {
+      "id": 24,
+      "service_id": 40,
+      "visit_id": 119,
+      "valid_until": "2021-06-30T15:50:03.556Z",
+      "created_at": "2021-06-15T15:50:03.556Z",
+      "updated_at": "2021-06-15T15:50:03.556Z",
+      "tm_background": null,
+      "cs_background": null,
+      "customer_background": null,
+      "labor_amount": 0,
+      "viatic_amount": 0,
+      "subtotal_amount": 0,
+      "iva_amount": 0,
+      "total_amount": 0,
+      "visit": {
+        "id": 119,
+        "principal_technician_id": "",
+        "total_time": null,
+        "confirmed": true,
+        "invoice": false,
+        "background": "Primera visita del servicio MTCL000040",
+        "created_at": "2021-06-15T15:49:11.602Z",
+        "updated_at": "2021-06-15T15:50:09.027Z",
+        "service_id": 40,
+        "start_time": "2021-06-15T15:50:01.898Z",
+        "finish_time": "2021-06-15T15:50:03.484Z",
+        "time_diff": 0,
+        "canceled_at": null,
+        "cancel_from": null,
+        "cancel_reason": null,
+        "arrival_time": null,
+        "arrival_time_diff": 0,
+        "payment_date": null,
+        "payment_state": "pending",
+        "status": "Visita completada",
+        "validated_payment": false,
+        "payment_channel": "",
+        "customer_payment_date": null,
+        "number": 1,
+        "hour_amount": 0,
+        "fee_amount": 0,
+        "total_hours": 0,
+        "total_amount": 0,
+        "subtotal_amount": 0,
+        "viatic_amount": 0,
+        "non_compliance": false,
+        "calendar_event": {
+          "id": 234,
+          "title": "Visita 1",
+          "start_date": "2021-06-20T15:00:00.000Z",
+          "finish_date": "2021-06-20T16:00:00.000Z",
+          "allDay": false,
+          "event_type": "Visit",
+          "description": "Visita 1 de servicio MTCL000040",
+          "created_at": "2021-06-15T15:49:23.002Z",
+          "updated_at": "2021-06-15T15:49:23.002Z",
+          "country_id": 2,
+          "object_id": null,
+          "service_id": 40,
+          "visit_id": 119,
+          "service_data": {
+            "customer_name": "TEST TEST TEST",
+            "selected_address": {
+              "name": "principal",
+              "zipcode": "8150000",
+              "state": "339",
+              "delegation": "",
+              "colony": "",
+              "street_name": "123123",
+              "street_type": "Av.",
+              "ext_number": "123",
+              "int_number": "2",
+              "country_id": 2,
+              "administrative_demarcation_id": 339,
+              "customer_id": 5,
+              "country": {
+                "id": 2,
+                "name": "Chile",
+                "iso": "CL",
+                "created_at": "2021-01-18T17:51:08.074Z",
+                "updated_at": "2021-01-18T17:51:08.089Z",
+                "iva": 0.19,
+                "time_zone": "Santiago"
+              },
+              "administrative_demarcation": {
+                "id": 339,
+                "admin_name_1": "Región de Magallanes y Antártica Chilena",
+                "admin_code_1": "10",
+                "admin_name_2": "Provincia de Última Esperanza",
+                "admin_code_2": "124",
+                "admin_name_3": "Natales",
+                "admin_code_3": "12401",
+                "place_name": "Natales",
+                "zipcode": "6160000",
+                "country_id": 2,
+                "created_at": "2021-01-19T13:32:02.004Z",
+                "updated_at": "2021-01-19T13:32:02.004Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2021-01-18T17:51:08.074Z",
+                  "updated_at": "2021-01-18T17:51:08.089Z",
+                  "iva": 0.19,
+                  "time_zone": "Santiago"
+                },
+                "admin3_admin1": "Natales, Región de Magallanes y Antártica Chilena",
+                "admin3_admin2_admin1": "Natales, Provincia de Última Esperanza, Región de Magallanes y Antártica Chilena",
+                "country_code": "CL",
+                "place_name_admin2_admin1": "Natales, Provincia de Última Esperanza Región de Magallanes y Antártica Chilena"
+              }
+            },
+            "id": 40,
+            "service_type": "Instalación",
+            "number": "MTCL000040",
+            "payment_state": "paid",
+            "status_label": "Finalizado",
+            "created_at": "15/06/2021 15:39:16",
+            "updated_at": "15/06/2021 15:39:16"
+          }
+        },
+        "status_label": "Visita completada",
+        "payment_resources": [],
+        "visit_number": 1,
+        "customer_products": [
+          {
+            "id": 10,
+            "customer_id": 5,
+            "product_id": 416,
+            "created_at": "2021-05-25T20:13:36.966Z",
+            "updated_at": "2021-05-25T20:13:36.966Z",
+            "status": "Inicial",
+            "warranty": null,
+            "policy": "S/N",
+            "serial_id": null,
+            "discontinued": false,
+            "instalation_date": null,
+            "reinstalation_date": null,
+            "technical_diagnosis": null,
+            "expert_opinion": null,
+            "activity_performed": null,
+            "pre_visit": false,
+            "product": {
+              "id": 416,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "9228950CL",
+              "ean": null,
+              "profit_center": null,
+              "name": "Encimera a Gas KM 3054 G Only CL",
+              "description": "Placa de gas con 5 quemadores base en vitrocerámica, para disfrutar de una máxima versatilidad a la hora de cocinar.",
+              "mandatory": null,
+              "product_type": null,
+              "created_at": "2021-05-25T17:01:00.188Z",
+              "updated_at": "2021-05-25T17:01:00.188Z",
+              "additional": false,
+              "home_program_hours": null,
+              "all_countries": false,
+              "taxons": [
+                {
+                  "id": 126,
+                  "name": "Cocina",
+                  "permalink": "cocina",
+                  "taxonomy_id": 2,
+                  "created_at": "2021-04-19T14:46:30.215Z",
+                  "updated_at": "2021-04-19T14:46:30.215Z",
+                  "ancestry": null,
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 504,
+                      "name": "Encimera2",
+                      "permalink": "cocina/encimera2",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-06-04T22:35:36.123Z",
+                      "updated_at": "2021-06-04T22:35:36.123Z",
+                      "ancestry": "126",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 505,
+                          "name": "Encimera3",
+                          "permalink": "cocina/encimera2/encimera3",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-06-04T22:35:36.153Z",
+                          "updated_at": "2021-06-04T22:35:36.153Z",
+                          "ancestry": "504",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 506,
+                              "name": "Encimera5",
+                              "permalink": "cocina/encimera2/encimera3/encimera5",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-06-04T22:35:36.177Z",
+                              "updated_at": "2021-06-04T22:35:36.177Z",
+                              "ancestry": "505",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 127,
+                      "name": "Gastronomía",
+                      "permalink": "cocina/gastronomía",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.233Z",
+                      "updated_at": "2021-04-19T14:46:30.233Z",
+                      "ancestry": "126",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 128,
+                          "name": "Hornos",
+                          "permalink": "cocina/gastronomía/hornos",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.245Z",
+                          "updated_at": "2021-04-19T14:46:30.245Z",
+                          "ancestry": "127",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 129,
+                              "name": "Hornos combinado a vapor",
+                              "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:30.257Z",
+                              "updated_at": "2021-04-19T14:46:30.257Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 170,
+                              "name": "Horno combinado con microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:34.894Z",
+                              "updated_at": "2021-04-19T14:46:34.894Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 171,
+                              "name": "Horno combinado vapor microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:35.129Z",
+                              "updated_at": "2021-04-19T14:46:35.129Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 219,
+                              "name": "Horno Microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.464Z",
+                              "updated_at": "2021-04-19T14:46:39.464Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 220,
+                              "name": "Horno Multifunción",
+                              "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.606Z",
+                              "updated_at": "2021-04-19T14:46:39.606Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 127,
+                  "name": "Gastronomía",
+                  "permalink": "cocina/gastronomía",
+                  "taxonomy_id": 2,
+                  "created_at": "2021-04-19T14:46:30.233Z",
+                  "updated_at": "2021-04-19T14:46:30.233Z",
+                  "ancestry": "126",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 128,
+                      "name": "Hornos",
+                      "permalink": "cocina/gastronomía/hornos",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.245Z",
+                      "updated_at": "2021-04-19T14:46:30.245Z",
+                      "ancestry": "127",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 129,
+                          "name": "Hornos combinado a vapor",
+                          "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.257Z",
+                          "updated_at": "2021-04-19T14:46:30.257Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 170,
+                          "name": "Horno combinado con microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:34.894Z",
+                          "updated_at": "2021-04-19T14:46:34.894Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 171,
+                          "name": "Horno combinado vapor microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:35.129Z",
+                          "updated_at": "2021-04-19T14:46:35.129Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 219,
+                          "name": "Horno Microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:39.464Z",
+                          "updated_at": "2021-04-19T14:46:39.464Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 220,
+                          "name": "Horno Multifunción",
+                          "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:39.606Z",
+                          "updated_at": "2021-04-19T14:46:39.606Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 21,
+                  "name": "Combiset",
+                  "permalink": "cocción/combiset",
+                  "taxonomy_id": 1,
+                  "created_at": "2021-02-16T15:49:49.470Z",
+                  "updated_at": "2021-02-16T15:49:49.470Z",
+                  "ancestry": "7",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 22,
+                      "name": "Extractor integrado en mesa",
+                      "permalink": "cocción/combiset/extractor_integrado_en_mesa",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.479Z",
+                      "updated_at": "2021-02-16T15:49:49.479Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 23,
+                      "name": "Gas",
+                      "permalink": "cocción/combiset/gas",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.502Z",
+                      "updated_at": "2021-02-16T15:49:49.502Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 24,
+                      "name": "Inducción",
+                      "permalink": "cocción/combiset/inducción",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.521Z",
+                      "updated_at": "2021-02-16T15:49:49.521Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 25,
+                      "name": "Eléctrico",
+                      "permalink": "cocción/combiset/eléctrico",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.541Z",
+                      "updated_at": "2021-02-16T15:49:49.541Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 832,
+                  "country_id": 1,
+                  "product_id": 416,
+                  "price": 7000,
+                  "sale_price": 7000,
+                  "created_at": "2021-05-25T17:01:00.294Z",
+                  "updated_at": "2021-05-25T17:01:00.294Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2021-01-18T17:51:08.068Z",
+                    "updated_at": "2021-01-18T17:51:08.098Z",
+                    "iva": 0.16,
+                    "time_zone": "Mexico City"
+                  }
+                },
+                {
+                  "id": 831,
+                  "country_id": 2,
+                  "product_id": 416,
+                  "price": 125000,
+                  "sale_price": 125000,
+                  "created_at": "2021-05-25T17:01:00.280Z",
+                  "updated_at": "2021-05-25T17:01:00.280Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2021-01-18T17:51:08.074Z",
+                    "updated_at": "2021-01-18T17:51:08.089Z",
+                    "iva": 0.19,
+                    "time_zone": "Santiago"
+                  }
+                }
+              ],
+              "country": null
+            },
+            "preVisit": false,
+            "customer_product_service_spare_parts": [],
+            "customer_product_checklists": []
+          }
+        ]
+      },
+      "service": {
+        "id": 40,
+        "customer_id": 5,
+        "address": "principal",
+        "service_type": "Instalación",
+        "subcategory": "Profesional",
+        "requested": "Cliente directo",
+        "request_channel": "Teléfono",
+        "distributor_name": "",
+        "distributor_email": "",
+        "created_at": "15/06/2021 15:39:16",
+        "updated_at": "15/06/2021 15:39:16",
+        "technicians_number": 0,
+        "hour_amount": 0,
+        "fee_amount": 1000,
+        "total_hours": 0,
+        "total_amount": 3243,
+        "status": "finished",
+        "background": "test",
+        "no_payment": true,
+        "payment_channel": "",
+        "payment_date": "2021-06-27",
+        "no_payment_reason": "Garantía de producto/manufactura",
+        "invoice": false,
+        "payment_state": "paid",
+        "job_id": "9b72e31dac81715466cd580a448cf823",
+        "number": "MTCL000040",
+        "address_fn": "principal",
+        "cancel_reason": null,
+        "background_cancel_service": null,
+        "customer_payment_date": null,
+        "ibs_number": "",
+        "spare_part_delivery_date": null,
+        "principal_technician": "",
+        "subtotal_amount": null,
+        "validated_payment": false,
+        "from": "app_web",
+        "policy_id": null,
+        "background_prediagnosis": "",
+        "completed_at": "2021-06-15T15:50:09.001Z",
+        "quotation_status": "",
+        "customer_products": [
+          {
+            "id": 10,
+            "customer_id": 5,
+            "product_id": 416,
+            "created_at": "2021-05-25T20:13:36.966Z",
+            "updated_at": "2021-05-25T20:13:36.966Z",
+            "status": "Inicial",
+            "warranty": null,
+            "policy": "S/N",
+            "serial_id": null,
+            "discontinued": false,
+            "instalation_date": null,
+            "reinstalation_date": null,
+            "technical_diagnosis": null,
+            "expert_opinion": null,
+            "activity_performed": null,
+            "pre_visit": false,
+            "product": {
+              "id": 416,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "9228950CL",
+              "ean": null,
+              "profit_center": null,
+              "name": "Encimera a Gas KM 3054 G Only CL",
+              "description": "Placa de gas con 5 quemadores base en vitrocerámica, para disfrutar de una máxima versatilidad a la hora de cocinar.",
+              "mandatory": null,
+              "product_type": null,
+              "created_at": "2021-05-25T17:01:00.188Z",
+              "updated_at": "2021-05-25T17:01:00.188Z",
+              "additional": false,
+              "home_program_hours": null,
+              "all_countries": false,
+              "taxons": [
+                {
+                  "id": 126,
+                  "name": "Cocina",
+                  "permalink": "cocina",
+                  "taxonomy_id": 2,
+                  "created_at": "2021-04-19T14:46:30.215Z",
+                  "updated_at": "2021-04-19T14:46:30.215Z",
+                  "ancestry": null,
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 504,
+                      "name": "Encimera2",
+                      "permalink": "cocina/encimera2",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-06-04T22:35:36.123Z",
+                      "updated_at": "2021-06-04T22:35:36.123Z",
+                      "ancestry": "126",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 505,
+                          "name": "Encimera3",
+                          "permalink": "cocina/encimera2/encimera3",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-06-04T22:35:36.153Z",
+                          "updated_at": "2021-06-04T22:35:36.153Z",
+                          "ancestry": "504",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 506,
+                              "name": "Encimera5",
+                              "permalink": "cocina/encimera2/encimera3/encimera5",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-06-04T22:35:36.177Z",
+                              "updated_at": "2021-06-04T22:35:36.177Z",
+                              "ancestry": "505",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 127,
+                      "name": "Gastronomía",
+                      "permalink": "cocina/gastronomía",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.233Z",
+                      "updated_at": "2021-04-19T14:46:30.233Z",
+                      "ancestry": "126",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 128,
+                          "name": "Hornos",
+                          "permalink": "cocina/gastronomía/hornos",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.245Z",
+                          "updated_at": "2021-04-19T14:46:30.245Z",
+                          "ancestry": "127",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 129,
+                              "name": "Hornos combinado a vapor",
+                              "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:30.257Z",
+                              "updated_at": "2021-04-19T14:46:30.257Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 170,
+                              "name": "Horno combinado con microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:34.894Z",
+                              "updated_at": "2021-04-19T14:46:34.894Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 171,
+                              "name": "Horno combinado vapor microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:35.129Z",
+                              "updated_at": "2021-04-19T14:46:35.129Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 219,
+                              "name": "Horno Microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.464Z",
+                              "updated_at": "2021-04-19T14:46:39.464Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 220,
+                              "name": "Horno Multifunción",
+                              "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.606Z",
+                              "updated_at": "2021-04-19T14:46:39.606Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 127,
+                  "name": "Gastronomía",
+                  "permalink": "cocina/gastronomía",
+                  "taxonomy_id": 2,
+                  "created_at": "2021-04-19T14:46:30.233Z",
+                  "updated_at": "2021-04-19T14:46:30.233Z",
+                  "ancestry": "126",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 128,
+                      "name": "Hornos",
+                      "permalink": "cocina/gastronomía/hornos",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.245Z",
+                      "updated_at": "2021-04-19T14:46:30.245Z",
+                      "ancestry": "127",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 129,
+                          "name": "Hornos combinado a vapor",
+                          "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.257Z",
+                          "updated_at": "2021-04-19T14:46:30.257Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 170,
+                          "name": "Horno combinado con microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:34.894Z",
+                          "updated_at": "2021-04-19T14:46:34.894Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 171,
+                          "name": "Horno combinado vapor microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:35.129Z",
+                          "updated_at": "2021-04-19T14:46:35.129Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 219,
+                          "name": "Horno Microondas",
+                          "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:39.464Z",
+                          "updated_at": "2021-04-19T14:46:39.464Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 220,
+                          "name": "Horno Multifunción",
+                          "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:39.606Z",
+                          "updated_at": "2021-04-19T14:46:39.606Z",
+                          "ancestry": "128",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 21,
+                  "name": "Combiset",
+                  "permalink": "cocción/combiset",
+                  "taxonomy_id": 1,
+                  "created_at": "2021-02-16T15:49:49.470Z",
+                  "updated_at": "2021-02-16T15:49:49.470Z",
+                  "ancestry": "7",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 22,
+                      "name": "Extractor integrado en mesa",
+                      "permalink": "cocción/combiset/extractor_integrado_en_mesa",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.479Z",
+                      "updated_at": "2021-02-16T15:49:49.479Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 23,
+                      "name": "Gas",
+                      "permalink": "cocción/combiset/gas",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.502Z",
+                      "updated_at": "2021-02-16T15:49:49.502Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 24,
+                      "name": "Inducción",
+                      "permalink": "cocción/combiset/inducción",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.521Z",
+                      "updated_at": "2021-02-16T15:49:49.521Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 25,
+                      "name": "Eléctrico",
+                      "permalink": "cocción/combiset/eléctrico",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.541Z",
+                      "updated_at": "2021-02-16T15:49:49.541Z",
+                      "ancestry": "21",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 832,
+                  "country_id": 1,
+                  "product_id": 416,
+                  "price": 7000,
+                  "sale_price": 7000,
+                  "created_at": "2021-05-25T17:01:00.294Z",
+                  "updated_at": "2021-05-25T17:01:00.294Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2021-01-18T17:51:08.068Z",
+                    "updated_at": "2021-01-18T17:51:08.098Z",
+                    "iva": 0.16,
+                    "time_zone": "Mexico City"
+                  }
+                },
+                {
+                  "id": 831,
+                  "country_id": 2,
+                  "product_id": 416,
+                  "price": 125000,
+                  "sale_price": 125000,
+                  "created_at": "2021-05-25T17:01:00.280Z",
+                  "updated_at": "2021-05-25T17:01:00.280Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2021-01-18T17:51:08.074Z",
+                    "updated_at": "2021-01-18T17:51:08.089Z",
+                    "iva": 0.19,
+                    "time_zone": "Santiago"
+                  }
+                }
+              ],
+              "country": null
+            },
+            "preVisit": false,
+            "customer_product_service_spare_parts": [],
+            "customer_product_checklists": []
+          }
+        ],
+        "spare_parts": [],
+        "calendar_events": [
+          {
+            "id": 233,
+            "title": "Agendamiento de servicio",
+            "start_date": "2021-06-20T15:00:00.000Z",
+            "finish_date": "2021-06-20T16:00:00.000Z",
+            "allDay": false,
+            "event_type": "Service_Schedule",
+            "description": "Agendamiento del servicio MTCL000040 Instalación para cliente TEST TEST TEST</br>Estado: Pre-agendado</br>Pagado: No",
+            "created_at": "2021-06-15T15:49:22.958Z",
+            "updated_at": "2021-06-15T15:49:22.958Z",
+            "country_id": 2,
+            "object_id": "1",
+            "service_id": 40,
+            "visit_id": null,
+            "service_data": {
+              "customer_name": "TEST TEST TEST",
+              "selected_address": {
+                "name": "principal",
+                "zipcode": "8150000",
+                "state": "339",
+                "delegation": "",
+                "colony": "",
+                "street_name": "123123",
+                "street_type": "Av.",
+                "ext_number": "123",
+                "int_number": "2",
+                "country_id": 2,
+                "administrative_demarcation_id": 339,
+                "customer_id": 5,
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2021-01-18T17:51:08.074Z",
+                  "updated_at": "2021-01-18T17:51:08.089Z",
+                  "iva": 0.19,
+                  "time_zone": "Santiago"
+                },
+                "administrative_demarcation": {
+                  "id": 339,
+                  "admin_name_1": "Región de Magallanes y Antártica Chilena",
+                  "admin_code_1": "10",
+                  "admin_name_2": "Provincia de Última Esperanza",
+                  "admin_code_2": "124",
+                  "admin_name_3": "Natales",
+                  "admin_code_3": "12401",
+                  "place_name": "Natales",
+                  "zipcode": "6160000",
+                  "country_id": 2,
+                  "created_at": "2021-01-19T13:32:02.004Z",
+                  "updated_at": "2021-01-19T13:32:02.004Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2021-01-18T17:51:08.074Z",
+                    "updated_at": "2021-01-18T17:51:08.089Z",
+                    "iva": 0.19,
+                    "time_zone": "Santiago"
+                  },
+                  "admin3_admin1": "Natales, Región de Magallanes y Antártica Chilena",
+                  "admin3_admin2_admin1": "Natales, Provincia de Última Esperanza, Región de Magallanes y Antártica Chilena",
+                  "country_code": "CL",
+                  "place_name_admin2_admin1": "Natales, Provincia de Última Esperanza Región de Magallanes y Antártica Chilena"
+                }
+              },
+              "id": 40,
+              "service_type": "Instalación",
+              "number": "MTCL000040",
+              "payment_state": "paid",
+              "status_label": "Finalizado",
+              "created_at": "15/06/2021 15:39:16",
+              "updated_at": "15/06/2021 15:39:16"
+            }
+          }
+        ],
+        "file_resources": [],
+        "payment_resources": [],
+        "status_label": "Finalizado",
+        "visit_numb": null,
+        "new_visit": {
+          "id": 118,
+          "principal_technician_id": null,
+          "total_time": null,
+          "confirmed": false,
+          "invoice": false,
+          "background": null,
+          "created_at": "2021-06-15T15:39:16.281Z",
+          "updated_at": "2021-06-15T15:39:16.281Z",
+          "service_id": 40,
+          "start_time": null,
+          "finish_time": null,
+          "time_diff": 0,
+          "canceled_at": null,
+          "cancel_from": null,
+          "cancel_reason": null,
+          "arrival_time": null,
+          "arrival_time_diff": 0,
+          "payment_date": null,
+          "payment_state": "pending",
+          "status": "new",
+          "validated_payment": false,
+          "payment_channel": null,
+          "customer_payment_date": null,
+          "number": 1,
+          "hour_amount": 0,
+          "fee_amount": 0,
+          "total_hours": 0,
+          "total_amount": 0,
+          "subtotal_amount": 0,
+          "viatic_amount": 0,
+          "non_compliance": false,
+          "calendar_event": null,
+          "status_label": "Pre-agendada",
+          "payment_resources": [],
+          "visit_number": 1
+        },
+        "current_survey": {
+          "id": 27,
+          "status": "Realizadas",
+          "service_id": 40,
+          "customer_id": 5,
+          "background": "ssdasadsad",
+          "created_at": "2021-06-15T15:39:16.325Z",
+          "updated_at": "2021-06-15T16:00:07.498Z",
+          "status_label": "Realizadas",
+          "survey_answers": [
+            {
+              "id": 57,
+              "survey_id": 27,
+              "survey_question_id": 1,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.511Z",
+              "updated_at": "2021-06-15T16:00:07.511Z"
+            },
+            {
+              "id": 58,
+              "survey_id": 27,
+              "survey_question_id": 2,
+              "answer": "2",
+              "created_at": "2021-06-15T16:00:07.529Z",
+              "updated_at": "2021-06-15T16:00:07.529Z"
+            },
+            {
+              "id": 59,
+              "survey_id": 27,
+              "survey_question_id": 3,
+              "answer": "2",
+              "created_at": "2021-06-15T16:00:07.547Z",
+              "updated_at": "2021-06-15T16:00:07.547Z"
+            },
+            {
+              "id": 60,
+              "survey_id": 27,
+              "survey_question_id": 4,
+              "answer": "2",
+              "created_at": "2021-06-15T16:00:07.561Z",
+              "updated_at": "2021-06-15T16:00:07.561Z"
+            },
+            {
+              "id": 61,
+              "survey_id": 27,
+              "survey_question_id": 5,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.571Z",
+              "updated_at": "2021-06-15T16:00:07.571Z"
+            },
+            {
+              "id": 62,
+              "survey_id": 27,
+              "survey_question_id": 6,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.583Z",
+              "updated_at": "2021-06-15T16:00:07.583Z"
+            },
+            {
+              "id": 63,
+              "survey_id": 27,
+              "survey_question_id": 7,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.591Z",
+              "updated_at": "2021-06-15T16:00:07.591Z"
+            },
+            {
+              "id": 64,
+              "survey_id": 27,
+              "survey_question_id": 8,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.604Z",
+              "updated_at": "2021-06-15T16:00:07.604Z"
+            },
+            {
+              "id": 65,
+              "survey_id": 27,
+              "survey_question_id": 9,
+              "answer": "2",
+              "created_at": "2021-06-15T16:00:07.615Z",
+              "updated_at": "2021-06-15T16:00:07.615Z"
+            },
+            {
+              "id": 66,
+              "survey_id": 27,
+              "survey_question_id": 10,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.624Z",
+              "updated_at": "2021-06-15T16:00:07.624Z"
+            },
+            {
+              "id": 67,
+              "survey_id": 27,
+              "survey_question_id": 11,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.633Z",
+              "updated_at": "2021-06-15T16:00:07.633Z"
+            },
+            {
+              "id": 68,
+              "survey_id": 27,
+              "survey_question_id": 12,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.645Z",
+              "updated_at": "2021-06-15T16:00:07.645Z"
+            },
+            {
+              "id": 69,
+              "survey_id": 27,
+              "survey_question_id": 13,
+              "answer": "2",
+              "created_at": "2021-06-15T16:00:07.655Z",
+              "updated_at": "2021-06-15T16:00:07.655Z"
+            },
+            {
+              "id": 70,
+              "survey_id": 27,
+              "survey_question_id": 14,
+              "answer": "3",
+              "created_at": "2021-06-15T16:00:07.665Z",
+              "updated_at": "2021-06-15T16:00:07.665Z"
+            }
+          ]
+        },
+        "visits": [
+          {
+            "id": 119,
+            "principal_technician_id": "",
+            "total_time": null,
+            "confirmed": true,
+            "invoice": false,
+            "background": "Primera visita del servicio MTCL000040",
+            "created_at": "2021-06-15T15:49:11.602Z",
+            "updated_at": "2021-06-15T15:50:09.027Z",
+            "service_id": 40,
+            "start_time": "2021-06-15T15:50:01.898Z",
+            "finish_time": "2021-06-15T15:50:03.484Z",
+            "time_diff": 0,
+            "canceled_at": null,
+            "cancel_from": null,
+            "cancel_reason": null,
+            "arrival_time": null,
+            "arrival_time_diff": 0,
+            "payment_date": null,
+            "payment_state": "pending",
+            "status": "Visita completada",
+            "validated_payment": false,
+            "payment_channel": "",
+            "customer_payment_date": null,
+            "number": 1,
+            "hour_amount": 0,
+            "fee_amount": 0,
+            "total_hours": 0,
+            "total_amount": 0,
+            "subtotal_amount": 0,
+            "viatic_amount": 0,
+            "non_compliance": false,
+            "calendar_event": {
+              "id": 234,
+              "title": "Visita 1",
+              "start_date": "2021-06-20T15:00:00.000Z",
+              "finish_date": "2021-06-20T16:00:00.000Z",
+              "allDay": false,
+              "event_type": "Visit",
+              "description": "Visita 1 de servicio MTCL000040",
+              "created_at": "2021-06-15T15:49:23.002Z",
+              "updated_at": "2021-06-15T15:49:23.002Z",
+              "country_id": 2,
+              "object_id": null,
+              "service_id": 40,
+              "visit_id": 119,
+              "service_data": {
+                "customer_name": "TEST TEST TEST",
+                "selected_address": {
+                  "name": "principal",
+                  "zipcode": "8150000",
+                  "state": "339",
+                  "delegation": "",
+                  "colony": "",
+                  "street_name": "123123",
+                  "street_type": "Av.",
+                  "ext_number": "123",
+                  "int_number": "2",
+                  "country_id": 2,
+                  "administrative_demarcation_id": 339,
+                  "customer_id": 5,
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2021-01-18T17:51:08.074Z",
+                    "updated_at": "2021-01-18T17:51:08.089Z",
+                    "iva": 0.19,
+                    "time_zone": "Santiago"
+                  },
+                  "administrative_demarcation": {
+                    "id": 339,
+                    "admin_name_1": "Región de Magallanes y Antártica Chilena",
+                    "admin_code_1": "10",
+                    "admin_name_2": "Provincia de Última Esperanza",
+                    "admin_code_2": "124",
+                    "admin_name_3": "Natales",
+                    "admin_code_3": "12401",
+                    "place_name": "Natales",
+                    "zipcode": "6160000",
+                    "country_id": 2,
+                    "created_at": "2021-01-19T13:32:02.004Z",
+                    "updated_at": "2021-01-19T13:32:02.004Z",
+                    "country": {
+                      "id": 2,
+                      "name": "Chile",
+                      "iso": "CL",
+                      "created_at": "2021-01-18T17:51:08.074Z",
+                      "updated_at": "2021-01-18T17:51:08.089Z",
+                      "iva": 0.19,
+                      "time_zone": "Santiago"
+                    },
+                    "admin3_admin1": "Natales, Región de Magallanes y Antártica Chilena",
+                    "admin3_admin2_admin1": "Natales, Provincia de Última Esperanza, Región de Magallanes y Antártica Chilena",
+                    "country_code": "CL",
+                    "place_name_admin2_admin1": "Natales, Provincia de Última Esperanza Región de Magallanes y Antártica Chilena"
+                  }
+                },
+                "id": 40,
+                "service_type": "Instalación",
+                "number": "MTCL000040",
+                "payment_state": "paid",
+                "status_label": "Finalizado",
+                "created_at": "15/06/2021 15:39:16",
+                "updated_at": "15/06/2021 15:39:16"
+              }
+            },
+            "status_label": "Visita completada",
+            "payment_resources": [],
+            "visit_number": 1,
+            "customer_products": [
+              {
+                "id": 10,
+                "customer_id": 5,
+                "product_id": 416,
+                "created_at": "2021-05-25T20:13:36.966Z",
+                "updated_at": "2021-05-25T20:13:36.966Z",
+                "status": "Inicial",
+                "warranty": null,
+                "policy": "S/N",
+                "serial_id": null,
+                "discontinued": false,
+                "instalation_date": null,
+                "reinstalation_date": null,
+                "technical_diagnosis": null,
+                "expert_opinion": null,
+                "activity_performed": null,
+                "pre_visit": false,
+                "product": {
+                  "id": 416,
+                  "country_id": null,
+                  "platform": "Tickets",
+                  "tnr": "9228950CL",
+                  "ean": null,
+                  "profit_center": null,
+                  "name": "Encimera a Gas KM 3054 G Only CL",
+                  "description": "Placa de gas con 5 quemadores base en vitrocerámica, para disfrutar de una máxima versatilidad a la hora de cocinar.",
+                  "mandatory": null,
+                  "product_type": null,
+                  "created_at": "2021-05-25T17:01:00.188Z",
+                  "updated_at": "2021-05-25T17:01:00.188Z",
+                  "additional": false,
+                  "home_program_hours": null,
+                  "all_countries": false,
+                  "taxons": [
+                    {
+                      "id": 126,
+                      "name": "Cocina",
+                      "permalink": "cocina",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.215Z",
+                      "updated_at": "2021-04-19T14:46:30.215Z",
+                      "ancestry": null,
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 504,
+                          "name": "Encimera2",
+                          "permalink": "cocina/encimera2",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-06-04T22:35:36.123Z",
+                          "updated_at": "2021-06-04T22:35:36.123Z",
+                          "ancestry": "126",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 505,
+                              "name": "Encimera3",
+                              "permalink": "cocina/encimera2/encimera3",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-06-04T22:35:36.153Z",
+                              "updated_at": "2021-06-04T22:35:36.153Z",
+                              "ancestry": "504",
+                              "alias": null,
+                              "children_set": [
+                                {
+                                  "id": 506,
+                                  "name": "Encimera5",
+                                  "permalink": "cocina/encimera2/encimera3/encimera5",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-06-04T22:35:36.177Z",
+                                  "updated_at": "2021-06-04T22:35:36.177Z",
+                                  "ancestry": "505",
+                                  "alias": null,
+                                  "children_set": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": 127,
+                          "name": "Gastronomía",
+                          "permalink": "cocina/gastronomía",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.233Z",
+                          "updated_at": "2021-04-19T14:46:30.233Z",
+                          "ancestry": "126",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 128,
+                              "name": "Hornos",
+                              "permalink": "cocina/gastronomía/hornos",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:30.245Z",
+                              "updated_at": "2021-04-19T14:46:30.245Z",
+                              "ancestry": "127",
+                              "alias": null,
+                              "children_set": [
+                                {
+                                  "id": 129,
+                                  "name": "Hornos combinado a vapor",
+                                  "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-04-19T14:46:30.257Z",
+                                  "updated_at": "2021-04-19T14:46:30.257Z",
+                                  "ancestry": "128",
+                                  "alias": null,
+                                  "children_set": []
+                                },
+                                {
+                                  "id": 170,
+                                  "name": "Horno combinado con microondas",
+                                  "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-04-19T14:46:34.894Z",
+                                  "updated_at": "2021-04-19T14:46:34.894Z",
+                                  "ancestry": "128",
+                                  "alias": null,
+                                  "children_set": []
+                                },
+                                {
+                                  "id": 171,
+                                  "name": "Horno combinado vapor microondas",
+                                  "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-04-19T14:46:35.129Z",
+                                  "updated_at": "2021-04-19T14:46:35.129Z",
+                                  "ancestry": "128",
+                                  "alias": null,
+                                  "children_set": []
+                                },
+                                {
+                                  "id": 219,
+                                  "name": "Horno Microondas",
+                                  "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-04-19T14:46:39.464Z",
+                                  "updated_at": "2021-04-19T14:46:39.464Z",
+                                  "ancestry": "128",
+                                  "alias": null,
+                                  "children_set": []
+                                },
+                                {
+                                  "id": 220,
+                                  "name": "Horno Multifunción",
+                                  "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                                  "taxonomy_id": 2,
+                                  "created_at": "2021-04-19T14:46:39.606Z",
+                                  "updated_at": "2021-04-19T14:46:39.606Z",
+                                  "ancestry": "128",
+                                  "alias": null,
+                                  "children_set": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 127,
+                      "name": "Gastronomía",
+                      "permalink": "cocina/gastronomía",
+                      "taxonomy_id": 2,
+                      "created_at": "2021-04-19T14:46:30.233Z",
+                      "updated_at": "2021-04-19T14:46:30.233Z",
+                      "ancestry": "126",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 128,
+                          "name": "Hornos",
+                          "permalink": "cocina/gastronomía/hornos",
+                          "taxonomy_id": 2,
+                          "created_at": "2021-04-19T14:46:30.245Z",
+                          "updated_at": "2021-04-19T14:46:30.245Z",
+                          "ancestry": "127",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 129,
+                              "name": "Hornos combinado a vapor",
+                              "permalink": "cocina/gastronomía/hornos/hornos_combinado_a_vapor",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:30.257Z",
+                              "updated_at": "2021-04-19T14:46:30.257Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 170,
+                              "name": "Horno combinado con microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_con_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:34.894Z",
+                              "updated_at": "2021-04-19T14:46:34.894Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 171,
+                              "name": "Horno combinado vapor microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_combinado_vapor_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:35.129Z",
+                              "updated_at": "2021-04-19T14:46:35.129Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 219,
+                              "name": "Horno Microondas",
+                              "permalink": "cocina/gastronomía/hornos/horno_microondas",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.464Z",
+                              "updated_at": "2021-04-19T14:46:39.464Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 220,
+                              "name": "Horno Multifunción",
+                              "permalink": "cocina/gastronomía/hornos/horno_multifunción",
+                              "taxonomy_id": 2,
+                              "created_at": "2021-04-19T14:46:39.606Z",
+                              "updated_at": "2021-04-19T14:46:39.606Z",
+                              "ancestry": "128",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 21,
+                      "name": "Combiset",
+                      "permalink": "cocción/combiset",
+                      "taxonomy_id": 1,
+                      "created_at": "2021-02-16T15:49:49.470Z",
+                      "updated_at": "2021-02-16T15:49:49.470Z",
+                      "ancestry": "7",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 22,
+                          "name": "Extractor integrado en mesa",
+                          "permalink": "cocción/combiset/extractor_integrado_en_mesa",
+                          "taxonomy_id": 1,
+                          "created_at": "2021-02-16T15:49:49.479Z",
+                          "updated_at": "2021-02-16T15:49:49.479Z",
+                          "ancestry": "21",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 23,
+                          "name": "Gas",
+                          "permalink": "cocción/combiset/gas",
+                          "taxonomy_id": 1,
+                          "created_at": "2021-02-16T15:49:49.502Z",
+                          "updated_at": "2021-02-16T15:49:49.502Z",
+                          "ancestry": "21",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 24,
+                          "name": "Inducción",
+                          "permalink": "cocción/combiset/inducción",
+                          "taxonomy_id": 1,
+                          "created_at": "2021-02-16T15:49:49.521Z",
+                          "updated_at": "2021-02-16T15:49:49.521Z",
+                          "ancestry": "21",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 25,
+                          "name": "Eléctrico",
+                          "permalink": "cocción/combiset/eléctrico",
+                          "taxonomy_id": 1,
+                          "created_at": "2021-02-16T15:49:49.541Z",
+                          "updated_at": "2021-02-16T15:49:49.541Z",
+                          "ancestry": "21",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ],
+                  "product_prices": [
+                    {
+                      "id": 832,
+                      "country_id": 1,
+                      "product_id": 416,
+                      "price": 7000,
+                      "sale_price": 7000,
+                      "created_at": "2021-05-25T17:01:00.294Z",
+                      "updated_at": "2021-05-25T17:01:00.294Z",
+                      "country": {
+                        "id": 1,
+                        "name": "México",
+                        "iso": "MX",
+                        "created_at": "2021-01-18T17:51:08.068Z",
+                        "updated_at": "2021-01-18T17:51:08.098Z",
+                        "iva": 0.16,
+                        "time_zone": "Mexico City"
+                      }
+                    },
+                    {
+                      "id": 831,
+                      "country_id": 2,
+                      "product_id": 416,
+                      "price": 125000,
+                      "sale_price": 125000,
+                      "created_at": "2021-05-25T17:01:00.280Z",
+                      "updated_at": "2021-05-25T17:01:00.280Z",
+                      "country": {
+                        "id": 2,
+                        "name": "Chile",
+                        "iso": "CL",
+                        "created_at": "2021-01-18T17:51:08.074Z",
+                        "updated_at": "2021-01-18T17:51:08.089Z",
+                        "iva": 0.19,
+                        "time_zone": "Santiago"
+                      }
+                    }
+                  ],
+                  "country": null
+                },
+                "preVisit": false,
+                "customer_product_service_spare_parts": [],
+                "customer_product_checklists": []
+              }
+            ]
+          }
+        ],
+        "customer": {
+          "id": 5,
+          "names": "TEST",
+          "lastname": "TEST",
+          "surname": "TEST",
+          "email": "daniel.vargas@usach.cl",
+          "zipcode": "8150000",
+          "state": "339",
+          "delegation": "",
+          "colony": "",
+          "street_type": "Av.",
+          "ext_number": "123",
+          "int_number": "2",
+          "phone": "(+52) 6095051259",
+          "cellphone": "(+56) 3123123123",
+          "reference": "2312DA",
+          "business_name": "USACH",
+          "rfc": "TEST",
+          "email_fn": "daniel.vargas@usach.cl",
+          "zipcode_fn": "8150000",
+          "state_fn": "339",
+          "delegation_fn": "",
+          "colony_fn": "",
+          "street_type_fn": "Av.",
+          "street_name_fn": "123123",
+          "ext_number_fn": "123",
+          "int_number_fn": "2",
+          "phone_fn": "(+52) 6095051259",
+          "created_at": "20/05/2021 14:40:38",
+          "updated_at": "20/05/2021 14:40:38",
+          "street_name": "123123",
+          "person_type": "person_p",
+          "rut": "",
+          "email2": "daniel.vargas@usach.cl",
+          "commercial_business": "TEST",
+          "country_id": 2,
+          "tradename": "",
+          "administrative_demarcation_id": 339,
+          "administrative_demarcation_fn_id": 339,
+          "country": {
+            "id": 2,
+            "name": "Chile",
+            "iso": "CL",
+            "created_at": "2021-01-18T17:51:08.074Z",
+            "updated_at": "2021-01-18T17:51:08.089Z",
+            "iva": 0.19,
+            "time_zone": "Santiago"
+          }
+        }
+      },
+      "requested_spare_parts": [],
+      "used_spare_parts": [],
+      "quotation_customer_products": []
+    }
+  }

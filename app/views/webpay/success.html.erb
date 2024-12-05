@@ -1,0 +1,19 @@
+<div id="checkout" data-hook>
+  <div class="row" data-hook="checkout_content">
+    <div class="columns alpha twelve" data-hook="webpay_field_wrapper">
+        <fieldset id="billing" data-hook>
+          <legend align="center">Información de Pago</legend>
+
+          <h2><%= @payment.object_class %>: <%= @payment.customer_id %>-<%= @payment.object_id %></h2>
+
+          <p>
+            <strong>
+              <%= @payment.number %>
+            </strong>
+          </p>
+        </fieldset>
+
+        <hr class="clear" />
+    </div>
+  </div>
+</div>

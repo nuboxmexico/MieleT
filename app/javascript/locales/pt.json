@@ -1,0 +1,937 @@
+{
+  "translation": {
+    "calendarTechnical": {
+      "scheduleBackButton": "Voltar",
+      "scheduleSaveButton": "Salvar",
+      "scheduleVisit": "Agendar Visitas",
+      "techniciansAvailable": "Técnicos disponíveis",
+      "techniciansText#1": "Para este serviço é necessário",
+      "techniciansText#2": "técnicos",
+      "otherTechnicians": "Outros técnicos",
+      "noTechniciansAvailable": "Não há técnicos disponíveis"
+    },
+    "globalText": {
+      "edit": "Editar",
+      "noInfo": "Sem informação",
+      "NoDataComponent": "Nenhum resultado encontrado",
+      "rowsPerPageText": "Linhas por Página:",
+      "rangeSeparatorText": "de",
+      "selectAllRowsItemText": "Todos",
+      "save": "Salvar",
+      "error": "Erro",
+      "country": "País",
+      "details": "Detalhes",
+      "filterFor": "Filtrar por ",
+      "addButton": "Adicionar",
+      "back": "Voltar",
+      "removed": "Deletado!",
+      "ok": "ok",
+      "downloadServices": "BAIXAR SERVIÇOS",
+      "showDownloads": "Ver Downloads"
+    },
+    "searcher": {
+      "searcherText": "Procurar cliente (3 ou mais digitos)",
+      "loading": "Carregando...",
+      "searchEnter": "Pressione enter para buscar:",
+      "noResults": "Resultados não encontrados para "
+    },
+    "sideNavBar": {
+      "home": "Home",
+      "users": "Usuários",
+      "technicians": "Técnicos",
+      "clients": "Clientes",
+      "domestics": "Linha Doméstica / Profissional",
+      "projects": "Projetos",
+      "services": "Serviços",
+      "finances": "Finanças",
+      "calendar": "Calendário",
+      "surveys": "Pesquisa"
+    },
+    "serviceName": {
+      "installation": "Instalação",
+      "maintenance": "Manutenção",
+      "repair": "Reparo",
+      "workshop": "Diagnóstico na oficina",
+      "homeProgram": "Home Program",
+      "delivery": "Entregas / Envios"
+    },
+    "home": {
+      "dashboard": {
+        "title": "Para acessar o painel, faça login no AWS através do seguinte botão",
+        "subTitle": "Você deve inserir os dados da sua conta IAM do AWS",
+        "quicksigthButton": "Iniciar sessão"
+      }
+    },
+    "users": {
+      "title": "Usuários",
+      "userCreateButton": "Criar usuário",
+      "erase": "Deletar",
+      "deleteConfirm": {
+        "confirmMessage": "¿Tem certeza de que quer deletar esse usuário? ",
+        "yes": "Sim",
+        "no": "Não",
+        "erase": "Deletar"
+      },
+      "flashAlert": {
+        "success": "O usuário foi deletado",
+        "failed": "Não foi possível deletar esse usuário"
+      },
+      "globalUserForm":{
+        "newUser":"Novo usuário",
+        "country":"País",
+        "firstname":"Nome",
+        "lastName": "Último sobrenome",
+        "surName": "Sobrenome",
+        "phone":"Telefone fixo",
+        "mobile":"Telefone celular",
+        "costCenter":"Centro de custo",
+        "roleId":"Rol ID",
+        "role":"Rol",
+        "workingDay":"jornada de trabalho",
+        "disabledCheckButtonP1":"Este usuário está",
+        "disabledCheckButtonP2":"Desativado",
+        "saveButton" : "Guardar"
+      }
+    },
+    "globalTables": {
+      "customerColumns": {
+        "name": "Nome",
+        "email": "Email",
+        "phone": "Telefone",
+        "address": "Endereço",
+        "createdAt": "Data",
+        "actions": "Ações",
+        "businessName": "Razão Social",
+        "rfc": "CNPJ",
+        "commercialBusiness": "Ramo de atividade"
+      },
+      "notificationColumns": {
+        "title": "Notificações",
+        "task": "Tarefa",
+        "description": "descrição",
+        "days": "Dias",
+        "actions": "Ações",
+        "notification": "Notificação"
+      },
+      "techniciansColumns": {
+        "user": "Usuário",
+        "createdAt": "Data de criação",
+        "actions": "Ações"
+      },
+      "projectColumns": {
+        "quoteCode": "Cod. cotação",
+        "address": "Endereço",
+        "commune": "Município",
+        "email": "E-mail",
+        "status": "Status",
+        "actions": "Ações"
+      },
+      "realEstateUnitColumns": {
+        "unitType": "Tipo de unidade imobiliária",
+        "unitNumber": "Número",
+        "productQuantity": "Quantidade total de produtos",
+        "deliveredProducts": "Produtos entregues",
+        "installedProducts": "Produtos instalados",
+        "pendingProducts": "Produtos pendentes"
+      },
+      "productsColumns": {
+        "name": "Nome",
+        "tnr": "Nº do produto",
+        "product": "Produtos",
+        "policy": "Política",
+        "status": "Status",
+        "model": "Modelo",
+        "services": "Serviços",
+        "requiredQuantity": "Quantidade requerida"
+      },
+      "customerProductColumns": {
+        "family": "Família",
+        "subFamily": "SubFamilia",
+        "id": "ID",
+        "tnr": "Nº do produto",
+        "name": "Nome",
+        "instalationDate": "Data de instalação",
+        "policy": "Politíca",
+        "status": "Status",
+        "discontinuedRow": {
+          "discontinued": "Des.",
+          "yes": "Sim",
+          "no": "Não"
+        },
+        "warrantyRow": {
+          "warranty": "Garantia",
+          "no": "Não",
+          "valid": "Válida"
+        }
+      },
+      "sparePartColumns": {
+        "tnr": "Nº do produto",
+        "name": "Nome",
+        "quantity": "Quantidade",
+        "refunded": "Reembolsado",
+        "deliveryStaus": "Status da entrega",
+        "background": "Comentários",
+        "actions": "Ações",
+        "warranty": "GarantÃ­a",
+        "price": "Preço",
+        "individualPrice": "Preço unitário",
+        "totalPrice": "Preço total"
+      },
+      "sparePartColumnsNoActions": {
+        "tnr": "Nº do produto",
+        "name": "Nome",
+        "quantity": "Quantidade",
+        "refunded": "Reembolsado",
+        "requestedQuantity": "Quantidade solicitada"
+      },
+      "consumableColumns": {
+        "tnr": "Nº do produto",
+        "name": "Nome",
+        "requiredQuantity": "Quantidade requerida"
+      },
+      "serviceColumns": {
+        "number": "OS",
+        "ibsNumber": "N° IBS",
+        "serviceType": "Tipo de serviço",
+        "subCategory": "Sub categoria",
+        "requested": "Solicitado por",
+        "customerFullName": "Cliente",
+        "requestChannel": "Solicidado via",
+        "statusLabel": "Status",
+        "status": "Status",
+        "visitNumber": "N° de visita",
+        "createdAt": "Data de criação",
+        "actions": "Ações",
+        "identifier": "Identificador"
+      },
+      "visitColumns": {
+        "visitNumber": "NÂ° de visita",
+        "paid": "Pagado",
+        "completed": "completado",
+        "invoiced": "FacturaciÃ³n",
+        "daysWithoutInvoicing": "Dias sem faturar",
+        "canceled": "Cancelado",
+        "yes": "Sim",
+        "no": "Não"
+      },
+      "usersColumns": {
+        "roleId": "Rol ID",
+        "role": "Rol",
+        "name": "Nome",
+        "phone": "Telefone fixo",
+        "email": "E-mail",
+        "country": "País",
+        "disabledd": "Habilitado",
+        "yes": "Sim",
+        "no": "Não",
+        "createAt": "Data de criação",
+        "action": "Ações"
+      },
+      "downloadColumns": {
+        "dataType": "Tipo de download",
+        "fullName": "Usuário",
+        "description": "Descrição",
+        "status": "Status",
+        "action": "Ações",
+        "finished": "Concluído",
+        "inProgress": "Em processo",
+        "downloads": "Downloads",
+        "reload": "Atualizar"
+      }
+    },
+    "globalEditForm": {
+      "title": "Editar cliente",
+      "name": "Nome",
+      "lastName": "Último sobrenome",
+      "surName": "Sobrenome",
+      "rut": "RUT",
+      "tradeName": "Nome comercial",
+      "email": "E-mail do cliente",
+      "email2": "E-mail opcional",
+      "zipcode": "CEP",
+      "delegation": "Município",
+      "StreetType": "Tipo de rua",
+      "streetName": "Nome da rua",
+      "phone": "Telefone Fixo",
+      "cellPhone": "Telefone Celular",
+      "references": "Complemento",
+      "title#2": "Dados de Facturação",
+      "businessName": "Razão social",
+      "commercialBusiness": "Ramo de atividade",
+      "emailFn": "E-mail do cliente",
+      "sameAddress": "Usar o endereço do cliente",
+      "colony": "Bairro",
+      "selectCountry": "Selecionar País",
+      "country": "País",
+      "naturalPerson": "Pessoa Fisica",
+      "legalPerson": "Pessoa Jurídica",
+      "projectCustomer": "Cliente de projeto",
+      "domesticCustomer": "Cliente doméstico",
+      "realStateName": "Nome da Imobiliária/Cliente",
+      "title#3": "Dados do cliente",
+      "title#4": "Dados do projecto",
+      "projectName": "Nome do projeto",
+      "contactInfo": "Informação de contato",
+      "referenceProject": "Referências do projeto",
+      "title#5": "Novo endereço adicional para: ",
+      "title#6": "Editar usuário adicional para :",
+      "title#7": "Novo cliente adicional para ",
+      "flashAlert": {
+        "notZipcodePresent": "Se o cliente é Mexicano é necessário inserir um código postal antes de ver os estados e ruas.",
+        "attention": "Atenção",
+        "created": "Criado em",
+        "createdSuccessfully": "O endereço adicional foi criado com êxito.",
+        "additionalCustomerUpdate": "O cliente adicional foi atualizado com êxito.",
+        "aditionalCustomerCreated": "O cliente adicional foi criado com êxito.",
+        "error": "Erro"
+      }
+    },
+    "technicians": {
+      "title": "Técnicos",
+      "createTechnicians": "Criar Técnico",
+      "confirm": {
+        "delete?": "Deseja eliminar o usuário?",
+        "alertDialog": "O técnico será deletado permanentemente",
+        "yes": "Sim",
+        "no": "Não",
+        "erase": "Deletar"
+      },
+      "scheduledTechnicians": "Calendário dos técnicos",
+      "techniciansZone": "Área técnica",
+      "infoDownload": "Baixar informações atuais",
+      "selectTechnician": "Selecione um técnico",
+      "techniciansTech": "Selecionar técnicos",
+      "editForm": {
+        "choseTechnicians": "Nome do técnico",
+        "enterprise": "Nome da empresa",
+        "store": "N° do almoxarifado",
+        "selectMultipleChip": "Tipo de atividade",
+        "vehicleInfo": "Informações do veículo",
+        "vehicleLicense": "Placa do veículo",
+        "photo": "Foto",
+        "techniciansCompetents": "Atividades",
+        "spareParts": "Peças de reposição"
+      },
+      "flashAlert": {
+        "success": "O técnico foi deletado",
+        "failed": "Não foi possível deletar o técnico",
+        "confirm": "Tem certeza de que vai deletar esse evento? ",
+        "done": "Feito",
+        "unlockedDate": "As datas foram liberadas",
+        "noSelectActivity": "Você deve selecionar o tipo de atividade",
+        "zoneFileText": "Arraste o arquivo nessa área"
+      }
+    },
+    "services": {
+      "title": "Serviços",
+      "number": "OS",
+      "statusLabel": "Status",
+      "downloadServices": "Download dos serviços",
+      "authorizedDealer": "Distribuidor autorizado",
+      "filterBy": "Filtrar por",
+      "downloads": "Ver downloads",
+      "newServicesButton": "Novo Serviço",
+      "saleButton": "Venda",
+      "invoice": "Faturar",
+      "indexRow":{
+        "serviceType":{
+          "Reparación":"Reparar",
+          "Reparaciones en Taller":"Reparos de oficina",
+          "Mantenimiento":"Manutenção",
+          "Home Program":"Home Program",
+          "Instalación": "Instalação",
+          "Entregas/Despachos": "Entregas/Remessas",
+          "Póliza de Mantenimiento":"Política de manutenção"
+        },
+        "subCategory":{
+          "Certificado de mantenimiento Doméstico": "Certificado de Manutenção Doméstica",
+          "Certificado de mantenimiento Profesional": "Certificado de Manutenção Profissional",
+          "Certificado de servicio doméstico": "Certificado de Serviço Doméstico",
+          "Cortesía - Cargo a Servicio": "Cortesia - Taxa de Serviço",
+          "Cortesía - Cargo a ventas Doméstico": "Cortesia - Taxa de Vendas Domésticas",
+          "Diagnóstico": "Diagnóstico",
+          "Doméstico": "Doméstico",
+          "Garantía de Manufactura": "Garantia de Fabricação",
+          "Garantía de instalación - Doméstico": "Garantia de Instalação - Doméstica",
+          "Garantía de instalación - Profesional": "Garantia de Instalação - Profissional",
+          "Garantía de reparación previa - Doméstico": "Garantia Pré-Reparo - Doméstica",
+          "Garantía de reparación previa - Profesional": "Garantia pré-reparação - Profissional",
+          "Mantenimiento Regular": "Manutenção regular",
+          "Miele":"Miele",
+          "Ninguna": "Nenhum",
+          "No existen sub-categorías": "Não há subcategorias",
+          "Profesional": "Profissional",
+          "Reinstalación": "Reintegração"
+        },
+        "requested":{
+          "Cliente Directo":"Cliente Direto",
+          "Cliente directo":"Cliente Direto",
+          "Distribuidor autorizado":"Distribuidor Autorizado",
+          "Marketing":"Marketing",
+          "Proyectos":"Projetos",
+          "Ventas":"Vendas"
+        },
+        "request_channel":{
+          "App Clientes":"Aplicativo Clientes",
+          "Correo":"Correspondência",
+          "Partners B2B":"Partners B2B",
+          "Redes sociales":"Redes sociais",
+          "Teléfono":"Telefone",
+          "Web":"Web",
+          "eCommerce":"eCommerce"
+        },
+        "status":{
+          "arrival_of_parts":"Chegada de Peças",
+          "audit_completed":"Auditoria Concluída",
+          "cancelled":"Cancelado",
+          "completed":"Concluído",
+          "finished":"Finalizado",
+          "fs_audit":"Auditoria FS",
+          "paid":"pago",
+          "partially_completed":"Parcialmente Concluído",
+          "pending_by_parts":"Pendente por Partes",
+          "prescheduled":"Pré-Agendado",
+          "Revisión de Solicitud":"Revisão de Solicitação",
+          "request_in_transit":"Solicitação em Trânsito",
+          "request_review":"Solicitar Revisão",
+          "scheduled":"Agendado",
+          "waiting_for_customer":"Aguardando Cliente"
+        }
+      },
+      "edit": {
+        "serviceTo": "Serviço para",
+        "person": "Pessoa",
+        "physicalPerson": "Física",
+        "moralPerson": "Jurídica",
+        "cancelServices": "Cancelar Serviço",
+        "endService": "Finalizar Serviço",
+        "state": "Estado",
+        "noInformation": "Sem informação"
+      },
+      "customerAddress": {
+        "title": "Endereço do Cliente",
+        "zipcodeCheck": "CEP",
+        "StreetType": "Tipo de rua",
+        "streetName": "Nombre da rua",
+        "extNumber": "Número (novo)",
+        "intNumber": "Número (antigo)",
+        "delegation": "Município",
+        "colony": "Bairro",
+        "references": "Complemento",
+        "phone": "Telefone Fixo",
+        "additionalAddress": "Adicionar endereço extra"
+      },
+      "taxData": {
+        "commercialBusinessCheck": "Ramo de atividade",
+        "title": "Dados Fiscais",
+        "noInformation": "Sem informação",
+        "businessName": "Razão Social",
+        "rfc": "CNPJ",
+        "email": "Endereço do cliente",
+        "zipcodeCheck": "CEP",
+        "state": "Estado",
+        "delegationCheck": "Município",
+        "colony": "Bairro",
+        "StreetType": "Tipo de rua",
+        "streetName": "Nome da rua",
+        "phone": "Telefone Fixo"
+      },
+      "additional": {
+        "title": "Adicionais",
+        "addAdditionalButton": "Novo Adicional"
+      },
+      "dataCustomer": {
+        "data": "Dados do cliente",
+        "country": "País",
+        "type": "Pessoa",
+        "rut": "CNPJ"
+      },
+      "info": {
+        "title": "Informação da solicitação",
+        "type": "Tipo de serviço",
+        "subCategory": "Sub-categoria do serviço",
+        "associatedPolicy": "Política associada",
+        "requestedBy": "Solicitado por",
+        "requestChannel": "Solicitado via",
+        "ibsNumber": "Número IBS",
+        "saveChanges": "Salvar alterações",
+        "stateChanges": "Ver mudanças de estados"
+      },
+      "productDetails": {
+        "title": "Detalhes de Produtos",
+        "family": "Família",
+        "subFamily": "Sub-família",
+        "serialId": "ID",
+        "tnr": "Nº do produto",
+        "name": "Nome",
+        "installed": "Instalado",
+        "discontinued": {
+          "columName": "Desc.",
+          "yes": "Sim",
+          "no": "Não"
+        },
+        "warranty": {
+          "title": "Garantia",
+          "no": "No",
+          "validate": "Válida"
+        },
+        "policy": "Política",
+        "status": "Estado",
+        "actions": "Ações",
+        "historyProblem": "Histórico do problema",
+        "noDetails": "Sem registro de detalhes",
+        "delete": "Deletar",
+        "deleteImage": "Deletar imagem",
+        "confirm": {
+          "confirmDelete": "Quer deletar esse arquivo?",
+          "yes": "Sim",
+          "no": "Não"
+        }
+      },
+      "additionalProductForm": {
+        "family": "Família",
+        "subFamily": "Sub-família",
+        "businessUnit": "Unidade de negócio",
+        "productName": "Nome do produto",
+        "specific": "Específico",
+        "flashAlert": {
+          "created": "Criado",
+          "createdProduct": "O produto foi criado com êxito"
+        }
+      },
+      "visits": {
+        "title": "Visitas",
+        "createVisit": "Criar nova visita",
+        "date": "Data",
+        "principalTechnician": "Técnico Principal",
+        "waitTime": "Tempo de Espera",
+        "visitTime": "Tempo de Visita",
+        "hour": "Hora",
+        "visitCancel": "Cancelar Visita",
+        "bill": "Fatura",
+        "billingAddress": "Endereço de cobrança",
+        "startTime": "Hora de início",
+        "endTime": "Hora de término",
+        "downloadReport": "Download do relatório",
+        "downloadShippingGuide": "Download do guia de despacho Nº ",
+        "expertOpinion": "Dictamen Técnico",
+        "activityPerformed": "Atividade conclupida",
+        "technicalDiagnosis": " Diagnóstico do técnico",
+        "warranty": "Garantia",
+        "instalationDate": "Instalado",
+        "reinstaled": " Reinstalado",
+        "noInfo": "Sem informação",
+        "costCenter": "Centro de custo",
+        "lastService": "Data do último serviço",
+        "requestFor": "Serviço Solicitado por",
+        "additionalInfo": "Informações Adicionais",
+        "associatedVisits": "Visitas associadas",
+        "instalationAddress": "Endereço de instalação",
+        "changeTotalValue": "Mudar o valor total",
+        "changeValue": "É possível alterar o valor total do serviço manualmente",
+        "totalService": "Total do serviço",
+        "visit": {
+          "title": "Visitas",
+          "scheduled": "Agendado",
+          "preScheduled": "Pre-Agendado",
+          "completed": "Visita concluída",
+          "checkList": {
+            "title": "Checklist Pre-InstalaciÃ³n",
+            "name": "Nombre",
+            "tnr": "Nº do item",
+            "id": "ID",
+            "status": "Estado",
+            "questionnaire": "cuestionario",
+            "coments": "Comentarios adicionales",
+            "noCheckList": "No se ha respondido el Checklist aÃºn",
+            "images": "ImÃ¡genes",
+            "noImages": "No se han cargado imagenes aÃºn"
+          }
+        },
+        "cancelServiceButton": {
+          "backButton": "Voltar",
+          "cancelVisitButton": "Cancelar visitas",
+          "fromMiele": "por Miele",
+          "fromCustomer": "pelo Cliente",
+          "reasons": "Insira o motivo do cancelamento aqui",
+          "flashAlert": {
+            "saved": "Salvo",
+            "cancelVisit": "A visita foi cancelada",
+            "cancelTooltip": "Cancelar Visita ",
+            "cancelVisit?": " Tem certeza de que deseja cancelar a visita? ",
+            "cancelMessage": "Tem certeza de que deseja cancelar a visita? "
+          }
+        },
+        "finishServiceButton": {
+          "backButton": "Voltar",
+          "finishServiceButton": "Finalizar Serviço",
+          "finishVisit?": "Finalizar o serviço?"
+        },
+        "productTableInfo": {
+          "name": "Nomes",
+          "tnr": "Nº do produto",
+          "id": "ID",
+          "status": "Status",
+          "productsInfo": "PRODUTOS",
+          "useSpareParts": "Peças de reposição utilizadas",
+          "requestSpareParts": "Peças de reposição solicitadas",
+          "paymentsInfo": "Pagamentos"
+        },
+        "flashAlert": {
+          "rescheduled": "A visita foi reagendada",
+          "unpaidVisit": "Não é possível reagendar a visita, uma vez que o pagamento ainda não foi realizado.",
+          "ibsNotPresent": "Não é possível agendar já que esta visita não tem Nº IBS",
+          "confirmVisit": "Visita confirmada",
+          "visitStarted": "A visita começou",
+          "visitEnded": "A visita terminou",
+          "notificationOfArrival": "A chegada do técnico no local do cliente foi notificada",
+          "finishTheLastVisit": "Finalize sua última visita antes de iniciar uma nova.",
+          "quoteNotPaid": "Não é possível reagendar a visita, uma vez que o orçamento ainda não foi pago.",
+          "startTheCounterAgain": "Reinicie o contador",
+          "couldDeleteFile": "O arquivo foi deletado",
+          "couldNotDeleteFile": "Falha ao deletar o arquivo",
+          "fileExceedLimit": "Arquivo inválido. Formato desconhecido ou maior que 10mb",
+          "paymentValidated": "O pagamento foi validado com sucesso.",
+          "attachProofOfPayment": "Por favor, anexe o comprovante do pagamento.",
+          "visitUpdatedSuccessfully": "Visita atualizada com êxito"
+        },
+        "payments": {
+          "paymentsDetails": "Detalhes do pagamento da visita",
+          "unpaidVisit": "Visita não paga",
+          "paidVisit": "Visita paga",
+          "name": "Nome",
+          "rut": "CNPJ",
+          "limitPaymentDate": "Prazo de pagamento expirado, reagendar serviço.",
+          "noPaymentOption": "Razão para falta de pagamento",
+          "consumables": "Consumíveis",
+          "spareParts": "Peças de substituição",
+          "receptionData": "Dados do recebimento da visita",
+          "nameAndSignature": "Nome e assinatura de quem recebe.",
+          "noSignature": "Sem assinatura",
+          "fileUploadInstructions": "Solte o arquivo aqui ou clique para selecioná-lo",
+          "selectedFiles": "Arquivos selecionados",
+          "backupData": "Backup",
+          "uploadFiles": "Arquivos enviados",
+          "deleteFile": {
+            "deleteImage": "Deletar imagem",
+            "confirmMessage": "Deseja deletar essa imagem?",
+            "yes": "Sim",
+            "no": "Não"
+          },
+          "validatePayment": "Validar pagameno",
+          "paymentData": {
+            "payHour": "Horário do pagamento",
+            "amount": "Valor",
+            "referenceNumber": "N° de Referencia da transação",
+            "paymentMethod": "Forma de pagamento",
+            "paymentSelect": "Selecione",
+            "typeOfService": "Tipo de serviço",
+            "bill?": "O cliente precisa de fatura?",
+            "billAddress": "Endereço de cobrança"
+          },
+          "summaryTable": {
+            "startingAmount": "Valor inicial",
+            "visitAmount": "Valor da visita",
+            "hourAmount": "Valor da hora",
+            "sparePartsAmount": "Preço da peça de substituição",
+            "feeAmount": "Taxa de visita",
+            "consumableAmount": "Consumíveis",
+            "laborAmount": "Mão de obra",
+            "viaticAmount": "Diária",
+            "subTotalAmount": "Sub Total",
+            "ivaAmount": "IVA",
+            "totalAmount": "TOTAL",
+            "validateAmount": "Validar pagamento"
+          }
+        }
+      },
+      "quotes": {
+        "title": "Orçamentos",
+        "rowQuote": "Cotação",
+        "number": "Nº",
+        "rowDate": "Data",
+        "rowUntil": "Validade",
+        "history": "Histórico de cotações",
+        "flashAlert": {
+          "quoteUpdateSuccess": "Cotação atualizada com sucesso",
+          "quoteCouldNotBeGenerated": "Não foi possível atualizar a cotação. Por favor, tente novamente mais tarde."
+        },
+        "detailsTab": {
+          "details": "Detalhes",
+          "usedSpareParts": "Peças utilizadas",
+          "requestSpareParts": "Peças solicitadas",
+          "messageWarranty#1": "Esse produto tem",
+          "messageWarranty#2": "Garantia de mão de obra.",
+          "visitAmount": "Valor da Visita",
+          "sparePartsAmount": "Peças de substituição",
+          "viaticAmount": "Diária",
+          "editViatics": {
+            "title": "Alterar valor da diária",
+            "viaticMessage": "Você pode alterar o valor da diária da cotação manualmente",
+            "tagLabel": "Diária",
+            "okButton": "OK"
+          },
+          "laborAmount": "Mão de obra",
+          "subTotalAmount": "Sub Total",
+          "ivaAmount": "IVA",
+          "totalAmount": "TOTAL",
+          "tmBackground": "Observações Technical Managements",
+          "fsBackground": "Observações Field Service",
+          "cBackground": "Observações para cliente",
+          "saveButton": "Salvar",
+          "saveAndSendButton": "Salvar e enviar cotação",
+          "addSpareParts": "Adicionar peças"
+        }
+      },
+      "preDiagnostic": {
+        "title": "Pre-Diagnóstico",
+        "subTitle": "Lista de peças de reposição",
+        "addSpareParts": "Adicionar peças de reposição",
+        "backgroundPrediagnosis": "Adicionar observações do pré-diagnóstico",
+        "saveAndSendButton": "Salvar e enviar"
+      },
+      "serviceSparePartsRequest": {
+        "title": "Solicitar peças de reposição",
+        "subTitle": "Peças de reposição pre-diagnóstico",
+        "principalTechnician": "Selecionar técnico principal",
+        "sparePartDeliveryDate": "Data de entrega da peça de reposição",
+        "technicalCalendarButton": "Ver calendário de técnicos",
+        "sparePartSubmitButton": "Atribuir peças de reposição",
+        "addSparePartButton": "Adicionar peças de reposição",
+        "close": "Fechar",
+        "flashAlert": {
+          "addSpareParts": "Peça de substituição adionada",
+          "requestSparepart": "É necessário selecionar uma peça de substituição para adicionar ao produto",
+          "quantityAlert": "É necessário inserir uma quantidade entre 1 e 99"
+        }
+      }
+    },
+    "finance": {
+      "input": {
+        "pending": "Pendente",
+        "completed": "Faturada",
+        "unrequired": "Não requer fatura",
+        "unrequiredPay": "Não requer pagamento",
+        "invoiced": "Faturado",
+        "yes": "Sim",
+        "no": "Não",
+        "canceled": "Cancelado",
+        "filled": "Completado",
+        "paid": "Pago",
+        "all": "Todos"
+      },
+      "confirmModal": {
+        "downloadMessage": "Os serviços neste período serão baixados.",
+        "continueMessage": "Deseja continuar?",
+        "cancel": "Cancelar",
+        "accept": "Aceitar",
+        "billMessage": "Número de visitas a faturar: ",
+        "alertMessage": "Esta ação não pode ser desfeita"
+      }
+    },
+    "customer": {
+      "title": "Clientes",
+      "titleProject": "Clientes projetos",
+      "quoteData": "Dados de cotação",
+      "customerCreateButton": "Criar cliente",
+      "confirm": {
+        "delete?": "Deseja eliminar cliente?",
+        "alertDialog": "O cliente será deletado permanentemente.",
+        "yes": "Sim",
+        "no": "Não"
+      },
+      "projectCustomer": {
+        "title": "Unidade Imobiliária",
+        "assignClient": "Atribuir cliente",
+        "here": "Aquì",
+        "associatedProducts": "Produtos Associados",
+        "searcher": "Buscar cliente",
+        "typeToSearch": "Escreva para buscar...",
+        "assignButton": "Atribuir"
+      },
+      "newPolicy": {
+        "title": "Nova política de manutenção para ",
+        "addressPolicy": "Selecione o endereço onde a política será aplicada",
+        "addProductPolicy": "Selecione os produtos para adicionar a política",
+        "consumableList": "Lista de consumíveis",
+        "createPolicyButton": "Criar",
+        "policyDetails": "Detalhe da política"
+      },
+      "newService": {
+        "serviceTo": "Novo servço para ",
+        "direcction": "Endereço de instalação",
+        "serviceRequestInfo": {
+          "title": "Informação de solicitação de serviço",
+          "subTitle": "Inserir dados do serviço a solicitar",
+          "serviceType": "Tipo de serviço",
+          "subCategory": "Sub-categoría do serviço",
+          "request": "Solicitado por",
+          "requestChannel": "Solicitado via",
+          "costCenter": "Centro de custo",
+          "distributorName": "Nome do distribuidor",
+          "distributorEmail": "E-mail do distribuidor"
+        },
+        "productSelection": {
+          "title": "Seleção de produtos",
+          "removeButton": "Eliminar seleção",
+          "requiredConsumables": "Consumíveis requeridos",
+          "spareParts": "Peças de reposição",
+          "backgroundTitle": "Inserir antecedentes do problema",
+          "background": "Inserir antecedentes",
+          "dragFile": "Arraste o arquivo aqui, ou clique para selecioná-lo",
+          "selectedFiles": "Arquivos selecionados",
+          "deleteImage": "Deletar imagem",
+          "confirmMessage": "Deseja deletar essa imagem?",
+          "yes": "Sim",
+          "no": "Não"
+        },
+        "diary": {
+          "title": "Agenda",
+          "subTitle": "Selecione data e hora para realizar o serviço.",
+          "calendarButton": "Ir ao calendário",
+          "selectedDate": "Data selecionada",
+          "dayAndHour": "Dia e hora",
+          "duration": "Duração",
+          "technicians": "Técnico(s)"
+        },
+        "paymentService": {
+          "title": "Pago de serviço",
+          "subTitle": "Selecionar forma de pagamento",
+          "nopay": "No há pagamento",
+          "reasonForNonPayment": "Motivo da falta de pagamento",
+          "paymentReady": "Esse serviço já foi pago",
+          "productAndService": "É necessário selecionar o topo de serviço e produtos.",
+          "paymentCompleted": "O serviço foi pago.",
+          "copyPaymentLink": "Clique para copiar o link de pagamento para o cliente",
+          "customerBill?": "O cliente requer fatura?:",
+          "yes": "Sim",
+          "no": "Não",
+          "selectBillaAddress": "Selecione o endereço de cobrança",
+          "generateServiceButton": "Gerar serviço",
+          "serviceDetails": {
+            "title": "Detalhes do serviço",
+            "concept": "Conceito",
+            "totalHours": "Total de horas",
+            "hourAmount": "Valor por horas",
+            "feeAmount": "Taxa de visita",
+            "consumables": "Consumíveis",
+            "laborAmount": "Mão de obra",
+            "viaticAmount": "Diária",
+            "subTotalAmount": "Sub Total",
+            "ivaAmount": "IVA",
+            "totalAmount": "TOTAL",
+            "paydayLimit": "Prazo de pagamento"
+          },
+          "paymentMethod": {
+            "online": "Online",
+            "transfer": "Transferência",
+            "payForphone": "Por Telefone",
+            "payAtHome": "Pago em domícilio",
+            "bankDeposit": "Depósito bancário"
+          },
+          "quotations": {
+            "purchaseNumber": "NÂº de compra",
+            "orderNumber": "NÂ° Orden Ecommerce",
+            "status": "Estado",
+            "ibsNumber": "NÂª de IBS",
+            "dateOfAdmission": "Fecha de ingreso",
+            "newService": "Nuevo servicio",
+            "requestedBy": "Solicitado por",
+            "client": "Cliente Directo",
+            "channel": "Canal",
+            "partnersB2B": "Partners B2B"
+          }
+        },
+        "flashAlert": {
+          "selectedProductRows": "É necessário selecionar ao menos um produto",
+          "serviceType": "É necessário selecionar o tipo de serviço",
+          "subCategory": "É necessário selecionar a sub-categoria do serviço",
+          "requested": "É necessário inserir por onde o serviço foi solicitado",
+          "requestChannel": "É necessário inserir o canal por onde foi feita a solicitação",
+          "indicateProblem": "É necessário inserir os antecedenter do problema",
+          "startDate": "É necessário selecionar uma data",
+          "noPaymentOption": "É necessário selecionar a razão da falta de pagamento",
+          "selectedPaymentDate": "É necessário selecionar o prazo para o pagamento",
+          "selectedPolicies": "É necessário selecionar a política",
+          "attention": "Atenção",
+          "success": "Operação realizada com sucesso!",
+          "updateSuccess": "O serviço foi atualizado com sucesso!",
+          "error": "Erro",
+          "noFileFormat": "O arquivo está em formato desconhecido ou é maior que 10mb.",
+          "created": "Criado",
+          "policyCreatedSuccess": "A política foi criada com sucesso!",
+          "uired": "Para atribuir essa unidade imobiliária a um cliente final é necessário criar um cliente antes.",
+          "deletedSuccess": "O cliente foi deletado",
+          "deletedFailed": "Não foi possível deletar o cliente",
+          "copied": "Copiado",
+          "copyLinkMessage": "O link foi copiado, você pode colar em outra janela para verificar."
+        }
+      },
+      "showCustomer": {
+        "title": "Produtos e serviços",
+        "addedProducts": "Produtos adicionados",
+        "equipment": "Equipamentos",
+        "maintenancePolicies": "Política de manutenção",
+        "addProductButton": "Adicionar produto",
+        "addNonExistentProduct": "Adicionar produto não existente",
+        "addOtherProductButton": "Adicionar outro produto",
+        "policyHistory": "Histórico de políticas",
+        "policy": "Política",
+        "policyValue": "Valor",
+        "paid": "Pago",
+        "visitNumber": "Nº Visita",
+        "status": "Status",
+        "validFrom": "Valido desde",
+        "validUntil": "Valido até",
+        "noPolicyAssociated": "Não há política associada",
+        "services": "Serviços",
+        "shopping": "Compras",
+        "serviceHistory": "Histórico de serviços",
+        "shoppingHistory": "Histórico de compras",
+        "complaints": "Reclamação",
+        "complaintsHistory": "Histórico de reclamações",
+        "enterComplaint": "Selecione os serviços para inserir a reclamação",
+        "complaintNumber": "Nº de reclamação",
+        "complaintType": "Tipo de reclamação",
+        "channel": "Canal",
+        "dateOfEntry": "Data de entrada",
+        "currentQuotesTitle": "Cotações atuais",
+        "complaintNegotiation": "Negociação da reclamação",
+        "secondComplaintNegotiation": "Segunda negociação da reclamação",
+        "complaintBackground": "Escreva a reclamação do cliente",
+        "phone": "Telefone",
+        "submit": "Salvar e enviar reclamação",
+        "compensationProposal": "Proposta de compensação",
+        "closureDetails": "Detalhes do fechamento",
+        "escalateComplaint": "Encaminhar reclamação",
+        "closeComplaint": "Encerrar reclamação",
+        "flashAlert": {
+          "addProductSuccessfully": "Produto adicionado!",
+          "requiredProduct": "É necessário selecionar um produto para adicionar ao cliente.",
+          "success": "Operação realizada com sucesso!",
+          "updateService": "O serviço foi atualizado",
+          "infoRequest": "Falta informação",
+          "complaintMessage": "É necessário inserir o tipo de reclamação",
+          "channelMessage": "É necessário inserir o canal",
+          "phoneMessage": "É necessparui inserir um telefone",
+          "customerMessage": "É necessário inserir a reclamação do cliente.",
+          "offsetMessage": "É necessário inserir uma proposta de compensação.",
+          "closureDetails": "É necessário inserir detalhes do fechamento."
+        }
+      }
+    },
+    "calendar": {
+      "title": "Calendário geral",
+      "Reparación":"Reparar",
+      "Reparaciones en Taller":"Reparos de oficina",
+      "Mantenimiento":"Manutenção",
+      "Home Program":"Home Program",
+      "Instalación": "Instalação",
+      "Entregas/Despachos": "Entregas/Remessas",
+      "Póliza de Mantenimiento":"Política de manutenção"
+    },
+    "suverys": {
+      "title": "Pesquisas"
+    }
+  }
+}

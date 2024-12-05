@@ -1,0 +1,63 @@
+version: "3.3"
+
+services:
+  app: &app
+    build: .
+    image: miele_tickets
+    volumes:
+      - .:/usr/src
+      - bundler_cache:/usr/local/bundle
+    command: foreman start -f Procfile
+    ports:
+      - "3000:3000"
+    extra_hosts:
+      - "miele.local:127.0.0.1"
+      - "br.miele.local:127.0.0.1"
+      - "localhost:127.0.0.1"
+    networks:
+      - miele-core_service_local
+    depends_on:
+      - postgres_tickets
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    tty: true
+    stdin_open: true
+  postgres_tickets:
+    image: postgres:12.17
+    restart: always
+    ports:
+      - 5432
+    volumes:
+      - postgres_tickets_data:/var/lib/postgres/data
+    networks:
+      - miele-core_service_local
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+
+  redis:
+    image: redis:7.2.3
+    command: redis-server
+    ports:
+      - 6379
+    volumes:
+      - redis_data:/var/lib/redis/data
+    networks:
+      - miele-core_service_local
+
+  sidekiq:
+    <<: *app
+    command: bundle exec sidekiq
+    ports: []
+    depends_on:
+      - redis
+volumes:
+  bundler_cache:
+  postgres_tickets_data:
+  redis_data:
+
+networks:
+  miele-core_service_local:
+    external: true
+    name: miele-core_service_local

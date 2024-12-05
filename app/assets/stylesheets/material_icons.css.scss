@@ -1,0 +1,62 @@
+@import "variables";
+
+.material-icons-custom {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.search-order-group .select2-container--default .select2-search--inline:after{
+	float: left;
+	padding-top: 8px;
+    padding-left: 5px;
+    content: '';
+}
+
+.search-order-group .select2-container--default .select2-search--inline .select2-search__field {
+	  padding-top: 3px;
+}
+
+.search-order-group .select2-container--default .select2-selection--multiple .select2-selection__rendered:before{
+	float: right;
+	@extend .material-icons-custom;
+	padding-top: 8px;
+    content: 'search';
+}
+
+.search-order-group .select2-container--default .select2-search--inline--whit-no-number:after{
+    float: left;
+    padding-top: 8px;
+    content: ' ';
+}
+
+
+.search-order-group .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary-hover;
+    color: $white-color;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.flag-icon-background, .flag-icon {
+    background-size: cover!important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}

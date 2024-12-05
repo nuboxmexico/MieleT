@@ -1,0 +1,41 @@
+.notification-unreaded{
+    background-color: #f59b0026!important;
+}
+.notification-light{
+    display: block;
+    font: normal normal 300 12px/16px 'Acumin Pro';
+    letter-spacing: 0px;
+    color: #705e5e;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.filter-select{
+    .MuiOutlinedInput-root{
+        .MuiOutlinedInput-input{
+            padding: 10px 0px 10px 14px !important;
+        }
+    }
+}
+
+.notifications-table{
+    div{
+        .rdt_Table{
+            .rdt_TableBody{
+                .rdt_TableRow{
+                    padding: 15px 0px!important;
+                    .rdt_TableCell{
+                        span{
+                            font-size: 14px!important;
+                            font-weight: lighter!important;
+                        }
+                        .span-medium{
+                            font-size: 14px!important;
+                            font-weight: 500!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

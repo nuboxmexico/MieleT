@@ -1,0 +1,170 @@
+
+@import "variables";
+
+a#global-search-button{
+  position: absolute;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.react-autosuggest__container {
+    position: relative;
+    display: flex;
+  }
+  
+  .react-autosuggest__input {
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 0px;
+    -webkit-appearance: none;
+  }
+  
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+  
+  .react-autosuggest__input::-ms-clear {
+    display: none;
+  }
+  
+  .react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+  }
+  
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+
+  .react-autosuggest__suggestions-container-no-results{
+    top: -1px;
+    .not-found-restults{
+      padding: 20px;
+    }
+  }
+
+  .press-enter{
+    padding: 10px 20px;
+  }
+
+
+.search-grid-container{
+  margin-top: 30px!important;
+  display: grid;
+  /* grid-template-columns: 80% 20%; */
+  position: relative;
+}
+
+.search-btn-full-height{
+  width: auto;
+  height: 100%;
+}
+
+.search-btn-full-height{
+  .MuiButton-label{
+    .MuiButton-startIcon {
+      display: inherit;
+      margin-left: 0px;
+      margin-right: 0px;
+      color: #707070!important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px){
+  [placeholder]{
+    text-overflow: inherit;
+    padding-right: 62%;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-overflow: inherit;
+    padding-right: 62%;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    text-overflow: inherit;
+    padding-right: 62%;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    text-overflow: inherit;
+    padding-right: 62%;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    text-overflow: inherit;
+    padding-right: 62%;
+    
+  }  
+}
+
+@media screen and (max-width: 350px){
+  [placeholder]{
+    text-overflow: inherit;
+    padding-right: 55%;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-overflow: inherit;
+    padding-right: 55%;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    text-overflow: inherit;
+    padding-right: 55%;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    text-overflow: inherit;
+    padding-right: 55%;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    text-overflow: inherit;
+    padding-right: 55%;
+    
+  }  
+}
+
+
+.table-search-form{
+  position: absolute!important;
+  left: 15px !important;
+}
+
+.custom-search {
+  position: absolute !important;
+  left: 0px !important
+}

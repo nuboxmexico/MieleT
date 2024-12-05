@@ -1,0 +1,2343 @@
+{
+    "data": {
+      "id": 34,
+      "names": "Prueba de cliente con codigo postal",
+      "lastname": "test",
+      "surname": "test",
+      "email": "testpostal@test.cl",
+      "zipcode": "01250",
+      "state": "126450",
+      "delegation": "Álvaro Obregón",
+      "colony": "Lomas de Nuevo México",
+      "street_type": "Calle",
+      "ext_number": "123",
+      "int_number": "321",
+      "phone": "(+52) 3213231   ",
+      "cellphone": "(+52) 3212312312",
+      "reference": "dasdasdasd",
+      "business_name": "test",
+      "rfc": "test",
+      "email_fn": "testpostal@test.cl",
+      "zipcode_fn": "01250",
+      "state_fn": "126450",
+      "delegation_fn": "Álvaro Obregón",
+      "colony_fn": "Lomas de Nuevo México",
+      "street_type_fn": "Calle",
+      "street_name_fn": "test postal",
+      "ext_number_fn": "123",
+      "int_number_fn": "321",
+      "phone_fn": "(+52) 3213231   ",
+      "created_at": "01/10/2020 19:53:06",
+      "updated_at": "01/10/2020 19:53:06",
+      "street_name": "test postal",
+      "person_type": "person_p",
+      "rut": "",
+      "email2": "testpostal@test.cl",
+      "commercial_business": "",
+      "country_id": 1,
+      "tradename": "",
+      "administrative_demarcation_id": 126450,
+      "administrative_demarcation_fn_id": 126450,
+      "last_service": {
+        "id": 34,
+        "customer_id": 34,
+        "address": "principal",
+        "service_type": "Reparación",
+        "subcategory": "Garantía de reparación previa - Profesional",
+        "requested": "Cliente directo",
+        "request_channel": "Teléfono",
+        "distributor_name": "",
+        "distributor_email": "",
+        "created_at": "28/10/2020 13:46:21",
+        "updated_at": "28/10/2020 13:46:21",
+        "technicians_number": 2,
+        "hour_amount": 60000,
+        "fee_amount": 890,
+        "total_hours": 3,
+        "total_amount": 111359,
+        "status": "new",
+        "background": "TEST",
+        "no_payment": false,
+        "payment_channel": "online",
+        "payment_date": "22/12/2020",
+        "no_payment_reason": "",
+        "invoice": false,
+        "payment_state": "pending",
+        "job_id": "d594b1a945b5d645e59e21f88bd2d83b",
+        "number": "MTMX000018",
+        "address_fn": "principal",
+        "cancel_reason": null,
+        "background_cancel_service": null,
+        "customer_payment_date": null,
+        "customer_products": [
+          {
+            "id": 39,
+            "customer_id": 34,
+            "product_id": 5,
+            "created_at": "2020-10-12T17:38:27.300Z",
+            "updated_at": "2020-10-12T17:38:27.300Z",
+            "status": "Inicial",
+            "warranty": "1/1/1990",
+            "policy": "S/N",
+            "serial_id": null,
+            "discontinued": false,
+            "product": {
+              "id": 5,
+              "country_id": null,
+              "platform": "Tickets",
+              "tnr": "10515060",
+              "ean": "004859EEEEQ129078",
+              "profit_center": "419",
+              "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+              "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+              "mandatory": true,
+              "product_type": "Limpieza",
+              "created_at": "2020-10-05T22:38:36.457Z",
+              "updated_at": "2020-12-02T14:22:12.872Z",
+              "additional": false,
+              "home_program_hours": 1,
+              "taxons": [
+                {
+                  "id": 5481,
+                  "name": "Limpieza",
+                  "permalink": "sda/test/limpieza",
+                  "taxonomy_id": 3,
+                  "created_at": "2020-11-27T14:49:27.279Z",
+                  "updated_at": "2020-11-27T14:49:27.279Z",
+                  "ancestry": "5478",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5482,
+                      "name": "test2",
+                      "permalink": "sda/test/limpieza/test2",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T14:49:27.301Z",
+                      "updated_at": "2020-11-27T14:49:27.301Z",
+                      "ancestry": "5481",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5483,
+                          "name": "test especifico",
+                          "permalink": "sda/test/limpieza/test2/test_especifico",
+                          "taxonomy_id": 3,
+                          "created_at": "2020-11-27T15:09:51.396Z",
+                          "updated_at": "2020-11-27T15:09:51.396Z",
+                          "ancestry": "5482",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5276,
+                  "name": "Limpieza",
+                  "permalink": "sda",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:01.927Z",
+                  "updated_at": "2020-11-18T14:17:18.435Z",
+                  "ancestry": null,
+                  "alias": "Limpieza",
+                  "children_set": [
+                    {
+                      "id": 5277,
+                      "name": "Máquinas de café",
+                      "permalink": "sda/máquinas_de_café",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.938Z",
+                      "updated_at": "2020-09-07T13:47:01.938Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5278,
+                          "name": "Empotrables",
+                          "permalink": "sda/máquinas_de_café/empotrables",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:01.949Z",
+                          "updated_at": "2020-09-07T13:47:01.949Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5288,
+                          "name": "Independiente",
+                          "permalink": "sda/máquinas_de_café/independiente",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:02.273Z",
+                          "updated_at": "2020-09-07T13:47:02.273Z",
+                          "ancestry": "5277",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5318,
+                      "name": "Aspiradoras",
+                      "permalink": "sda/aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.446Z",
+                      "updated_at": "2020-09-07T13:47:03.446Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5319,
+                          "name": "Sin bolsa",
+                          "permalink": "sda/aspiradoras/sin_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.458Z",
+                          "updated_at": "2020-09-07T13:47:03.458Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5326,
+                          "name": "Robot",
+                          "permalink": "sda/aspiradoras/robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.811Z",
+                          "updated_at": "2020-09-07T13:47:03.811Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5330,
+                          "name": "Con bolsa",
+                          "permalink": "sda/aspiradoras/con_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:04.077Z",
+                          "updated_at": "2020-09-07T13:47:04.077Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 5318,
+                  "name": "Aspiradoras",
+                  "permalink": "sda/aspiradoras",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.446Z",
+                  "updated_at": "2020-09-07T13:47:03.446Z",
+                  "ancestry": "5276",
+                  "alias": null,
+                  "children_set": [
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5326,
+                      "name": "Robot",
+                      "permalink": "sda/aspiradoras/robot",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.811Z",
+                      "updated_at": "2020-09-07T13:47:03.811Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    },
+                    {
+                      "id": 5330,
+                      "name": "Con bolsa",
+                      "permalink": "sda/aspiradoras/con_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:04.077Z",
+                      "updated_at": "2020-09-07T13:47:04.077Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ]
+                },
+                {
+                  "id": 5319,
+                  "name": "Sin bolsa",
+                  "permalink": "sda/aspiradoras/sin_bolsa",
+                  "taxonomy_id": 2,
+                  "created_at": "2020-09-07T13:47:03.458Z",
+                  "updated_at": "2020-09-07T13:47:03.458Z",
+                  "ancestry": "5318",
+                  "alias": null,
+                  "children_set": []
+                }
+              ],
+              "product_prices": [
+                {
+                  "id": 3,
+                  "country_id": 2,
+                  "product_id": 5,
+                  "price": 499900,
+                  "sale_price": 499900,
+                  "created_at": "2020-11-12T21:36:30.286Z",
+                  "updated_at": "2020-11-12T21:36:30.286Z",
+                  "country": {
+                    "id": 2,
+                    "name": "Chile",
+                    "iso": "CL",
+                    "created_at": "2020-09-02T20:07:18.167Z",
+                    "updated_at": "2020-09-02T20:07:18.167Z"
+                  }
+                },
+                {
+                  "id": 4,
+                  "country_id": 1,
+                  "product_id": 5,
+                  "price": 6999,
+                  "sale_price": 6999,
+                  "created_at": "2020-11-12T21:36:30.295Z",
+                  "updated_at": "2020-11-12T21:36:30.295Z",
+                  "country": {
+                    "id": 1,
+                    "name": "México",
+                    "iso": "MX",
+                    "created_at": "2020-09-02T20:07:18.160Z",
+                    "updated_at": "2020-09-02T20:07:18.160Z"
+                  }
+                }
+              ],
+              "country": null
+            }
+          }
+        ],
+        "service_products": [],
+        "spare_parts": [],
+        "calendar_events": [
+          {
+            "id": 311,
+            "title": "Agendamiento de servicio",
+            "start_date": "2020-12-22T11:00:00.000Z",
+            "finish_date": "2020-12-22T12:00:00.000Z",
+            "allDay": false,
+            "event_type": "Service_Schedule",
+            "description": "Agendamiento del servicio 18 para cliente 34",
+            "created_at": "2020-12-15T20:15:11.664Z",
+            "updated_at": "2020-12-15T20:15:11.664Z",
+            "country_id": 1,
+            "object_id": "13",
+            "service_id": 18
+          }
+        ],
+        "file_resources": [],
+        "payment_resources": [],
+        "status_label": "Agendado",
+        "visit_number": 0,
+        "ibs_number": "EEE458097890UOP",
+        "technicians": [
+          {
+            "id": 13,
+            "n_store": "qwe TEST",
+            "user_id": 24,
+            "vehicle_info": "qwe",
+            "vehicle_license": "qwe",
+            "created_at": "16/10/2020 12:39:20",
+            "updated_at": "30/11/2020 07:32:48",
+            "photo": null,
+            "jobs_count": 29,
+            "enterprise": null,
+            "technician_taxons_grouped": {
+              "installation": [
+                {
+                  "id": 1262,
+                  "technician_id": 13,
+                  "taxon_id": 5245,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.341-06:00",
+                  "updated_at": "2020-11-03T12:37:18.341-06:00"
+                },
+                {
+                  "id": 1263,
+                  "technician_id": 13,
+                  "taxon_id": 5249,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.352-06:00",
+                  "updated_at": "2020-11-03T12:37:18.352-06:00"
+                },
+                {
+                  "id": 1264,
+                  "technician_id": 13,
+                  "taxon_id": 5251,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.363-06:00",
+                  "updated_at": "2020-11-03T12:37:18.363-06:00"
+                },
+                {
+                  "id": 1265,
+                  "technician_id": 13,
+                  "taxon_id": 5254,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.371-06:00",
+                  "updated_at": "2020-11-03T12:37:18.371-06:00"
+                },
+                {
+                  "id": 1266,
+                  "technician_id": 13,
+                  "taxon_id": 5255,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.379-06:00",
+                  "updated_at": "2020-11-03T12:37:18.379-06:00"
+                },
+                {
+                  "id": 1267,
+                  "technician_id": 13,
+                  "taxon_id": 5258,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.388-06:00",
+                  "updated_at": "2020-11-03T12:37:18.388-06:00"
+                },
+                {
+                  "id": 1268,
+                  "technician_id": 13,
+                  "taxon_id": 5260,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.403-06:00",
+                  "updated_at": "2020-11-03T12:37:18.403-06:00"
+                },
+                {
+                  "id": 1269,
+                  "technician_id": 13,
+                  "taxon_id": 5261,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.411-06:00",
+                  "updated_at": "2020-11-03T12:37:18.411-06:00"
+                },
+                {
+                  "id": 1270,
+                  "technician_id": 13,
+                  "taxon_id": 5263,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.426-06:00",
+                  "updated_at": "2020-11-03T12:37:18.426-06:00"
+                },
+                {
+                  "id": 1271,
+                  "technician_id": 13,
+                  "taxon_id": 5264,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.439-06:00",
+                  "updated_at": "2020-11-03T12:37:18.439-06:00"
+                },
+                {
+                  "id": 1272,
+                  "technician_id": 13,
+                  "taxon_id": 5266,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.449-06:00",
+                  "updated_at": "2020-11-03T12:37:18.449-06:00"
+                },
+                {
+                  "id": 1273,
+                  "technician_id": 13,
+                  "taxon_id": 5269,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.457-06:00",
+                  "updated_at": "2020-11-03T12:37:18.457-06:00"
+                },
+                {
+                  "id": 1274,
+                  "technician_id": 13,
+                  "taxon_id": 5270,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.466-06:00",
+                  "updated_at": "2020-11-03T12:37:18.466-06:00"
+                },
+                {
+                  "id": 1275,
+                  "technician_id": 13,
+                  "taxon_id": 5273,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.473-06:00",
+                  "updated_at": "2020-11-03T12:37:18.473-06:00"
+                },
+                {
+                  "id": 1276,
+                  "technician_id": 13,
+                  "taxon_id": 5274,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.481-06:00",
+                  "updated_at": "2020-11-03T12:37:18.481-06:00"
+                },
+                {
+                  "id": 1277,
+                  "technician_id": 13,
+                  "taxon_id": 5275,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.489-06:00",
+                  "updated_at": "2020-11-03T12:37:18.489-06:00"
+                },
+                {
+                  "id": 1278,
+                  "technician_id": 13,
+                  "taxon_id": 5278,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.496-06:00",
+                  "updated_at": "2020-11-03T12:37:18.496-06:00"
+                },
+                {
+                  "id": 1279,
+                  "technician_id": 13,
+                  "taxon_id": 5279,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.502-06:00",
+                  "updated_at": "2020-11-03T12:37:18.502-06:00"
+                },
+                {
+                  "id": 1280,
+                  "technician_id": 13,
+                  "taxon_id": 5280,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.512-06:00",
+                  "updated_at": "2020-11-03T12:37:18.512-06:00"
+                },
+                {
+                  "id": 1281,
+                  "technician_id": 13,
+                  "taxon_id": 5281,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.519-06:00",
+                  "updated_at": "2020-11-03T12:37:18.519-06:00"
+                },
+                {
+                  "id": 1282,
+                  "technician_id": 13,
+                  "taxon_id": 5282,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.526-06:00",
+                  "updated_at": "2020-11-03T12:37:18.526-06:00"
+                },
+                {
+                  "id": 1283,
+                  "technician_id": 13,
+                  "taxon_id": 5283,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.535-06:00",
+                  "updated_at": "2020-11-03T12:37:18.535-06:00"
+                },
+                {
+                  "id": 1284,
+                  "technician_id": 13,
+                  "taxon_id": 5286,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.545-06:00",
+                  "updated_at": "2020-11-03T12:37:18.545-06:00"
+                },
+                {
+                  "id": 1285,
+                  "technician_id": 13,
+                  "taxon_id": 5288,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.555-06:00",
+                  "updated_at": "2020-11-03T12:37:18.555-06:00"
+                },
+                {
+                  "id": 1286,
+                  "technician_id": 13,
+                  "taxon_id": 5289,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.565-06:00",
+                  "updated_at": "2020-11-03T12:37:18.565-06:00"
+                },
+                {
+                  "id": 1287,
+                  "technician_id": 13,
+                  "taxon_id": 5290,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.577-06:00",
+                  "updated_at": "2020-11-03T12:37:18.577-06:00"
+                },
+                {
+                  "id": 1288,
+                  "technician_id": 13,
+                  "taxon_id": 5295,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.588-06:00",
+                  "updated_at": "2020-11-03T12:37:18.588-06:00"
+                },
+                {
+                  "id": 1289,
+                  "technician_id": 13,
+                  "taxon_id": 5298,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.598-06:00",
+                  "updated_at": "2020-11-03T12:37:18.598-06:00"
+                },
+                {
+                  "id": 1290,
+                  "technician_id": 13,
+                  "taxon_id": 5300,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.609-06:00",
+                  "updated_at": "2020-11-03T12:37:18.609-06:00"
+                },
+                {
+                  "id": 1291,
+                  "technician_id": 13,
+                  "taxon_id": 5301,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.619-06:00",
+                  "updated_at": "2020-11-03T12:37:18.619-06:00"
+                },
+                {
+                  "id": 1292,
+                  "technician_id": 13,
+                  "taxon_id": 5304,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.627-06:00",
+                  "updated_at": "2020-11-03T12:37:18.627-06:00"
+                },
+                {
+                  "id": 1293,
+                  "technician_id": 13,
+                  "taxon_id": 5306,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.637-06:00",
+                  "updated_at": "2020-11-03T12:37:18.637-06:00"
+                },
+                {
+                  "id": 1294,
+                  "technician_id": 13,
+                  "taxon_id": 5307,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.644-06:00",
+                  "updated_at": "2020-11-03T12:37:18.644-06:00"
+                },
+                {
+                  "id": 1295,
+                  "technician_id": 13,
+                  "taxon_id": 5308,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.650-06:00",
+                  "updated_at": "2020-11-03T12:37:18.650-06:00"
+                },
+                {
+                  "id": 1296,
+                  "technician_id": 13,
+                  "taxon_id": 5310,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.656-06:00",
+                  "updated_at": "2020-11-03T12:37:18.656-06:00"
+                },
+                {
+                  "id": 1297,
+                  "technician_id": 13,
+                  "taxon_id": 5313,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.662-06:00",
+                  "updated_at": "2020-11-03T12:37:18.662-06:00"
+                },
+                {
+                  "id": 1298,
+                  "technician_id": 13,
+                  "taxon_id": 5314,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.669-06:00",
+                  "updated_at": "2020-11-03T12:37:18.669-06:00"
+                },
+                {
+                  "id": 1299,
+                  "technician_id": 13,
+                  "taxon_id": 5319,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.675-06:00",
+                  "updated_at": "2020-11-03T12:37:18.675-06:00"
+                },
+                {
+                  "id": 1300,
+                  "technician_id": 13,
+                  "taxon_id": 5321,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.682-06:00",
+                  "updated_at": "2020-11-03T12:37:18.682-06:00"
+                },
+                {
+                  "id": 1301,
+                  "technician_id": 13,
+                  "taxon_id": 5326,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.688-06:00",
+                  "updated_at": "2020-11-03T12:37:18.688-06:00"
+                },
+                {
+                  "id": 1302,
+                  "technician_id": 13,
+                  "taxon_id": 5327,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.695-06:00",
+                  "updated_at": "2020-11-03T12:37:18.695-06:00"
+                },
+                {
+                  "id": 1303,
+                  "technician_id": 13,
+                  "taxon_id": 5328,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.701-06:00",
+                  "updated_at": "2020-11-03T12:37:18.701-06:00"
+                },
+                {
+                  "id": 1304,
+                  "technician_id": 13,
+                  "taxon_id": 5330,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.708-06:00",
+                  "updated_at": "2020-11-03T12:37:18.708-06:00"
+                },
+                {
+                  "id": 1305,
+                  "technician_id": 13,
+                  "taxon_id": 5336,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.714-06:00",
+                  "updated_at": "2020-11-03T12:37:18.714-06:00"
+                },
+                {
+                  "id": 1306,
+                  "technician_id": 13,
+                  "taxon_id": 5337,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.720-06:00",
+                  "updated_at": "2020-11-03T12:37:18.720-06:00"
+                },
+                {
+                  "id": 1307,
+                  "technician_id": 13,
+                  "taxon_id": 5367,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.726-06:00",
+                  "updated_at": "2020-11-03T12:37:18.726-06:00"
+                },
+                {
+                  "id": 1308,
+                  "technician_id": 13,
+                  "taxon_id": 5435,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.732-06:00",
+                  "updated_at": "2020-11-03T12:37:18.732-06:00"
+                },
+                {
+                  "id": 1309,
+                  "technician_id": 13,
+                  "taxon_id": 5437,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.739-06:00",
+                  "updated_at": "2020-11-03T12:37:18.739-06:00"
+                },
+                {
+                  "id": 1310,
+                  "technician_id": 13,
+                  "taxon_id": 5438,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.747-06:00",
+                  "updated_at": "2020-11-03T12:37:18.747-06:00"
+                },
+                {
+                  "id": 1311,
+                  "technician_id": 13,
+                  "taxon_id": 5439,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.756-06:00",
+                  "updated_at": "2020-11-03T12:37:18.756-06:00"
+                },
+                {
+                  "id": 1312,
+                  "technician_id": 13,
+                  "taxon_id": 5441,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.765-06:00",
+                  "updated_at": "2020-11-03T12:37:18.765-06:00"
+                },
+                {
+                  "id": 1313,
+                  "technician_id": 13,
+                  "taxon_id": 5442,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.774-06:00",
+                  "updated_at": "2020-11-03T12:37:18.774-06:00"
+                },
+                {
+                  "id": 1314,
+                  "technician_id": 13,
+                  "taxon_id": 5444,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.781-06:00",
+                  "updated_at": "2020-11-03T12:37:18.781-06:00"
+                },
+                {
+                  "id": 1315,
+                  "technician_id": 13,
+                  "taxon_id": 5445,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.786-06:00",
+                  "updated_at": "2020-11-03T12:37:18.786-06:00"
+                },
+                {
+                  "id": 1316,
+                  "technician_id": 13,
+                  "taxon_id": 5447,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.792-06:00",
+                  "updated_at": "2020-11-03T12:37:18.792-06:00"
+                },
+                {
+                  "id": 1317,
+                  "technician_id": 13,
+                  "taxon_id": 5449,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.799-06:00",
+                  "updated_at": "2020-11-03T12:37:18.799-06:00"
+                },
+                {
+                  "id": 1318,
+                  "technician_id": 13,
+                  "taxon_id": 5450,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.804-06:00",
+                  "updated_at": "2020-11-03T12:37:18.804-06:00"
+                },
+                {
+                  "id": 1319,
+                  "technician_id": 13,
+                  "taxon_id": 5451,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.809-06:00",
+                  "updated_at": "2020-11-03T12:37:18.809-06:00"
+                },
+                {
+                  "id": 1320,
+                  "technician_id": 13,
+                  "taxon_id": 5453,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.815-06:00",
+                  "updated_at": "2020-11-03T12:37:18.815-06:00"
+                },
+                {
+                  "id": 1321,
+                  "technician_id": 13,
+                  "taxon_id": 5454,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.821-06:00",
+                  "updated_at": "2020-11-03T12:37:18.821-06:00"
+                },
+                {
+                  "id": 1322,
+                  "technician_id": 13,
+                  "taxon_id": 5455,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.826-06:00",
+                  "updated_at": "2020-11-03T12:37:18.826-06:00"
+                },
+                {
+                  "id": 1323,
+                  "technician_id": 13,
+                  "taxon_id": 5456,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.833-06:00",
+                  "updated_at": "2020-11-03T12:37:18.833-06:00"
+                },
+                {
+                  "id": 1324,
+                  "technician_id": 13,
+                  "taxon_id": 5457,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.841-06:00",
+                  "updated_at": "2020-11-03T12:37:18.841-06:00"
+                },
+                {
+                  "id": 1325,
+                  "technician_id": 13,
+                  "taxon_id": 5458,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.851-06:00",
+                  "updated_at": "2020-11-03T12:37:18.851-06:00"
+                },
+                {
+                  "id": 1326,
+                  "technician_id": 13,
+                  "taxon_id": 5459,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.859-06:00",
+                  "updated_at": "2020-11-03T12:37:18.859-06:00"
+                },
+                {
+                  "id": 1327,
+                  "technician_id": 13,
+                  "taxon_id": 5461,
+                  "taxon_type": "installation",
+                  "created_at": "2020-11-03T12:37:18.869-06:00",
+                  "updated_at": "2020-11-03T12:37:18.869-06:00"
+                }
+              ]
+            },
+            "technician_taxons": [
+              {
+                "id": 1262,
+                "technician_id": 13,
+                "taxon_id": 5245,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.341-06:00",
+                "updated_at": "2020-11-03T12:37:18.341-06:00"
+              },
+              {
+                "id": 1263,
+                "technician_id": 13,
+                "taxon_id": 5249,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.352-06:00",
+                "updated_at": "2020-11-03T12:37:18.352-06:00"
+              },
+              {
+                "id": 1264,
+                "technician_id": 13,
+                "taxon_id": 5251,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.363-06:00",
+                "updated_at": "2020-11-03T12:37:18.363-06:00"
+              },
+              {
+                "id": 1265,
+                "technician_id": 13,
+                "taxon_id": 5254,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.371-06:00",
+                "updated_at": "2020-11-03T12:37:18.371-06:00"
+              },
+              {
+                "id": 1266,
+                "technician_id": 13,
+                "taxon_id": 5255,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.379-06:00",
+                "updated_at": "2020-11-03T12:37:18.379-06:00"
+              },
+              {
+                "id": 1267,
+                "technician_id": 13,
+                "taxon_id": 5258,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.388-06:00",
+                "updated_at": "2020-11-03T12:37:18.388-06:00"
+              },
+              {
+                "id": 1268,
+                "technician_id": 13,
+                "taxon_id": 5260,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.403-06:00",
+                "updated_at": "2020-11-03T12:37:18.403-06:00"
+              },
+              {
+                "id": 1269,
+                "technician_id": 13,
+                "taxon_id": 5261,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.411-06:00",
+                "updated_at": "2020-11-03T12:37:18.411-06:00"
+              },
+              {
+                "id": 1270,
+                "technician_id": 13,
+                "taxon_id": 5263,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.426-06:00",
+                "updated_at": "2020-11-03T12:37:18.426-06:00"
+              },
+              {
+                "id": 1271,
+                "technician_id": 13,
+                "taxon_id": 5264,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.439-06:00",
+                "updated_at": "2020-11-03T12:37:18.439-06:00"
+              },
+              {
+                "id": 1272,
+                "technician_id": 13,
+                "taxon_id": 5266,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.449-06:00",
+                "updated_at": "2020-11-03T12:37:18.449-06:00"
+              },
+              {
+                "id": 1273,
+                "technician_id": 13,
+                "taxon_id": 5269,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.457-06:00",
+                "updated_at": "2020-11-03T12:37:18.457-06:00"
+              },
+              {
+                "id": 1274,
+                "technician_id": 13,
+                "taxon_id": 5270,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.466-06:00",
+                "updated_at": "2020-11-03T12:37:18.466-06:00"
+              },
+              {
+                "id": 1275,
+                "technician_id": 13,
+                "taxon_id": 5273,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.473-06:00",
+                "updated_at": "2020-11-03T12:37:18.473-06:00"
+              },
+              {
+                "id": 1276,
+                "technician_id": 13,
+                "taxon_id": 5274,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.481-06:00",
+                "updated_at": "2020-11-03T12:37:18.481-06:00"
+              },
+              {
+                "id": 1277,
+                "technician_id": 13,
+                "taxon_id": 5275,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.489-06:00",
+                "updated_at": "2020-11-03T12:37:18.489-06:00"
+              },
+              {
+                "id": 1278,
+                "technician_id": 13,
+                "taxon_id": 5278,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.496-06:00",
+                "updated_at": "2020-11-03T12:37:18.496-06:00"
+              },
+              {
+                "id": 1279,
+                "technician_id": 13,
+                "taxon_id": 5279,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.502-06:00",
+                "updated_at": "2020-11-03T12:37:18.502-06:00"
+              },
+              {
+                "id": 1280,
+                "technician_id": 13,
+                "taxon_id": 5280,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.512-06:00",
+                "updated_at": "2020-11-03T12:37:18.512-06:00"
+              },
+              {
+                "id": 1281,
+                "technician_id": 13,
+                "taxon_id": 5281,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.519-06:00",
+                "updated_at": "2020-11-03T12:37:18.519-06:00"
+              },
+              {
+                "id": 1282,
+                "technician_id": 13,
+                "taxon_id": 5282,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.526-06:00",
+                "updated_at": "2020-11-03T12:37:18.526-06:00"
+              },
+              {
+                "id": 1283,
+                "technician_id": 13,
+                "taxon_id": 5283,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.535-06:00",
+                "updated_at": "2020-11-03T12:37:18.535-06:00"
+              },
+              {
+                "id": 1284,
+                "technician_id": 13,
+                "taxon_id": 5286,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.545-06:00",
+                "updated_at": "2020-11-03T12:37:18.545-06:00"
+              },
+              {
+                "id": 1285,
+                "technician_id": 13,
+                "taxon_id": 5288,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.555-06:00",
+                "updated_at": "2020-11-03T12:37:18.555-06:00"
+              },
+              {
+                "id": 1286,
+                "technician_id": 13,
+                "taxon_id": 5289,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.565-06:00",
+                "updated_at": "2020-11-03T12:37:18.565-06:00"
+              },
+              {
+                "id": 1287,
+                "technician_id": 13,
+                "taxon_id": 5290,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.577-06:00",
+                "updated_at": "2020-11-03T12:37:18.577-06:00"
+              },
+              {
+                "id": 1288,
+                "technician_id": 13,
+                "taxon_id": 5295,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.588-06:00",
+                "updated_at": "2020-11-03T12:37:18.588-06:00"
+              },
+              {
+                "id": 1289,
+                "technician_id": 13,
+                "taxon_id": 5298,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.598-06:00",
+                "updated_at": "2020-11-03T12:37:18.598-06:00"
+              },
+              {
+                "id": 1290,
+                "technician_id": 13,
+                "taxon_id": 5300,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.609-06:00",
+                "updated_at": "2020-11-03T12:37:18.609-06:00"
+              },
+              {
+                "id": 1291,
+                "technician_id": 13,
+                "taxon_id": 5301,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.619-06:00",
+                "updated_at": "2020-11-03T12:37:18.619-06:00"
+              },
+              {
+                "id": 1292,
+                "technician_id": 13,
+                "taxon_id": 5304,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.627-06:00",
+                "updated_at": "2020-11-03T12:37:18.627-06:00"
+              },
+              {
+                "id": 1293,
+                "technician_id": 13,
+                "taxon_id": 5306,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.637-06:00",
+                "updated_at": "2020-11-03T12:37:18.637-06:00"
+              },
+              {
+                "id": 1294,
+                "technician_id": 13,
+                "taxon_id": 5307,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.644-06:00",
+                "updated_at": "2020-11-03T12:37:18.644-06:00"
+              },
+              {
+                "id": 1295,
+                "technician_id": 13,
+                "taxon_id": 5308,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.650-06:00",
+                "updated_at": "2020-11-03T12:37:18.650-06:00"
+              },
+              {
+                "id": 1296,
+                "technician_id": 13,
+                "taxon_id": 5310,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.656-06:00",
+                "updated_at": "2020-11-03T12:37:18.656-06:00"
+              },
+              {
+                "id": 1297,
+                "technician_id": 13,
+                "taxon_id": 5313,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.662-06:00",
+                "updated_at": "2020-11-03T12:37:18.662-06:00"
+              },
+              {
+                "id": 1298,
+                "technician_id": 13,
+                "taxon_id": 5314,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.669-06:00",
+                "updated_at": "2020-11-03T12:37:18.669-06:00"
+              },
+              {
+                "id": 1299,
+                "technician_id": 13,
+                "taxon_id": 5319,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.675-06:00",
+                "updated_at": "2020-11-03T12:37:18.675-06:00"
+              },
+              {
+                "id": 1300,
+                "technician_id": 13,
+                "taxon_id": 5321,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.682-06:00",
+                "updated_at": "2020-11-03T12:37:18.682-06:00"
+              },
+              {
+                "id": 1301,
+                "technician_id": 13,
+                "taxon_id": 5326,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.688-06:00",
+                "updated_at": "2020-11-03T12:37:18.688-06:00"
+              },
+              {
+                "id": 1302,
+                "technician_id": 13,
+                "taxon_id": 5327,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.695-06:00",
+                "updated_at": "2020-11-03T12:37:18.695-06:00"
+              },
+              {
+                "id": 1303,
+                "technician_id": 13,
+                "taxon_id": 5328,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.701-06:00",
+                "updated_at": "2020-11-03T12:37:18.701-06:00"
+              },
+              {
+                "id": 1304,
+                "technician_id": 13,
+                "taxon_id": 5330,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.708-06:00",
+                "updated_at": "2020-11-03T12:37:18.708-06:00"
+              },
+              {
+                "id": 1305,
+                "technician_id": 13,
+                "taxon_id": 5336,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.714-06:00",
+                "updated_at": "2020-11-03T12:37:18.714-06:00"
+              },
+              {
+                "id": 1306,
+                "technician_id": 13,
+                "taxon_id": 5337,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.720-06:00",
+                "updated_at": "2020-11-03T12:37:18.720-06:00"
+              },
+              {
+                "id": 1307,
+                "technician_id": 13,
+                "taxon_id": 5367,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.726-06:00",
+                "updated_at": "2020-11-03T12:37:18.726-06:00"
+              },
+              {
+                "id": 1308,
+                "technician_id": 13,
+                "taxon_id": 5435,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.732-06:00",
+                "updated_at": "2020-11-03T12:37:18.732-06:00"
+              },
+              {
+                "id": 1309,
+                "technician_id": 13,
+                "taxon_id": 5437,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.739-06:00",
+                "updated_at": "2020-11-03T12:37:18.739-06:00"
+              },
+              {
+                "id": 1310,
+                "technician_id": 13,
+                "taxon_id": 5438,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.747-06:00",
+                "updated_at": "2020-11-03T12:37:18.747-06:00"
+              },
+              {
+                "id": 1311,
+                "technician_id": 13,
+                "taxon_id": 5439,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.756-06:00",
+                "updated_at": "2020-11-03T12:37:18.756-06:00"
+              },
+              {
+                "id": 1312,
+                "technician_id": 13,
+                "taxon_id": 5441,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.765-06:00",
+                "updated_at": "2020-11-03T12:37:18.765-06:00"
+              },
+              {
+                "id": 1313,
+                "technician_id": 13,
+                "taxon_id": 5442,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.774-06:00",
+                "updated_at": "2020-11-03T12:37:18.774-06:00"
+              },
+              {
+                "id": 1314,
+                "technician_id": 13,
+                "taxon_id": 5444,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.781-06:00",
+                "updated_at": "2020-11-03T12:37:18.781-06:00"
+              },
+              {
+                "id": 1315,
+                "technician_id": 13,
+                "taxon_id": 5445,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.786-06:00",
+                "updated_at": "2020-11-03T12:37:18.786-06:00"
+              },
+              {
+                "id": 1316,
+                "technician_id": 13,
+                "taxon_id": 5447,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.792-06:00",
+                "updated_at": "2020-11-03T12:37:18.792-06:00"
+              },
+              {
+                "id": 1317,
+                "technician_id": 13,
+                "taxon_id": 5449,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.799-06:00",
+                "updated_at": "2020-11-03T12:37:18.799-06:00"
+              },
+              {
+                "id": 1318,
+                "technician_id": 13,
+                "taxon_id": 5450,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.804-06:00",
+                "updated_at": "2020-11-03T12:37:18.804-06:00"
+              },
+              {
+                "id": 1319,
+                "technician_id": 13,
+                "taxon_id": 5451,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.809-06:00",
+                "updated_at": "2020-11-03T12:37:18.809-06:00"
+              },
+              {
+                "id": 1320,
+                "technician_id": 13,
+                "taxon_id": 5453,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.815-06:00",
+                "updated_at": "2020-11-03T12:37:18.815-06:00"
+              },
+              {
+                "id": 1321,
+                "technician_id": 13,
+                "taxon_id": 5454,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.821-06:00",
+                "updated_at": "2020-11-03T12:37:18.821-06:00"
+              },
+              {
+                "id": 1322,
+                "technician_id": 13,
+                "taxon_id": 5455,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.826-06:00",
+                "updated_at": "2020-11-03T12:37:18.826-06:00"
+              },
+              {
+                "id": 1323,
+                "technician_id": 13,
+                "taxon_id": 5456,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.833-06:00",
+                "updated_at": "2020-11-03T12:37:18.833-06:00"
+              },
+              {
+                "id": 1324,
+                "technician_id": 13,
+                "taxon_id": 5457,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.841-06:00",
+                "updated_at": "2020-11-03T12:37:18.841-06:00"
+              },
+              {
+                "id": 1325,
+                "technician_id": 13,
+                "taxon_id": 5458,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.851-06:00",
+                "updated_at": "2020-11-03T12:37:18.851-06:00"
+              },
+              {
+                "id": 1326,
+                "technician_id": 13,
+                "taxon_id": 5459,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.859-06:00",
+                "updated_at": "2020-11-03T12:37:18.859-06:00"
+              },
+              {
+                "id": 1327,
+                "technician_id": 13,
+                "taxon_id": 5461,
+                "taxon_type": "installation",
+                "created_at": "2020-11-03T12:37:18.869-06:00",
+                "updated_at": "2020-11-03T12:37:18.869-06:00"
+              }
+            ],
+            "user": {
+              "id": 24,
+              "firstname": "TEST CLIENTE WEB",
+              "lastname": "TEST CLIENTE WEB",
+              "created_at": "08/10/2020 13:49:03",
+              "updated_at": "11/11/2020 15:43:04",
+              "email": "test@testsdasdqwf2112314567.cl",
+              "surname": "TEST CLIENTE WEB",
+              "cellphone": "(+56) 123123    ",
+              "phone": "(+56) 213123    ",
+              "cost_center": "test4",
+              "role_id": "CODE2",
+              "worktime": "Part-Time",
+              "photo": null,
+              "api_key": null,
+              "customer_id": "39",
+              "from_auth": "",
+              "country": "MX",
+              "get_roles_names": "Técnico",
+              "countries": [
+                {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-01T14:03:12.695-05:00",
+                  "updated_at": "2020-09-01T14:03:12.695-05:00"
+                }
+              ],
+              "fullname": "TEST CLIENTE WEB TEST CLIENTE WEB"
+            }
+          }
+        ]
+      },
+      "country": {
+        "id": 1,
+        "name": "México",
+        "iso": "MX",
+        "created_at": "2020-09-02T20:07:18.160Z",
+        "updated_at": "2020-09-02T20:07:18.160Z"
+      },
+      "additionals": [
+        {
+          "id": 5,
+          "customer_id": 34,
+          "names": "test",
+          "lastname": "test",
+          "surname": "test",
+          "email": "tes@test.cl",
+          "phone": "(+52) 3123123123",
+          "cellphone": "(+52) 1321231231",
+          "created_at": "2020-10-12T17:38:21.369Z",
+          "updated_at": "2020-10-12T17:38:21.369Z"
+        }
+      ],
+      "additional_addresses": [
+        {
+          "id": 17,
+          "name": "",
+          "zipcode": "01250",
+          "state": "01",
+          "delegation": "Álvaro Obregón",
+          "colony": "Tecolalco",
+          "street_name": "dasd",
+          "street_type": "Cerrada",
+          "ext_number": "2342",
+          "int_number": "1231",
+          "country_id": 1,
+          "administrative_demarcation_id": 5903,
+          "customer_id": 34,
+          "created_at": "2020-10-12T17:38:02.602Z",
+          "updated_at": "2020-10-12T17:38:02.602Z",
+          "country": {
+            "id": 1,
+            "name": "México",
+            "iso": "MX",
+            "created_at": "2020-09-02T20:07:18.160Z",
+            "updated_at": "2020-09-02T20:07:18.160Z"
+          },
+          "administrative_demarcation": {
+            "id": 5903,
+            "admin_name_1": "Sinaloa",
+            "admin_code_1": "25",
+            "admin_name_2": "Ahome",
+            "admin_code_2": "001",
+            "admin_name_3": "Los Mochis",
+            "admin_code_3": "01",
+            "place_name": "Los Sauces",
+            "zipcode": "81247",
+            "country_id": 1,
+            "created_at": "2020-09-30T14:06:30.305Z",
+            "updated_at": "2020-09-30T14:06:30.305Z",
+            "country": {
+              "id": 1,
+              "name": "México",
+              "iso": "MX",
+              "created_at": "2020-09-02T20:07:18.160Z",
+              "updated_at": "2020-09-02T20:07:18.160Z"
+            },
+            "admin3_admin1": "Los Mochis, Sinaloa",
+            "admin3_admin2_admin1": "Los Mochis, Ahome, Sinaloa",
+            "country_code": "MX",
+            "place_name_admin2_admin1": "Los Sauces, Ahome Sinaloa"
+          }
+        }
+      ],
+      "administrative_demarcation": {
+        "id": 126450,
+        "admin_name_1": "Distrito Federal",
+        "admin_code_1": "09",
+        "admin_name_2": "Álvaro Obregón",
+        "admin_code_2": "010",
+        "admin_name_3": "Ciudad de México",
+        "admin_code_3": "01",
+        "place_name": "Tecolalco",
+        "zipcode": "01250",
+        "country_id": 1,
+        "created_at": "2020-10-07T20:38:26.517Z",
+        "updated_at": "2020-10-07T20:38:26.517Z",
+        "country": {
+          "id": 1,
+          "name": "México",
+          "iso": "MX",
+          "created_at": "2020-09-02T20:07:18.160Z",
+          "updated_at": "2020-09-02T20:07:18.160Z"
+        },
+        "admin3_admin1": "Ciudad de México, Distrito Federal",
+        "admin3_admin2_admin1": "Ciudad de México, Álvaro Obregón, Distrito Federal",
+        "country_code": "MX",
+        "place_name_admin2_admin1": "Tecolalco, Álvaro Obregón Distrito Federal"
+      },
+      "administrative_demarcation_fn": {
+        "id": 126450,
+        "admin_name_1": "Distrito Federal",
+        "admin_code_1": "09",
+        "admin_name_2": "Álvaro Obregón",
+        "admin_code_2": "010",
+        "admin_name_3": "Ciudad de México",
+        "admin_code_3": "01",
+        "place_name": "Tecolalco",
+        "zipcode": "01250",
+        "country_id": 1,
+        "created_at": "2020-10-07T20:38:26.517Z",
+        "updated_at": "2020-10-07T20:38:26.517Z",
+        "country": {
+          "id": 1,
+          "name": "México",
+          "iso": "MX",
+          "created_at": "2020-09-02T20:07:18.160Z",
+          "updated_at": "2020-09-02T20:07:18.160Z"
+        },
+        "admin3_admin1": "Ciudad de México, Distrito Federal",
+        "admin3_admin2_admin1": "Ciudad de México, Álvaro Obregón, Distrito Federal",
+        "country_code": "MX",
+        "place_name_admin2_admin1": "Tecolalco, Álvaro Obregón Distrito Federal"
+      },
+      "customer_products": [
+        {
+          "id": 39,
+          "customer_id": 34,
+          "product_id": 5,
+          "created_at": "2020-10-12T17:38:27.300Z",
+          "updated_at": "2020-10-12T17:38:27.300Z",
+          "status": "Inicial",
+          "warranty": "1/1/1990",
+          "policy": "S/N",
+          "serial_id": null,
+          "discontinued": false,
+          "product": {
+            "id": 5,
+            "country_id": null,
+            "platform": "Tickets",
+            "tnr": "10515060",
+            "ean": "004859EEEEQ129078",
+            "profit_center": "419",
+            "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+            "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+            "mandatory": true,
+            "product_type": "Limpieza",
+            "created_at": "2020-10-05T22:38:36.457Z",
+            "updated_at": "2020-12-02T14:22:12.872Z",
+            "additional": false,
+            "home_program_hours": 1,
+            "taxons": [
+              {
+                "id": 5481,
+                "name": "Limpieza",
+                "permalink": "sda/test/limpieza",
+                "taxonomy_id": 3,
+                "created_at": "2020-11-27T14:49:27.279Z",
+                "updated_at": "2020-11-27T14:49:27.279Z",
+                "ancestry": "5478",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5482,
+                    "name": "test2",
+                    "permalink": "sda/test/limpieza/test2",
+                    "taxonomy_id": 3,
+                    "created_at": "2020-11-27T14:49:27.301Z",
+                    "updated_at": "2020-11-27T14:49:27.301Z",
+                    "ancestry": "5481",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5483,
+                        "name": "test especifico",
+                        "permalink": "sda/test/limpieza/test2/test_especifico",
+                        "taxonomy_id": 3,
+                        "created_at": "2020-11-27T15:09:51.396Z",
+                        "updated_at": "2020-11-27T15:09:51.396Z",
+                        "ancestry": "5482",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5276,
+                "name": "Limpieza",
+                "permalink": "sda",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:01.927Z",
+                "updated_at": "2020-11-18T14:17:18.435Z",
+                "ancestry": null,
+                "alias": "Limpieza",
+                "children_set": [
+                  {
+                    "id": 5277,
+                    "name": "Máquinas de café",
+                    "permalink": "sda/máquinas_de_café",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:01.938Z",
+                    "updated_at": "2020-09-07T13:47:01.938Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5278,
+                        "name": "Empotrables",
+                        "permalink": "sda/máquinas_de_café/empotrables",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:01.949Z",
+                        "updated_at": "2020-09-07T13:47:01.949Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5288,
+                        "name": "Independiente",
+                        "permalink": "sda/máquinas_de_café/independiente",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:02.273Z",
+                        "updated_at": "2020-09-07T13:47:02.273Z",
+                        "ancestry": "5277",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5318,
+                    "name": "Aspiradoras",
+                    "permalink": "sda/aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.446Z",
+                    "updated_at": "2020-09-07T13:47:03.446Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5319,
+                        "name": "Sin bolsa",
+                        "permalink": "sda/aspiradoras/sin_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.458Z",
+                        "updated_at": "2020-09-07T13:47:03.458Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5326,
+                        "name": "Robot",
+                        "permalink": "sda/aspiradoras/robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.811Z",
+                        "updated_at": "2020-09-07T13:47:03.811Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5330,
+                        "name": "Con bolsa",
+                        "permalink": "sda/aspiradoras/con_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:04.077Z",
+                        "updated_at": "2020-09-07T13:47:04.077Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 5318,
+                "name": "Aspiradoras",
+                "permalink": "sda/aspiradoras",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.446Z",
+                "updated_at": "2020-09-07T13:47:03.446Z",
+                "ancestry": "5276",
+                "alias": null,
+                "children_set": [
+                  {
+                    "id": 5319,
+                    "name": "Sin bolsa",
+                    "permalink": "sda/aspiradoras/sin_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.458Z",
+                    "updated_at": "2020-09-07T13:47:03.458Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5326,
+                    "name": "Robot",
+                    "permalink": "sda/aspiradoras/robot",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.811Z",
+                    "updated_at": "2020-09-07T13:47:03.811Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  },
+                  {
+                    "id": 5330,
+                    "name": "Con bolsa",
+                    "permalink": "sda/aspiradoras/con_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:04.077Z",
+                    "updated_at": "2020-09-07T13:47:04.077Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ]
+              },
+              {
+                "id": 5319,
+                "name": "Sin bolsa",
+                "permalink": "sda/aspiradoras/sin_bolsa",
+                "taxonomy_id": 2,
+                "created_at": "2020-09-07T13:47:03.458Z",
+                "updated_at": "2020-09-07T13:47:03.458Z",
+                "ancestry": "5318",
+                "alias": null,
+                "children_set": []
+              }
+            ],
+            "product_prices": [
+              {
+                "id": 3,
+                "country_id": 2,
+                "product_id": 5,
+                "price": 499900,
+                "sale_price": 499900,
+                "created_at": "2020-11-12T21:36:30.286Z",
+                "updated_at": "2020-11-12T21:36:30.286Z",
+                "country": {
+                  "id": 2,
+                  "name": "Chile",
+                  "iso": "CL",
+                  "created_at": "2020-09-02T20:07:18.167Z",
+                  "updated_at": "2020-09-02T20:07:18.167Z"
+                }
+              },
+              {
+                "id": 4,
+                "country_id": 1,
+                "product_id": 5,
+                "price": 6999,
+                "sale_price": 6999,
+                "created_at": "2020-11-12T21:36:30.295Z",
+                "updated_at": "2020-11-12T21:36:30.295Z",
+                "country": {
+                  "id": 1,
+                  "name": "México",
+                  "iso": "MX",
+                  "created_at": "2020-09-02T20:07:18.160Z",
+                  "updated_at": "2020-09-02T20:07:18.160Z"
+                }
+              }
+            ],
+            "country": null
+          }
+        }
+      ],
+      "policies":  [
+        {
+          "id": 8,
+          "customer_id": 34,
+          "address_assinged": "principal",
+          "labor_price": 2000,
+          "items_price": 127400,
+          "viatic_price": 0,
+          "total_price": 129400,
+          "created_at": "2020-12-15T20:46:44.825Z",
+          "updated_at": "2020-12-15T20:46:44.825Z",
+          "customer_products": [
+            {
+              "id": 39,
+              "customer_id": 34,
+              "product_id": 5,
+              "created_at": "2020-10-12T17:38:27.300Z",
+              "updated_at": "2020-10-12T17:38:27.300Z",
+              "status": "Inicial",
+              "warranty": "1/1/1990",
+              "policy": "S/N",
+              "serial_id": null,
+              "discontinued": false,
+              "product": {
+                "id": 5,
+                "country_id": null,
+                "platform": "Tickets",
+                "tnr": "10515060",
+                "ean": "004859EEEEQ129078",
+                "profit_center": "419",
+                "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+                "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+                "mandatory": true,
+                "product_type": "Limpieza",
+                "created_at": "2020-10-05T22:38:36.457Z",
+                "updated_at": "2020-12-02T14:22:12.872Z",
+                "additional": false,
+                "home_program_hours": 1,
+                "taxons": [
+                  {
+                    "id": 5481,
+                    "name": "Limpieza",
+                    "permalink": "sda/test/limpieza",
+                    "taxonomy_id": 3,
+                    "created_at": "2020-11-27T14:49:27.279Z",
+                    "updated_at": "2020-11-27T14:49:27.279Z",
+                    "ancestry": "5478",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5482,
+                        "name": "test2",
+                        "permalink": "sda/test/limpieza/test2",
+                        "taxonomy_id": 3,
+                        "created_at": "2020-11-27T14:49:27.301Z",
+                        "updated_at": "2020-11-27T14:49:27.301Z",
+                        "ancestry": "5481",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5483,
+                            "name": "test especifico",
+                            "permalink": "sda/test/limpieza/test2/test_especifico",
+                            "taxonomy_id": 3,
+                            "created_at": "2020-11-27T15:09:51.396Z",
+                            "updated_at": "2020-11-27T15:09:51.396Z",
+                            "ancestry": "5482",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5276,
+                    "name": "Limpieza",
+                    "permalink": "sda",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:01.927Z",
+                    "updated_at": "2020-11-18T14:17:18.435Z",
+                    "ancestry": null,
+                    "alias": "Limpieza",
+                    "children_set": [
+                      {
+                        "id": 5277,
+                        "name": "Máquinas de café",
+                        "permalink": "sda/máquinas_de_café",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:01.938Z",
+                        "updated_at": "2020-09-07T13:47:01.938Z",
+                        "ancestry": "5276",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5278,
+                            "name": "Empotrables",
+                            "permalink": "sda/máquinas_de_café/empotrables",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:01.949Z",
+                            "updated_at": "2020-09-07T13:47:01.949Z",
+                            "ancestry": "5277",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5288,
+                            "name": "Independiente",
+                            "permalink": "sda/máquinas_de_café/independiente",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:02.273Z",
+                            "updated_at": "2020-09-07T13:47:02.273Z",
+                            "ancestry": "5277",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 5318,
+                        "name": "Aspiradoras",
+                        "permalink": "sda/aspiradoras",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.446Z",
+                        "updated_at": "2020-09-07T13:47:03.446Z",
+                        "ancestry": "5276",
+                        "alias": null,
+                        "children_set": [
+                          {
+                            "id": 5319,
+                            "name": "Sin bolsa",
+                            "permalink": "sda/aspiradoras/sin_bolsa",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:03.458Z",
+                            "updated_at": "2020-09-07T13:47:03.458Z",
+                            "ancestry": "5318",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5326,
+                            "name": "Robot",
+                            "permalink": "sda/aspiradoras/robot",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:03.811Z",
+                            "updated_at": "2020-09-07T13:47:03.811Z",
+                            "ancestry": "5318",
+                            "alias": null,
+                            "children_set": []
+                          },
+                          {
+                            "id": 5330,
+                            "name": "Con bolsa",
+                            "permalink": "sda/aspiradoras/con_bolsa",
+                            "taxonomy_id": 2,
+                            "created_at": "2020-09-07T13:47:04.077Z",
+                            "updated_at": "2020-09-07T13:47:04.077Z",
+                            "ancestry": "5318",
+                            "alias": null,
+                            "children_set": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5318,
+                    "name": "Aspiradoras",
+                    "permalink": "sda/aspiradoras",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.446Z",
+                    "updated_at": "2020-09-07T13:47:03.446Z",
+                    "ancestry": "5276",
+                    "alias": null,
+                    "children_set": [
+                      {
+                        "id": 5319,
+                        "name": "Sin bolsa",
+                        "permalink": "sda/aspiradoras/sin_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.458Z",
+                        "updated_at": "2020-09-07T13:47:03.458Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5326,
+                        "name": "Robot",
+                        "permalink": "sda/aspiradoras/robot",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:03.811Z",
+                        "updated_at": "2020-09-07T13:47:03.811Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      },
+                      {
+                        "id": 5330,
+                        "name": "Con bolsa",
+                        "permalink": "sda/aspiradoras/con_bolsa",
+                        "taxonomy_id": 2,
+                        "created_at": "2020-09-07T13:47:04.077Z",
+                        "updated_at": "2020-09-07T13:47:04.077Z",
+                        "ancestry": "5318",
+                        "alias": null,
+                        "children_set": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5319,
+                    "name": "Sin bolsa",
+                    "permalink": "sda/aspiradoras/sin_bolsa",
+                    "taxonomy_id": 2,
+                    "created_at": "2020-09-07T13:47:03.458Z",
+                    "updated_at": "2020-09-07T13:47:03.458Z",
+                    "ancestry": "5318",
+                    "alias": null,
+                    "children_set": []
+                  }
+                ],
+                "product_prices": [
+                  {
+                    "id": 3,
+                    "country_id": 2,
+                    "product_id": 5,
+                    "price": 499900,
+                    "sale_price": 499900,
+                    "created_at": "2020-11-12T21:36:30.286Z",
+                    "updated_at": "2020-11-12T21:36:30.286Z",
+                    "country": {
+                      "id": 2,
+                      "name": "Chile",
+                      "iso": "CL",
+                      "created_at": "2020-09-02T20:07:18.167Z",
+                      "updated_at": "2020-09-02T20:07:18.167Z"
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "country_id": 1,
+                    "product_id": 5,
+                    "price": 6999,
+                    "sale_price": 6999,
+                    "created_at": "2020-11-12T21:36:30.295Z",
+                    "updated_at": "2020-11-12T21:36:30.295Z",
+                    "country": {
+                      "id": 1,
+                      "name": "México",
+                      "iso": "MX",
+                      "created_at": "2020-09-02T20:07:18.160Z",
+                      "updated_at": "2020-09-02T20:07:18.160Z"
+                    }
+                  }
+                ],
+                "country": null
+              }
+            }
+          ],
+          "policy_customer_products": [
+            {
+              "id": 29,
+              "customer_product_id": 39,
+              "policy_id": 8,
+              "created_at": "2020-12-15T20:46:44.835Z",
+              "updated_at": "2020-12-15T20:46:44.835Z",
+              "status": "Inactivo",
+              "visits": 0,
+              "customer_product": {
+                "id": 39,
+                "customer_id": 34,
+                "product_id": 5,
+                "created_at": "2020-10-12T17:38:27.300Z",
+                "updated_at": "2020-10-12T17:38:27.300Z",
+                "status": "Inicial",
+                "warranty": "1/1/1990",
+                "policy": "S/N",
+                "serial_id": null,
+                "discontinued": false,
+                "product": {
+                  "id": 5,
+                  "country_id": null,
+                  "platform": "Tickets",
+                  "tnr": "10515060",
+                  "ean": "004859EEEEQ129078",
+                  "profit_center": "419",
+                  "name": "Aspiradora sin Bolsa CX1 Blizzard Excellence",
+                  "description": "Aspirador sin bolsa\ncon una alta potencia aspiradora y tubo telescópico para una aspiración cómoda.",
+                  "mandatory": true,
+                  "product_type": "Limpieza",
+                  "created_at": "2020-10-05T22:38:36.457Z",
+                  "updated_at": "2020-12-02T14:22:12.872Z",
+                  "additional": false,
+                  "home_program_hours": 1,
+                  "taxons": [
+                    {
+                      "id": 5481,
+                      "name": "Limpieza",
+                      "permalink": "sda/test/limpieza",
+                      "taxonomy_id": 3,
+                      "created_at": "2020-11-27T14:49:27.279Z",
+                      "updated_at": "2020-11-27T14:49:27.279Z",
+                      "ancestry": "5478",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5482,
+                          "name": "test2",
+                          "permalink": "sda/test/limpieza/test2",
+                          "taxonomy_id": 3,
+                          "created_at": "2020-11-27T14:49:27.301Z",
+                          "updated_at": "2020-11-27T14:49:27.301Z",
+                          "ancestry": "5481",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5483,
+                              "name": "test especifico",
+                              "permalink": "sda/test/limpieza/test2/test_especifico",
+                              "taxonomy_id": 3,
+                              "created_at": "2020-11-27T15:09:51.396Z",
+                              "updated_at": "2020-11-27T15:09:51.396Z",
+                              "ancestry": "5482",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5276,
+                      "name": "Limpieza",
+                      "permalink": "sda",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:01.927Z",
+                      "updated_at": "2020-11-18T14:17:18.435Z",
+                      "ancestry": null,
+                      "alias": "Limpieza",
+                      "children_set": [
+                        {
+                          "id": 5277,
+                          "name": "Máquinas de café",
+                          "permalink": "sda/máquinas_de_café",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:01.938Z",
+                          "updated_at": "2020-09-07T13:47:01.938Z",
+                          "ancestry": "5276",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5278,
+                              "name": "Empotrables",
+                              "permalink": "sda/máquinas_de_café/empotrables",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:01.949Z",
+                              "updated_at": "2020-09-07T13:47:01.949Z",
+                              "ancestry": "5277",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5288,
+                              "name": "Independiente",
+                              "permalink": "sda/máquinas_de_café/independiente",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:02.273Z",
+                              "updated_at": "2020-09-07T13:47:02.273Z",
+                              "ancestry": "5277",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 5318,
+                          "name": "Aspiradoras",
+                          "permalink": "sda/aspiradoras",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.446Z",
+                          "updated_at": "2020-09-07T13:47:03.446Z",
+                          "ancestry": "5276",
+                          "alias": null,
+                          "children_set": [
+                            {
+                              "id": 5319,
+                              "name": "Sin bolsa",
+                              "permalink": "sda/aspiradoras/sin_bolsa",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:03.458Z",
+                              "updated_at": "2020-09-07T13:47:03.458Z",
+                              "ancestry": "5318",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5326,
+                              "name": "Robot",
+                              "permalink": "sda/aspiradoras/robot",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:03.811Z",
+                              "updated_at": "2020-09-07T13:47:03.811Z",
+                              "ancestry": "5318",
+                              "alias": null,
+                              "children_set": []
+                            },
+                            {
+                              "id": 5330,
+                              "name": "Con bolsa",
+                              "permalink": "sda/aspiradoras/con_bolsa",
+                              "taxonomy_id": 2,
+                              "created_at": "2020-09-07T13:47:04.077Z",
+                              "updated_at": "2020-09-07T13:47:04.077Z",
+                              "ancestry": "5318",
+                              "alias": null,
+                              "children_set": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5318,
+                      "name": "Aspiradoras",
+                      "permalink": "sda/aspiradoras",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.446Z",
+                      "updated_at": "2020-09-07T13:47:03.446Z",
+                      "ancestry": "5276",
+                      "alias": null,
+                      "children_set": [
+                        {
+                          "id": 5319,
+                          "name": "Sin bolsa",
+                          "permalink": "sda/aspiradoras/sin_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.458Z",
+                          "updated_at": "2020-09-07T13:47:03.458Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5326,
+                          "name": "Robot",
+                          "permalink": "sda/aspiradoras/robot",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:03.811Z",
+                          "updated_at": "2020-09-07T13:47:03.811Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        },
+                        {
+                          "id": 5330,
+                          "name": "Con bolsa",
+                          "permalink": "sda/aspiradoras/con_bolsa",
+                          "taxonomy_id": 2,
+                          "created_at": "2020-09-07T13:47:04.077Z",
+                          "updated_at": "2020-09-07T13:47:04.077Z",
+                          "ancestry": "5318",
+                          "alias": null,
+                          "children_set": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5319,
+                      "name": "Sin bolsa",
+                      "permalink": "sda/aspiradoras/sin_bolsa",
+                      "taxonomy_id": 2,
+                      "created_at": "2020-09-07T13:47:03.458Z",
+                      "updated_at": "2020-09-07T13:47:03.458Z",
+                      "ancestry": "5318",
+                      "alias": null,
+                      "children_set": []
+                    }
+                  ],
+                  "product_prices": [
+                    {
+                      "id": 3,
+                      "country_id": 2,
+                      "product_id": 5,
+                      "price": 499900,
+                      "sale_price": 499900,
+                      "created_at": "2020-11-12T21:36:30.286Z",
+                      "updated_at": "2020-11-12T21:36:30.286Z",
+                      "country": {
+                        "id": 2,
+                        "name": "Chile",
+                        "iso": "CL",
+                        "created_at": "2020-09-02T20:07:18.167Z",
+                        "updated_at": "2020-09-02T20:07:18.167Z"
+                      }
+                    },
+                    {
+                      "id": 4,
+                      "country_id": 1,
+                      "product_id": 5,
+                      "price": 6999,
+                      "sale_price": 6999,
+                      "created_at": "2020-11-12T21:36:30.295Z",
+                      "updated_at": "2020-11-12T21:36:30.295Z",
+                      "country": {
+                        "id": 1,
+                        "name": "México",
+                        "iso": "MX",
+                        "created_at": "2020-09-02T20:07:18.160Z",
+                        "updated_at": "2020-09-02T20:07:18.160Z"
+                      }
+                    }
+                  ],
+                  "country": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }

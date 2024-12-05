@@ -1,0 +1,65 @@
+<% @body_id = 'login' %>
+<div id="" class="login-grid" align="center">
+  <div class="login-image">
+  </div>
+  <div class="login-form ">
+    <div id="existing-customer" class="panel-body" data-hook="password-recover">
+      <div align="center">
+        <figure id="logo" class="login-logo-no-margin" data-hook>
+              <%= image_tag('logo/logo.svg', alt: 'Logo Garage', class: 'img-responsive logo')%>
+        </figure>
+      </div>
+      <div class="top-login login-padding">
+        <h3 class="title-login">Cambia tu contraseña</h3>
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+        <%= f.hidden_field :reset_password_token %>
+        <fieldset class="mdlext-bordered-fields" id="password-credentials">
+      
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--expandable required">
+              <%= f.label :password, class: "mdl-textfield__label" do %>
+              <%= "Nueva contraseña" %>
+            <% end %>
+              <%= f.password_field :password, class: 'mdl-textfield__input', autofocus: true, autocomplete: "new-password" %>
+              <label class="mdl-button mdl-js-button mdl-button--icon show-password-btn hidden" id="visibility_off" for="user_password">
+                  <i class="material-icons">visibility_off</i>
+              </label>
+              <label class="mdl-button mdl-js-button mdl-button--icon show-password-btn" id="visibility" for="user_password">
+                  <i class="material-icons">visibility</i>
+              </label>
+          </div>
+          
+          <span class="mdl-navigation__link minimum_password_length">
+            <% if @minimum_password_length %>
+              <i class="material-icons">error_outline</i><em> La contraseña debe tener mínimo <%= @minimum_password_length %> caracteres</em>
+            <% end %>
+          </span>
+          <br>
+
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--expandable required">
+              <%= f.label :password_confirmation, "Repita la nueva contraseña", class: "mdl-textfield__label" %>
+              <%= f.password_field :password_confirmation, class: 'mdl-textfield__input', autocomplete: "off"  %>
+              <label class="mdl-button mdl-js-button mdl-button--icon show-password_confirmation-btn hidden" id="password_confirmation_visibility_off" for="user_password_confirmation">
+                  <i class="material-icons">visibility_off</i>
+              </label>
+              <label class="mdl-button mdl-js-button mdl-button--icon show-password_confirmation-btn" id="password_confirmation_visibility" for="user_password_confirmation">
+                  <i class="material-icons">visibility</i>
+              </label>
+          </div>
+        </fieldset>   
+        <div class="form-group" align="center">
+          <%= f.submit "Guardar contraseña", class: 'mdl-button mdl-js-button mdl-js-ripple-effect btn-primary-custom btn-block', tabindex: 3 %>
+        </div>
+        <% end %>
+        <br>
+        <div data-hook="login_extras">
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render partial: "devise/shared/password_toggle", locals: {toggler: "show-password-btn", visibility_off: "visibility_off", visibility: "visibility", password: "user_password"} %>
+<%= render partial: "devise/shared/password_toggle", locals: {toggler: "show-password_confirmation-btn", visibility_off: "password_confirmation_visibility_off", visibility: "password_confirmation_visibility", password: "user_password_confirmation"} %>

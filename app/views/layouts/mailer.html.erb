@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/bal7ovi.css">
+    <%= render partial: 'layouts/shared/base_mailer_stylesheets' %>
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+    <%= render partial: 'layouts/shared/base_mailer_header' %>
+    <table class="row header">
+      <tr>
+        <td>
+            <table class="container">
+              <%= yield %>
+              <tr>
+                <td>
+                  <br>
+                  <%= render partial: 'layouts/shared/base_mailer_footer' %>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    
+  </body>
+</html>

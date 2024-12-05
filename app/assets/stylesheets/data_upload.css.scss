@@ -1,0 +1,14 @@
+@import "variables";
+
+.data-upload-paper {
+    height: max-content;
+    display: inline-table;
+    padding: 25px;
+
+    h1{
+        margin-top: 0px!important;
+    }
+}
+.MuiDropzoneArea-root{
+    min-height: 165px!important;
+}

@@ -1,0 +1,25 @@
+<table class="row header">
+  <tr>
+    <td align="center" >
+        <table class="container">
+          <tr>
+            <td class="wrapper last">
+
+              <table class="container" style="display: block;position: relative;">
+                <tr>
+                  <td class="last logo-column" style="" align="center" >
+                        <div style= "margin: 0 auto; text-align: center;">
+                            <%= link_to main_app.root_url, class: 'template-label' do %>
+                                <%= image_tag attachments['logo-mini.png'].url, class: 'logo', style: "max-width: 145px;height: auto;margin: 0px 186%;", alt: Rails.configuration.site_url, title: Rails.configuration.site_url %>
+                            <% end %>
+                        </div>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>

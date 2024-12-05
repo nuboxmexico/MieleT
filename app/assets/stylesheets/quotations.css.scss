@@ -1,0 +1,86 @@
+.quotation-container{
+    .MuiAccordionSummary-content{
+        justify-content: space-between!important;
+    }
+}
+
+.quotation-product-name{
+    font-size: 18px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    opacity: 1;
+}
+.quotation-products-ids{
+    font-size: 14px!important;
+    font-weight: 300!important;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+.quotation-sparepart-subtitle{
+    font-size: 14px!important;
+    font-weight: 500!important;
+    letter-spacing: 0px;
+    color: #1F1F1F;
+    opacity: 1;
+    margin-top: 30px;
+}
+
+.quotation-product-labor-price{
+    font-size: 14px!important;
+    font-weight: 300!important;
+    strong{
+        font-weight: 500!important;    
+    }
+}
+
+.warranty-check{
+    align-items: flex-start;
+    vertical-align: middle;
+    display: flex;
+}
+
+.quotation-product-container{
+    margin-top: 30px;
+}
+.quotation-product-grid{
+    margin-bottom: 60px;
+}
+
+.ecommerce-card {
+  width: 0;
+  height: 0;
+  border-top: 35px solid #069c13;
+  border-right: 35px solid transparent;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  margin-bottom: -20px;
+}
+
+.project-card {
+  width: 0;
+  height: 0;
+  border-top: 35px solid #262626;
+  border-right: 35px solid transparent;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  margin-bottom: -20px;
+}
+
+.retail-card {
+  width: 0;
+  height: 0;
+  border-top: 35px solid #8c0314;
+  border-right: 35px solid transparent;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  margin-bottom: -20px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/open-sans:n4,n7:default.js" type="text/javascript">\x3C/script>');
+  </script>
+</head>
+<body>
+    <%= render partial: "layouts/shared/pdf_stylesheets", formats: [:html]%>
+	<div class="paddinger" style="margin-left: -10px;margin-right: -10px;text-align: center;">
+    <% if Rails.env.production? %>
+      <img src="https:<%= asset_path('logo/logo-mini.png') %>" class="img-miele">
+    <% else %>
+      <%= wicked_pdf_image_tag("#{request.protocol}#{request.host_with_port}#{asset_path('logo/logo-mini.png')}", class: "img-miele")%>
+    <% end %>
+	</div>
+</body>
+  
+</html>
+

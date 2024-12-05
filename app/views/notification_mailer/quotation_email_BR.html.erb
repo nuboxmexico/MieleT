@@ -1,0 +1,18 @@
+
+<% unless @quotation.nil? %>
+    <p>Prezado(a) <%=  @quotation["service"]["customer"]["names"] %>,</p>
+    <p>
+        Segue cotação de visita para o serviço <%=  @quotation["service"]["number"] %>
+    </p>
+    <p>
+        <strong>Cotação detalhada</strong>
+
+        <p style="margin: 25px 0px;"><%= link_to 'Ver cotización', @quotation_url, style: "background: #FFFFFF;border: 1px solid #8C0014;opacity: 1;padding: 10px 20px;color: #8C0014;text-transform: uppercase;text-decoration:none;font-size: 12px;text-overflow: initial;word-break: break-all;white-space: nowrap;" %></p>    
+
+    </p>
+    <p>
+        <span class="service-p-small">Caso haja algum erro nos dados da cotação, por favor, entre em contato conosco via telefone em <a class="link-mailer" href="tel:3061-0430">(11) 3061-0430</a> ou envie um e-mail para <a class="link-mailer" href="mailto:info@mielebrasil.com.br">info@mielebrasil.com.br</a></span>
+    </p>
+    <br>
+    
+<% end %>
