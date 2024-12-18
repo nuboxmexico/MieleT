@@ -35,7 +35,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-
+      POSTGRES_DB: ticketsmiele
   redis:
     image: redis:7.2.3
     command: redis-server

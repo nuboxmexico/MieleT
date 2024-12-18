@@ -17,7 +17,9 @@ default: &default
 
 development:
   <<: *default
-  host: postgres_tickets
+host: 44.201.192.191
+database: ticketsmiele
+ # host: postgres_tickets
 
 
   #database: ticketsmiele
